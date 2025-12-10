@@ -69,12 +69,14 @@ def make_a_query3(prompt, tokenizer, model, max_new_tokens=512):
 
 
 
-def log_llm_output(prompt, response, model_name, log_file):
+def log_llm_output(prompt, response, model_name, log_file,lingua=""):
     log_entry = {
         "date": datetime.now().isoformat(),  # ISO 8601 timestamp
         "prompt": prompt,
         "response": response,
-        "model_name": model_name
+        "model_name": model_name,
+        "language":lingua
+
     }
         # Append JSON line to file
     with open(log_file, "a", encoding="utf-8") as f:
@@ -113,8 +115,7 @@ def check_if_output_exists(prompt, model_name, log_file):
 
 
 
-
-def call_local_qwen(prompt, log_file,maxnew_token=15):
+def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
    
 
     model_name = "Qwen/Qwen3-4B-Instruct-2507-FP8"
@@ -140,7 +141,7 @@ def call_local_qwen(prompt, log_file,maxnew_token=15):
 
                     answer=make_a_query3(prompt, tokenizer, model, max_new_tokens=maxnew_token)
           
-                    log_llm_output(prompt, answer, model_name,log_file)
+                    log_llm_output(prompt, answer, model_name,log_file,lingua)
 
 
 
@@ -154,7 +155,7 @@ def call_local_qwen(prompt, log_file,maxnew_token=15):
 
 
 
-def call_multiple_apis_only_text(prompt, log_file):
+def call_multiple_apis_only_text(prompt, log_file,lingua=""):
    
 
     model_name="gemini-2.5-pro"
@@ -171,7 +172,7 @@ def call_multiple_apis_only_text(prompt, log_file):
             )
 
             print(response.text)
-            log_llm_output(prompt, response.text, model_name,log_file)
+            log_llm_output(prompt, response.text, model_name,log_file,lingua)
             print("\n\n\n\n-----")
         
         except Exception as e:
@@ -219,7 +220,7 @@ def call_multiple_apis_only_text(prompt, log_file):
                 print(chunk.choices[0].delta.content or "", end="")
                 first_answer+=chunk.choices[0].delta.content or ""
 
-            log_llm_output(prompt, first_answer, model_name,log_file)
+            log_llm_output(prompt, first_answer, model_name,log_file,lingua)
         
         except Exception as e:
             print(f"Error model {model_name}. the error is : {e}")   
@@ -273,7 +274,7 @@ def call_multiple_apis_only_text(prompt, log_file):
             print(response['message']['content'])
 
 
-            log_llm_output(prompt, response['message']['content'], model_name,log_file)
+            log_llm_output(prompt, response['message']['content'], model_name,log_file,lingua)
         
         except Exception as e:
             print(f"Error model {model_name}. the error is : {e}")   
@@ -326,7 +327,7 @@ def call_multiple_apis_only_text(prompt, log_file):
 
             print(final_output) 
 
-            log_llm_output(prompt, final_output, model_name,log_file)
+            log_llm_output(prompt, final_output, model_name,log_file,lingua)
 
 
         except Exception as e:
