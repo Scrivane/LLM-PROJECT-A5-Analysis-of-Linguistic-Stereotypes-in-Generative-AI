@@ -9,7 +9,8 @@ from ollama import chat
 from ollama import ChatResponse
 import os
 from mistralai import Mistral
-
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
 """
 change the following keys with yoru own you cna generate them in the respective sites
 """
@@ -24,7 +25,43 @@ api_key_minstral="placeholder"
 
 
 
+def make_a_query3(prompt, tokenizer, model, max_new_tokens=512):
+    import gc
+    """
+    query: your question or instruction
+    ground_truth: optional reference text
+    first_response: optional previous response to include in prompt
+    """
+    # Build the prompt following Qwen instruction-style format
 
+    
+    # Prepare chat template
+    messages = [{"role": "user", "content": prompt}]
+    text = tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True
+    )
+
+    # Tokenize for model input
+    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+
+    # Generate output
+    with torch.no_grad():
+        generated_ids = model.generate(
+            **model_inputs,
+            max_new_tokens=max_new_tokens,
+            do_sample=False,
+            pad_token_id=tokenizer.eos_token_id
+        )
+
+    # Remove prompt tokens to get only the model response
+    output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist()
+    content = tokenizer.decode(output_ids, skip_special_tokens=True)
+    del model_inputs, generated_ids
+    torch.cuda.empty_cache()
+    gc.collect()
+    return content
 
 
 
@@ -75,6 +112,42 @@ def check_if_output_exists(prompt, model_name, log_file):
 
 
 
+
+
+def call_local_qwen(prompt, log_file,maxnew_token=15):
+   
+
+    model_name = "Qwen/Qwen3-4B-Instruct-2507-FP8"
+    if check_if_output_exists(prompt, model_name,log_file)==False:
+        try:
+
+
+            
+
+
+
+                    model = AutoModelForCausalLM.from_pretrained(model_name, 
+                                                            
+                                                                torch_dtype="auto",
+                                                            
+                                                            device_map="cuda")
+                    tokenizer = AutoTokenizer.from_pretrained(model_name)
+         
+                
+
+
+
+
+                    answer=make_a_query3(prompt, tokenizer, model, max_new_tokens=maxnew_token)
+          
+                    log_llm_output(prompt, answer, model_name,log_file)
+
+
+
+        
+        except Exception as e:
+            print(f"Error model {model_name}. the error is : {e}")   
+    
 
 
 
