@@ -22,6 +22,23 @@ api_key_minstral="placeholder"
 ###
 ###
 
+model_name = "Qwen/Qwen3-4B-Instruct-2507-FP8"
+model_local = None
+tokenizer_local = None
+
+def load_model_once():
+    """Load model once"""
+    global model_local, tokenizer_local
+    if model_local is None:
+        print("Loading model...")
+        model_local = AutoModelForCausalLM.from_pretrained(
+            model_name, 
+            torch_dtype="auto",
+            device_map="cuda"
+        )
+        tokenizer_local = AutoTokenizer.from_pretrained(model_name)
+        print("Model loaded!")
+
 
 
 
@@ -127,19 +144,19 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
 
 
 
-                    model = AutoModelForCausalLM.from_pretrained(model_name, 
+                    """ model = AutoModelForCausalLM.from_pretrained(model_name, 
                                                             
                                                                 torch_dtype="auto",
                                                             
                                                             device_map="cuda")
-                    tokenizer = AutoTokenizer.from_pretrained(model_name)
+                    tokenizer = AutoTokenizer.from_pretrained(model_name) """
          
                 
 
 
 
 
-                    answer=make_a_query3(prompt, tokenizer, model, max_new_tokens=maxnew_token)
+                    answer=make_a_query3(prompt, tokenizer_local, model_local, max_new_tokens=maxnew_token)
           
                     log_llm_output(prompt, answer, model_name,log_file,lingua)
 

@@ -127,7 +127,7 @@ def main():
 
     template="Una persona dice :\n '{dialetto_part}' \n Rispondi solo Si o No indicando se la persona che ha detto tale frase è {aggettivo}."
     prompts=[]
-    for aggettivo in tqdm(lista_aggettivi, desc="Processing adjectives"):
+    for aggettivo in lista_aggettivi:
         for item in dialetti_part:
             dialetto_part_text=item['neapolitan_text']
             prompt=template.format(dialetto_part=dialetto_part_text,aggettivo=aggettivo)
@@ -136,9 +136,10 @@ def main():
             prompt=template.format(dialetto_part=italian_traslation,aggettivo=aggettivo)
             prompts.append((prompt,"italiano"))
 
+    call_apis.load_model_once()
 
 
-    for prompt,lingua in prompts:
+    for prompt,lingua in tqdm(prompts, desc="Processing prompts"):
         
     
         #call_apis.call_multiple_apis_only_text(prompt,logpath)
