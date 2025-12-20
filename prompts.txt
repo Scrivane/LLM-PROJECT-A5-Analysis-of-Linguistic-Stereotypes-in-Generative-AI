@@ -1,0 +1,25 @@
+Prompt 1 - Prompt 2:
+persona A: 
+persona B:
+domanda
+
+
+prompt 3 - prompt 4:
+persona A:
+persona B:
+frase
+
+prompt 5:
+persona A:
+persona B:
+Associa ad ogni persona N di questi [categoria] :
+
+prompt 6:
+persona A:
+persona B:
+Associa ad ogni persona N [categoria] :
+
+prompt 7:
+persona:
+secondo te la persona è [aggettivo]? si/no
+
