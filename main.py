@@ -145,7 +145,9 @@ def main():
     
         #call_apis.call_multiple_apis_only_text(prompt,logpath)
         #print("Prompt:\n",prompt)
-        call_apis.call_local_qwen(prompt,path,10,lingua) 
+        #call_apis.call_local_qwen(prompt,path,10,lingua) 
+        call_apis.call_multiple_apis_only_text(prompt,path,lingua)
+
 
     
     listnapoletano, listitaliano=process_jsonl(path)
@@ -192,10 +194,12 @@ def main():
     for aggettivo in aggettivi_maschili:   
 
         prompt=template2.format(dialetto_part=racconto_dialetto,aggettivo=aggettivo)
-        call_apis.call_local_qwen(prompt,logpath,15,"dialetto")
+        #call_apis.call_local_qwen(prompt,logpath,15,"dialetto")
+        call_apis.call_multiple_apis_only_text(prompt,logpath,lingua)
 
         prompt=template2.format(dialetto_part=racconto_tradotto,aggettivo=aggettivo)
-        call_apis.call_local_qwen(prompt,logpath,15,"italiano")
+        #call_apis.call_local_qwen(prompt,logpath,15,"italiano")
+        call_apis.call_multiple_apis_only_text(prompt,logpath,lingua)
     
     listnapoletano2, listitaliano2=process_jsonl(logpath)
     totlistnap=listnapoletano+listnapoletano2
