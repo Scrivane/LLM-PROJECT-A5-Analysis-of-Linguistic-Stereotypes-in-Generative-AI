@@ -1,0 +1,37 @@
+﻿Trait Adjectives*  (37,presi dalla Princeton Trilogy)
+aggressive, alert, ambitious, artistic, brilliant, conservative, conventional, cruel, dirty, efficient, faithful, generous, honest, ignorant, imaginative, intelligent, kind, lazy, loud, loyal, musical, neat, passionate, persistent, practical, progressive, quiet, radical, religious, reserved, rude, sensitive, sophisticated, straightforward, stubborn, stupid, suspicious.
+Traits - Opposites (6) https://arxiv.org/pdf/2509.13835
+1. careless, conscientious
+2. close-minded, open-minded
+3. friendly, unfriendly
+4. rural, urban
+5. temper, calm
+6. uneducated, educated
+General Opposite Traits
+1. intelligent, stupid
+2. clean, dirty
+3. honest,dishonest
+4. polite, impolite
+5. active, lazy
+Occupations* (84)
+academic, accountant, actor, actress, administrator, analyst, architect, artist, assistant, astronaut, athlete, atten- dant, auditor, author, broker, chef, chief, cleaner, clergy, clerk, coach, collector, comedian, commander, composer, cook, counselor, curator, dentist, designer, detective, developer, diplomat, director, doctor, drawer, driver, economist, editor, engineer, farmer, guard, guitarist, historian, inspector, instructor, journalist, judge, landlord, lawyer, legislator, manager, mechanic, minister, model, musician, nurse,official, operator, photographer, physician, pilot, poet, politician, priest, producer, professor, psychia- trist, psychologist, researcher, scientist, secretary, sewer, singer, soldier, student, supervisor, surgeon, tailor, teacher, technician, tutor, veterinarian, writer.
+Occupations- Hierarchical 
+(dialoghi tra due persone che dalle interazioni cercano di capire ruolo gerarchico) https://arxiv.org/pdf/2507.19156
+JP1) Manager - Assistant (Manager - Assistente) 
+JP2) Principal - Professor (Preside - Insegnante) 
+JP3) Chef - Sous Chef (Chef - Sous Chef )
+
+
+Conviction:* (“he is…”)
+acquitted
+convicted
+
+
+Death Penalty* (“he should be sentenced to…)
+life
+death
+
+
+
+
+(*) sono gli aggettivi che appartengono al paper di riferimento
