@@ -75,14 +75,19 @@ def process_jsonl(file_path):
     """
     listnapoletano = []  # Even line + "Yes"
     listitaliano = []  # Odd line + "No"
+
+
+    all_data = []
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line in file:
+            if line.strip():
+                all_data.append(json.loads(line))
     
     try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            for line_num, line in enumerate(file):
+        for data in all_data:
                     
                
-                    data = json.loads(line.strip())
-                    
+
                     prompt = data.get('prompt', '')
                     response = data.get('response', '').strip()
                     
@@ -94,16 +99,45 @@ def process_jsonl(file_path):
                     # Check if line number is even or odd
                     lingua=data.get('language')
                     is_dialetto=lingua.lower() =="dialetto"
-                    is_yes = response.lower() == "si" or response.lower()=="yes"
+                    response_no_point=response.lower().replace(".","").replace(",","").strip()
+                    is_yes = response_no_point.lower() == "si" or response_no_point.lower()=="yes" 
+                    is_no=response_no_point.lower() == "no"
+                    is_rephrased=data.get("response_rephrased") is not None
+                    if not is_no and not is_yes:
+                       
+                        if is_rephrased==False:
+                            data["response_rephrased"]=call_apis.refrase_to_yes_or_no(response,maxnew_token=5)
+                            with open(file_path, 'w', encoding='utf-8') as file:
+                                    for entry in all_data:
+                                        json.dump(entry, file, ensure_ascii=False)
+                                        file.write('\n')
+                                    
+
+
+                            
+
+                            log_path1 = 'check_rephrasing.txt'
+
+                            with open(log_path1, 'a', encoding='utf-8') as log_file:
+                                    # ... inside your loop ...
+                                    
+                                    log_file.write(f"Original response: {response}\n")
+                                    log_file.write(f"New response: {data['response_rephrased']}\n")
+                                    log_file.write("\n\n") # The two empty lines you wanted
+                        rephrased=data["response_rephrased"].replace(".","").replace(",","").strip().lower()
+                        is_yes = rephrased.lower() == "si" or rephrased.lower()=="yes" 
+                      
+
+          
+                        
                     
                     # Apply rules
                     if is_dialetto and is_yes:
                         listnapoletano.append(adjective)
-                        print(f"Line {line_num} (even): Added '{adjective}' to listnapoletano")
+                      
                     
                     elif is_dialetto==False and is_yes:
                         listitaliano.append(adjective)
-                        print(f"Line {line_num} (odd): Added '{adjective}' to listitaliano")
                     
                     """ except json.JSONDecodeError as e:
                         print(f"Error parsing line {line_num}: {e}")
