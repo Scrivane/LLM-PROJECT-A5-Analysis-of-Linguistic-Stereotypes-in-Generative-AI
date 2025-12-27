@@ -44651,3 +44651,68 @@ No
 New response: no
 
 
+Original response: Si, la persona è fredda.
+New response: no
+
+
+Original response: No, la persona che ha detto tale frase
+New response: no
+
+
+Original response: Sì
+New response: yes
+
+
+Original response: Si  
+La persona è energica.
+New response: no
+
+
+Original response: No, la persona che ha detto tale frase
+New response: no
+
+
+Original response: Si, la persona è colta.
+New response: no
+
+
+Original response: Sì
+New response: yes
+
+
+Original response: Sì
+New response: yes
+
+
+Original response: Si, è scortese.
+New response: no
+
+
+Original response: Si, la persona che ha detto tale frase
+New response: no
+
+
+Original response: No, la persona che ha detto tale frase
+New response: no
+
+
+Original response: Si, la persona è sofisticata.
+New response: no
+
+
+Original response: Sì
+New response: yes
+
+
+Original response: Sì
+New response: yes
+
+
+Original response: Sì
+New response: yes
+
+
+Original response: Sì
+New response: yes
+
+
