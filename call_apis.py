@@ -22,22 +22,31 @@ api_key_minstral="placeholder"
 ###
 ###
 
-model_name = "Qwen/Qwen3-4B-Instruct-2507-FP8"
+model_name = "Qwen/Qwen2.5-3B-Instruct"  # Non-FP8 model that works on CPU
 model_local = None
 tokenizer_local = None
 
 def load_model_once():
-    """Load model once"""
+    """Load model once, using GPU if available, otherwise CPU"""
     global model_local, tokenizer_local
     if model_local is None:
         print("Loading model...")
+        
+        # Check if CUDA is available
+        if torch.cuda.is_available():
+            device = "cuda"
+            print("Using GPU (CUDA)")
+        else:
+            device = "cpu"
+            print("Using CPU (no GPU detected)")
+        
         model_local = AutoModelForCausalLM.from_pretrained(
             model_name, 
-            torch_dtype="auto",
-            device_map="cuda"
+            torch_dtype=torch.float32 if device == "cpu" else "auto",
+            device_map=device
         )
         tokenizer_local = AutoTokenizer.from_pretrained(model_name)
-        print("Model loaded!")
+        print(f"Model loaded on {device}!")
 
 
 

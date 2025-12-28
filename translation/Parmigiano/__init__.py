@@ -1,0 +1,1 @@
+# Parmigiano translation resources
