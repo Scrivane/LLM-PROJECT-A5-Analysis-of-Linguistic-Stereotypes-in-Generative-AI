@@ -101,7 +101,7 @@ def log_llm_output(prompt, response, model_name, log_file,lingua=""):
 
 
 
-def check_if_output_exists(prompt, model_name, log_file):
+def check_if_output_exists(prompt, model_name, log_file,lingua):
     """
     Checks whether an LLM output already exists in the log file for a given prompt, image, and model.
     
@@ -122,6 +122,7 @@ def check_if_output_exists(prompt, model_name, log_file):
                 if (
                     entry.get("prompt") == prompt
                     and entry.get("model_name") == model_name
+                    and entry.get("language") == lingua
                 ):
                     return entry.get("response")  # Found a match
     except Exception as e:
@@ -188,7 +189,7 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
    
 
     model_name = "Qwen/Qwen3-4B-Instruct-2507-FP8"
-    if check_if_output_exists(prompt, model_name,log_file)==False:
+    if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
         try:
 
 
@@ -261,7 +262,7 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
     ) """
     model_name="meta-llama/llama-4-maverick-17b-128e-instruct"
 
-    if check_if_output_exists(prompt, model_name,log_file)==False:
+    if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
         try:
         
             client = Groq(api_key=groq_token)
@@ -326,7 +327,7 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
     #run qwen3-vl:235b-instruct-cloud
     # use  ollama signin  before running 
     model_name='qwen3-vl:235b-instruct-cloud'
-    if check_if_output_exists(prompt, model_name,log_file)==False:
+    if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
         try:
 
             response: ChatResponse = chat(   
@@ -358,7 +359,7 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
     #model = "mistral-large-latest"   #not good
 
     #model = "magistral-medium-latest"   #not good
-    if check_if_output_exists(prompt, model_name,log_file)==False:
+    if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
         try:
 
             client = Mistral(api_key=api_key_minstral)
