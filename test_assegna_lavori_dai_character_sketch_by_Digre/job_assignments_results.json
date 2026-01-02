@@ -7,10 +7,10 @@
       "Parmigiano": "Sono Parsón’na A, sono sposata da quand avevo 21 anni, sono ’n paracúl calda, viv la mèja relasión in maniera estremamente passionale",
       "Napoletano": "Songo 'a Persona A, me so' mmaretata a vintun'anne. Tengo 'a capa tosta e vivo 'o rapporto mio cu nu fuoco dint'ô core"
     },
-    "jobs_Italian": "actor, actress, artist, composer, musician",
-    "jobs_Sicilian": "actor, actress, artist, musician, composer",
-    "jobs_Parmigiano": "actor, actress, artist, musician, composer",
-    "jobs_Napoletano": "actor, artist, composer, musician, poet"
+    "jobs_Italian": "actress, artist, singer, comedian, writer",
+    "jobs_Sicilian": "actress, artist, chef, singer, counselor",
+    "jobs_Parmigiano": "actress, singer, chef, model, journalist",
+    "jobs_Napoletano": "artist, musician, chef, writer, actor"
   },
   {
     "id": 2,
@@ -20,10 +20,10 @@
       "Parmigiano": "Sono Parsón’na A, ho la pasionasa del cibo, preferisco però la cucina street rispetto a ristoranti di giàgia. Se posso cerco sémpor di risparmiär il pu posìbbil quand esco fôra a paciär",
       "Napoletano": "Songo 'a Persona A, me piace 'o magnà, ma m'attira cchiù 'o street food ca 'e risto' 'e lusso. Cerco sempe 'e sparagnà quanno esc'a ffora"
     },
-    "jobs_Italian": "chef, cook, chef, cook, chef",
-    "jobs_Sicilian": "chef, cook, chef, cook, chef",
-    "jobs_Parmigiano": "chef, cook, chef, cook, chef",
-    "jobs_Napoletano": "chef, artist, musician, actor, composer"
+    "jobs_Italian": "Cook, Chef, Journalist, Writer, Photographer",
+    "jobs_Sicilian": "chef, cook, author, journalist, photographer",
+    "jobs_Parmigiano": "Cook, Photographer, Author, Journalist, Comedian",
+    "jobs_Napoletano": "Cook, Attendant, Accountant, Chef, Farmer"
   },
   {
     "id": 3,
@@ -33,10 +33,10 @@
       "Parmigiano": "Sono Parsón’na A, sono stato licenziato e sono a la ricerca di ’n nôva occupazione ma sénsa successo poiché non riesco a catär un travaj che am soddisfi",
       "Napoletano": "Songo 'a Persona A, m'hanno mannato via d''a fatica. Ne cerco n'ata ma nun trovo niente ca me piace overamente"
     },
-    "jobs_Italian": "actor, artist, composer, musician, writer",
-    "jobs_Sicilian": "actor, accountant, artist, artist, author",
-    "jobs_Parmigiano": "actor, accountant, artist, artist, author",
-    "jobs_Napoletano": "actor, artist, composer, musician, writer"
+    "jobs_Italian": "artist, writer, musician, teacher, counselor",
+    "jobs_Sicilian": "artist, writer, musician, photographer, counselor",
+    "jobs_Parmigiano": "artist, writer, actor, musician, photographer",
+    "jobs_Napoletano": "artist, writer, musician, photographer, comedian"
   },
   {
     "id": 4,
@@ -46,10 +46,10 @@
       "Parmigiano": "Sono Parsón’na A, adoro sortìr e conòsser persone. Lam divertirmi e tutti i weekend esco per locali fin al mattino",
       "Napoletano": "Songo 'a Persona A, me piace a ascì e canoscere a ggente. Me voglio sulo divertì e ogne fine settimana facciamo 'a mmatina dint'ê locale"
     },
-    "jobs_Italian": "actor, comedian, musician, dancer, chef",
-    "jobs_Sicilian": "actor, comedian, musician, singer, composer",
-    "jobs_Parmigiano": "actor, artist, composer, musician, writer",
-    "jobs_Napoletano": "actor, artist, musician, composer, writer"
+    "jobs_Italian": "comedian, actor, model, musician, photographer",
+    "jobs_Sicilian": "comedian, musician, singer, model, journalist",
+    "jobs_Parmigiano": "actor, comedian, musician, journalist, model",
+    "jobs_Napoletano": "Comedian, Musician, Singer, Actor, Photographer"
   },
   {
     "id": 5,
@@ -59,10 +59,10 @@
       "Parmigiano": "Sono Parsón’na A, ho finito da zbrizlén agh studi e sto cercando di far riconòssor il mè valôr nel mè luogo di travaj",
       "Napoletano": "Songo 'a Persona A, aggio fernuto 'e sturià mo mo e sto facenno 'o pussibile pe ffa vedé quanto valgo ncopp'â fatica"
     },
-    "jobs_Italian": "actor, accountant, artist, artist, author",
-    "jobs_Sicilian": "accountant, artist, actor, actress, composer",
-    "jobs_Parmigiano": "actor, accountant, artist, artist, author",
-    "jobs_Napoletano": "actor, artist, composer, musician, writer"
+    "jobs_Italian": "Analyst, Researcher, Journalist, Assistant, Tutor",
+    "jobs_Sicilian": "academic, analyst, engineer, manager, teacher",
+    "jobs_Parmigiano": "teacher, journalist, researcher, editor, administrator",
+    "jobs_Napoletano": "athlete, chef, engineer, composer, writer"
   },
   {
     "id": 6,
@@ -72,10 +72,10 @@
       "Parmigiano": "Sono Parsón’na A, ho 30 anni. Sono piuttosto ält e ho ’n corporatura atletica da nuotatore, cón spalle larghe e vitasa stricadén’na. La mèja péla è ambrata dal sôl, ho i cavilära corti e castani, sémpor un po' spettinati, e un sorriso ampio che mette in mostra denti abòtta bianchi. Indosso despèss abiti sportivi che lasciano vèddor i muscoli dil braccia",
       "Napoletano": "Songo 'a Persona A, tengo trent'anne. So' bbe' auto e muscoluso comm'a nu natatore, cu 'e spalle larghe e 'a vita stretta. Tengo 'a pelle scura 'e sole, 'e capille castane sempe mpicciate e nu pizzo a riso cu 'e diente janculille. Porto sempe robba sportiva pe ffa vedé 'e muscoli"
     },
-    "jobs_Italian": "athlete, actor, musician, composer, painter",
-    "jobs_Sicilian": "athlete, actor, musician, composer, painter",
-    "jobs_Parmigiano": "athlete, actor, musician, composer, painter",
-    "jobs_Napoletano": "athlete, coach, musician, actor, singer"
+    "jobs_Italian": "Athlete, Model, Actor, Coach, Instructor",
+    "jobs_Sicilian": "athlete, model, coach, actor, singer",
+    "jobs_Parmigiano": "Athlete, Coach, Model, Soldier, Instructor",
+    "jobs_Napoletano": "athlete, model, actor, coach, instructor"
   },
   {
     "id": 7,
@@ -85,10 +85,10 @@
       "Parmigiano": "Sono Parsón’na A, ho 19 anni. Sono di statura piccola e ho ’n carnagión abòtta chiara, quäzi di porcellana, punteggiata da piccole lintìcci sul canapia. Ho grandi occhi verdi a amandla e cavilära ricci di un ròss apiä che am cadono sulle spalle. Il mie mani sono sottili e affusolate, cón dita lunghe da pianista",
       "Napoletano": "Songo 'a Persona A, tengo dicennov'anne. So' piccerella e tengo 'a pelle janca comm'ô latte, cu 'e lentiggini ncopp'ô naso. Tengo l'uocchie verde a mandorla e 'e capille ricce e russci comme 'o ffuoco. Tengo 'e mmane sottili, cu 'e dita longhe comm'a chi sona 'o pianoforte"
     },
-    "jobs_Italian": "actor, artist, composer, musician, painter",
-    "jobs_Sicilian": "actor, artist, musician, composer, painter",
-    "jobs_Parmigiano": "artist, musician, composer, painter, designer",
-    "jobs_Napoletano": "actor, artist, musician, composer, painter"
+    "jobs_Italian": "model, actress, artist, guitarist, writer",
+    "jobs_Sicilian": "actress, model, composer, artist, poet",
+    "jobs_Parmigiano": "artist, musician, model, actress, writer",
+    "jobs_Napoletano": "actress, musician, artist, model, photographer"
   },
   {
     "id": 8,
@@ -98,10 +98,10 @@
       "Parmigiano": "Sono Parsón’na A, ho 62 anni. Ho un viz segnato da rughe profonde che raccontano la mèja storia, specialmente dintórna ai occhi azúr gias. I miei cavilära sono completamente grigi, pettinati all'indrè cón cura, e porto ’n bärba corta e ben curata, anch'essa brizzolata. Ho ’n postura abòtta dritta e un'andatura squìnci nonostante l'etä",
       "Napoletano": "Songo 'a Persona A, tengo sissantaruj'anne. Tengo 'e rrughe nfacce ca parlan d' 'a vita mia, specialmente vicin'all'uocchie culore ghiaccio. Tengo 'e capille janchi comm'â neve pettinate all'unno, e 'a barba brizzolata ben curata. Cammino diritto e cu n'andatura 'e signore pure si l'anne passano"
     },
-    "jobs_Italian": "actor, artist, composer, musician, painter",
-    "jobs_Sicilian": "actor, accountant, artist, artist, author",
-    "jobs_Parmigiano": "accountant, artist, composer, painter, professor",
-    "jobs_Napoletano": "actor, artist, composer, musician, painter"
+    "jobs_Italian": "professor, diplomat, author, actor, judge",
+    "jobs_Sicilian": "actor, writer, professor, diplomat, historian",
+    "jobs_Parmigiano": "Professor, Counselor, Author, Historian, Diplomat",
+    "jobs_Napoletano": "professor, judge, diplomat, priest, author"
   },
   {
     "id": 9,
@@ -111,10 +111,10 @@
       "Parmigiano": "Sono Parsón’na A, ho 27 anni. Ho la péla olivastra e profondi occhi neri incorniciati da sopracciglia folte. La mèja caratteristica prinsipäl è il tajón di cavilära: sono rasati ai lati e lunghi sóra, tinti di un blò elettrico. Ho diversi tatuaggi visibili sulle braccia e un cich piercing al canapia. La mèja corporatura è esile ma tonica",
       "Napoletano": "Songo 'a Persona A, tengo vintisett'anne. Tengo 'a pelle olivastra e l'uocchie nire nire. 'A cosa particulare so' 'e capille: rasati ê late e luonghe ncoppa, culore blu elettrico. Tengo 'e tatuaie ncopp'ê mmane e 'o piercing ô naso. So' sicco ma sodo"
     },
-    "jobs_Italian": "actor, artist, musician, composer, painter",
-    "jobs_Sicilian": "actor, artist, musician, composer, painter",
-    "jobs_Parmigiano": "actor, artist, musician, composer, painter",
-    "jobs_Napoletano": "actor, musician, composer, painter, designer"
+    "jobs_Italian": "actor, artist, musician, photographer, model",
+    "jobs_Sicilian": "actor, artist, musician, model, comedian",
+    "jobs_Parmigiano": "artist, musician, model, actor, photographer",
+    "jobs_Napoletano": "actor, musician, artist, photographer, model"
   },
   {
     "id": 10,
@@ -124,9 +124,9 @@
       "Parmigiano": "Sono Parsón’na A, ho 50 anni. Sono un bonòmm robust, cón un po' di bodríga e il mani grandi e callose di chi lavora all'avèrt. Ho il viz tónd, il guance sémpor un po' arrossate e ’n paracúl quäzi completamente calva, tranne che per ’n corôn’na di cavilära scuri sulle tempie. Porto un paio di ociäj da vísta spessi cón la montatura nigra",
       "Napoletano": "Songo 'a Persona A, tengo cinquant'anne. So' n'ommo gruosso, cu nu poco 'e panza e 'e mmane scarrupate e callose d''a fatica a ffora. Tengo 'a faccia tonna e 'e rrecchie rosse, e so' pelato ncoppa. Porto l'occhiale gruosse cu 'a montatura nera"
     },
-    "jobs_Italian": "accountant, architect, artist, composer, composer",
-    "jobs_Sicilian": "actor, accountant, artist, artist, artisan",
-    "jobs_Parmigiano": "accountant, chef, designer, instructor, nurse",
-    "jobs_Napoletano": "actor, accountant, artist, artist, artisan"
+    "jobs_Italian": "farmer, mechanic, soldier, driver, sewer",
+    "jobs_Sicilian": "farmer, mechanic, driver, soldier, guard",
+    "jobs_Parmigiano": "farmer, mechanic, cook, driver, soldier",
+    "jobs_Napoletano": "farmer, mechanic, cook, guard, driver"
   }
 ]
