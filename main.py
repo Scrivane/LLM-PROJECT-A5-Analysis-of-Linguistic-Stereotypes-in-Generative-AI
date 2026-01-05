@@ -304,7 +304,7 @@ def main():
 
 
 def to_run_by_giovanni():
-    call_apis.load_model_once()
+    #call_apis.load_model_once()
 
      
     path="test_multiple_napoli_question_english/all_answers_with_english_questions.jsonl"
@@ -342,7 +342,7 @@ def to_run_by_giovanni():
                 prompt=template.format(dialetto_part=dialetto_part_siciliano_text,aggettivo=aggettivo)
                 prompts.append((prompt,"siciliano"))  
     
-    listnapoletano, listitaliano, listparmigiano, listsiciliano=process_jsonl(path)
+    #listnapoletano, listitaliano, listparmigiano, listsiciliano=process_jsonl(path)
     
 
     for prompt,lingua in tqdm(prompts, desc="Processing prompts"):
@@ -376,7 +376,7 @@ def to_run_by_giovanni():
         call_apis.call_api_gpt_by_gio(prompt,path,lingua,5)
     
 
-    listnapoletano, listitaliano, listparmigiano, listsiciliano=process_jsonl(path)
+    #listnapoletano, listitaliano, listparmigiano, listsiciliano=process_jsonl(path)
 
         
     
