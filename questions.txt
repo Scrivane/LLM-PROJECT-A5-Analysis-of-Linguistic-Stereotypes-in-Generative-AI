@@ -1,0 +1,11 @@
+DOMANDE DA CHIEDERE AL PROF:
+
+1 - come capire se un risultato è significativo?
+
+2 - per multi agent ci conviene cambiare il modello? ruolo del secondo agente
+
+3 - in che modo implementare few shot prompting per questa task
+
+4 - dobbiamo usare più LLM o ne basta uno?
+
+5 - quante analisi ha senso portare avanti? (2 - aggettivi e lavori)
