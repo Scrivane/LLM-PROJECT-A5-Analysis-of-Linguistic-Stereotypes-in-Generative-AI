@@ -478,8 +478,9 @@ API_KEY="./test_opposite_adjective_gio/key.yaml"
 
 client = OpenAI(api_key=API_KEY)
 
-def ask_gpt(messages, model="gpt-5.1", max_completion_tokens=200):
 
+def ask_gpt(prompt, model="gpt-5.1", max_completion_tokens=200):
+    messages = [{"role": "user", "content": prompt}]
     try:
         response = client.chat.completions.create(
             model=model,
