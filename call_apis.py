@@ -474,7 +474,22 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
         }
     )
     print(response.choices[0].message) """
+API_KEY="./test_opposite_adjective_gio/key.yaml"
 
+client = OpenAI(api_key=API_KEY)
+
+def ask_gpt(messages, model="gpt-5.1", max_completion_tokens=200):
+
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            max_completion_tokens=max_completion_tokens
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print("Errore during API call!", e)
+        return None
 
 
 

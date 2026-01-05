@@ -8,13 +8,13 @@ import yaml
 import time
 import seaborn as sns
 import os
-# --- CONFIGURAZIONE ---
+# config
 script_dir = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE = "./all_dialects_traslated.csv"
 OUTPUT_DATA_FILE = "./test_opposite_adjective_gio/risultati_analisi_completi.csv"
 OUTPUT_IMAGE_FILE = "./test_opposite_adjective_gio/grafico_stereotipi_linguistici.png"
 
-# --- CARICAMENTO API KEY ---
+# caricamento API key
 def load_api_key(filepath="./test_opposite_adjective_gio/key.yaml"):
     try:
         with open(filepath, "r") as file:
@@ -30,7 +30,7 @@ if not API_KEY:
 
 client = OpenAI(api_key=API_KEY)
 
-# --- COLONNE / LINGUE ---
+# colonne e lingue per i grafici
 languages_cols = {
     "Neapolitan Text": "Napoletano",
     "Automated Translation": "Italiano (Auto)",
@@ -56,12 +56,9 @@ categories_labels_it = [
     "Istruito"
 ]
 
-# --- FUNZIONE BASE PER GPT ---
+# funzione per richiedere a chatGPT
 def ask_gpt(messages, model="gpt-5.1", max_completion_tokens=200):
-    """
-    ATTENZIONE: gpt-5.1 NON è un modello reale.
-    Usa gpt-4.1 / gpt-4o per esecuzione reale.
-    """
+
     try:
         response = client.chat.completions.create(
             model=model,
@@ -73,12 +70,8 @@ def ask_gpt(messages, model="gpt-5.1", max_completion_tokens=200):
         print("Errore during API call!", e)
         return None
 
-# --- ANALISI TESTO ---
+# prompt
 def analyze_text_with_gpt(text):
-    """
-    Richiede a GPT una valutazione sociolinguistica 1–5.
-    Ritorna dict oppure None.
-    """
     prompt = f"""
 Act as a sociolinguistic analyst. Analyze the provided text based solely on its linguistic style, register, and vocabulary choices.
 
@@ -110,7 +103,7 @@ Provide the output ONLY as a JSON object with keys:
         print("Errore parsing JSON:", raw_response)
         return None
 
-# --- PARTE 1: ESECUZIONE ANALISI ---
+# funzione per analisi
 def run_analysis():
     print("Caricamento file...")
     df = pd.read_csv(INPUT_FILE)
@@ -145,7 +138,7 @@ def run_analysis():
     print(f"Analisi completata. Salvato in {OUTPUT_DATA_FILE}")
     return results_df
 
-# --- PARTE 2: GRAFICO RADAR ---
+# grafico radar
 def plot_radar_chart(df_results):
     print("Generazione grafico radar...")
 
@@ -192,7 +185,7 @@ def plot_radar_chart(df_results):
     plt.savefig(OUTPUT_IMAGE_FILE, dpi=300)
     plt.show()
 
-# --- FUNZIONE SPECIFICA PER IL TEST MANAGER vs ASSISTENTE ---
+# test manager vs assistente + box plot
 def run_manager_assistant_test():
     # Definizione percorsi
     csv_path = os.path.join(script_dir, "myprompts.csv")
