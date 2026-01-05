@@ -226,7 +226,40 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
 
 
 def call_multiple_apis_only_text(prompt, log_file,lingua=""):
+
+
+        
+###################### OPENAI      
+    
+    API_KEY="./test_opposite_adjective_gio/key.yaml"
+    max_completion_tokens=200
+    
+
+    
+    model_name="gpt-5.1"
+    messages = [
+        {   "role": "user",
+            "content": prompt
+        }
+        ]
+    try:
+        client = OpenAI(api_key=API_KEY)
+        response = client.chat.completions.create(
+            model=model_name,
+            messages=messages,
+            max_completion_tokens=max_completion_tokens
+        )
+        final_output = response.choices[0].message.content
+    except Exception as e:
+        print("Errore during API call!", e)
+        return None 
+    
+    log_llm_output(prompt, final_output, model_name,log_file,lingua)
    
+
+
+###################### GOOGLE GEMINI
+
 
     """ model_name="gemini-2.5-pro"
     if check_if_output_exists(prompt, model_name,log_file)==False:
@@ -260,6 +293,12 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
         base_url="https://router.huggingface.co/v1",
         api_key=h_token,
     ) """
+
+
+
+############### LLMA 4 MAVERICK  
+
+    """ 
     model_name="meta-llama/llama-4-maverick-17b-128e-instruct"
 
     if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
@@ -295,6 +334,22 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
         except Exception as e:
             print(f"Error model {model_name}. the error is : {e}") 
 
+        """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+############### QWEN 3 VL
 
 
     """   works with qwen byuyt no idea wich model
@@ -321,7 +376,7 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
 
     print(assistant_reply) """
 
-
+    """
     #   good in qwen3-vl:235b-instruct-cloud
 
     #run qwen3-vl:235b-instruct-cloud
@@ -348,12 +403,10 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
         
         except Exception as e:
             print(f"Error model {model_name}. the error is : {e}")   
+    """
 
 
-
-
-
-
+    """ 
     model_name = "magistral-small-2509"  #seems pretty good
     #model = "pixtral-large-latest"  #not goos
     #model = "mistral-large-latest"   #not good
@@ -401,7 +454,12 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
 
 
         except Exception as e:
-            print(f"Error model {model_name}. the error is : {e}")   
+            print(f"Error model {model_name}. the error is : {e}")  
+
+    """
+    
+    
+    
 
     
 ##############grok
@@ -474,23 +532,7 @@ def call_multiple_apis_only_text(prompt, log_file,lingua=""):
         }
     )
     print(response.choices[0].message) """
-API_KEY="./test_opposite_adjective_gio/key.yaml"
-
-client = OpenAI(api_key=API_KEY)
-
-
-def ask_gpt(prompt, model="gpt-5.1", max_completion_tokens=200):
-    messages = [{"role": "user", "content": prompt}]
-    try:
-        response = client.chat.completions.create(
-            model=model,
-            messages=messages,
-            max_completion_tokens=max_completion_tokens
-        )
-        return response.choices[0].message.content
-    except Exception as e:
-        print("Errore during API call!", e)
-        return None
+    
 
 
 
