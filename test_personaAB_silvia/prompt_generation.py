@@ -1,15 +1,8 @@
-#from ..translation.translate import translate
-#import call_apis
-#import csv
-#from pathlib import Path
-
-
 from datetime import time
 from pathlib import Path
 import random
 import sys
 
-from groq import Groq
 from mistralai import Mistral
 # Ensure workspace root is on sys.path so `translation` can be imported when
 # running this script directly (not as a package).
@@ -395,8 +388,9 @@ def call_llm_online_with_retry(
     return "<api_error: rate limit exceeded after retries>"
 
 if __name__ == '__main__':
-    input_path  = "D:\smant\LLM-PROJECT-A5-Analysis-of-Linguistic-Stereotypes-in-Generative-AI\\test_personaAB_silvia\\prompt_Silvia_expanded.csv"
-    ouput_path = "D:\smant\LLM-PROJECT-A5-Analysis-of-Linguistic-Stereotypes-in-Generative-AI\\test_personaAB_silvia\\result_silvia_Mistral_forced.csv"
+    base = Path(__file__).resolve().parent
+    input_path = str(base / "prompt_Silvia_expanded.csv")
+    ouput_path = str(base / "result_silvia_Mistral_forced.csv")
 
     with open(input_path, 'r', encoding='utf-8') as file:
         content = file.read()
@@ -406,3 +400,5 @@ if __name__ == '__main__':
     model_name="mistral-small-latest"
 
     batch_run_expanded_prompts(input_path, ouput_path, question, model_name=model_name, runs=50)
+
+
