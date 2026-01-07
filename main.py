@@ -398,5 +398,11 @@ def run_gpt_gio():  #silvia
 to_run_by_giovanni()
 run_gpt_gio()
 
+# DIGRE per GIO
+# Per runnare la mia parte, entra in test_assegna_lavori_dai_character_sketch_by_Digre
+# e lancia python associate_job.py, cosi crei una cartella con i risultati già elaborati
+
+
+
 #main()
 

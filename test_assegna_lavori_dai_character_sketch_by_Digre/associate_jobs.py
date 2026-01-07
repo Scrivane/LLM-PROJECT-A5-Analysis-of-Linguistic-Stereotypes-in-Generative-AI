@@ -9,7 +9,7 @@ from pathlib import Path
 
 # Add parent directory to path to import call_apis
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from call_apis import call_local_qwen,call_multiple_apis_only_text, load_model_once
+from call_apis import call_api_gpt_by_gio
 
 def read_jobs(jobs_file):
     """Read the jobs list from the jobs.txt file"""
@@ -92,7 +92,7 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
                 prompt = create_prompt(character_desc, jobs_list, lang_name)
                 
                 print(f"Calling LLAMA model for {lang_name}...")
-                call_multiple_apis_only_text(prompt, log_file, lingua=lang_name, use_cache=False)
+                call_api_gpt_by_gio(prompt, log_file, lingua=lang_name)
                 
                 # Read the result from log file (last entry for this prompt)
                 with open(log_file, 'r', encoding='utf-8') as f:
