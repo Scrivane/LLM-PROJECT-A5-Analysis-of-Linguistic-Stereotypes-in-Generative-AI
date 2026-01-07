@@ -1,8 +1,17 @@
 
 import call_apis
-import csv,re,json
+import csv,re,json, os
 from tqdm import tqdm
 from pathlib import Path
+from datetime import datetime
+from test_assegna_lavori_dai_character_sketch_by_Digre import (
+    process_prompts,
+    aggregate_results,
+)
+
+
+
+
 def read_csv_extract_fields(csv_file_path):
     """Read CSV file and extract only Neapolitan Text and Automated Translation"""
     data = []
@@ -397,6 +406,70 @@ def run_gpt_gio():  #silvia
     
 to_run_by_giovanni()
 run_gpt_gio()
+
+
+def run_gpt_gio_2(num_runs: int = 50, out_dir=None) -> None:
+    
+    base_dir = Path(__file__).parent / "test_assegna_lavori_dai_character_sketch_by_Digre"
+    csv_file = base_dir / "descrizioni.csv"
+    jobs_file = base_dir / "jobs.txt"
+
+    if not csv_file.exists():
+        print(f"Error: CSV file not found: {csv_file}")
+        return
+    if not jobs_file.exists():
+        print(f"Error: Jobs file not found: {jobs_file}")
+        return
+
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    results_dir = Path(out_dir) if out_dir else (base_dir / f"results_{num_runs}_runs_{timestamp}")
+    os.makedirs(results_dir, exist_ok=True)
+
+    output_file = results_dir / "job_assignments_results.json"
+    log_file = results_dir / "job_assignments_log.jsonl"
+    aggregated_file = results_dir / "aggregated_results.json"
+    summary_file = results_dir / "summary.txt"
+
+    print("=" * 80)
+    print("Job Assignment Script - Multiple Runs (via run_gpt_gio_2)")
+    print("=" * 80)
+    print(f"CSV file: {csv_file}")
+    print(f"Jobs file: {jobs_file}")
+    print(f"Results directory: {results_dir}")
+    print(f"Number of runs: {num_runs}")
+    print("=" * 80)
+
+    all_results = []
+    for run_num in range(1, num_runs + 1):
+        results = process_prompts(
+            str(csv_file),
+            str(jobs_file),
+            str(output_file),
+            str(log_file),
+            num_runs,
+            run_num,
+        )
+        all_results.extend(results)
+
+    # Persist raw results
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(all_results, f, ensure_ascii=False, indent=2)
+
+    aggregated_final, summary_text = aggregate_results(all_results, num_runs)
+    with open(aggregated_file, "w", encoding="utf-8") as f:
+        json.dump(aggregated_final, f, ensure_ascii=False, indent=2)
+    with open(summary_file, "w", encoding="utf-8") as f:
+        f.write(summary_text)
+
+    print("\n" + "=" * 80)
+    print("Processing complete (run_gpt_gio_2)!")
+    print(f"Results directory: {results_dir}")
+    print(f"All results saved to: {output_file}")
+    print(f"Aggregated results saved to: {aggregated_file}")
+    print(f"Summary report saved to: {summary_file}")
+    print(f"Log saved to: {log_file}")
+    print("=" * 80)
 
 # DIGRE per GIO
 # Per runnare la mia parte, entra in test_assegna_lavori_dai_character_sketch_by_Digre
