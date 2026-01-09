@@ -471,6 +471,6 @@ def run_gpt_gio_2(num_runs: int = 50, out_dir=None) -> None:
     print("=" * 80)
 
 #to_run_by_giovanni()
-#run_gpt_gio()
-run_gpt_gio_2()
+run_gpt_gio()
+#run_gpt_gio_2()
 
