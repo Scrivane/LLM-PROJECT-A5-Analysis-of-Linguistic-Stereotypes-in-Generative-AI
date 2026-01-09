@@ -240,22 +240,22 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200):
             "content": prompt
         }
         ]
-    if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
-        try:
+    #if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
+    try:
 
-            client = OpenAI(api_key=API_KEY)
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                max_completion_tokens=max_completion_tokens
-            )
-            final_output = response.choices[0].message.content
+        client = OpenAI(api_key=API_KEY)
+        response = client.chat.completions.create(
+            model=model_name,
+            messages=messages,
+            max_completion_tokens=max_completion_tokens
+        )
+        final_output = response.choices[0].message.content
 
-            log_llm_output(prompt, final_output, model_name,log_file,lingua)
+        log_llm_output(prompt, final_output, model_name,log_file,lingua)
 
-        except Exception as e:
-            print("Errore during API call!", e)
-            return None 
+    except Exception as e:
+        print("Errore during API call!", e)
+        return None 
         
 
 def call_multiple_apis_only_text(prompt, log_file,lingua=""):
