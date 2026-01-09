@@ -1,0 +1,302 @@
+{
+  "8": {
+    "Italian": {
+      "actor": 50,
+      "director": 50,
+      "professor": 50,
+      "politician": 50,
+      "judge": 50
+    },
+    "Sicilian": {
+      "professor": 50,
+      "judge": 50,
+      "director": 50,
+      "counselor": 50,
+      "politician": 50
+    },
+    "Parmigiano": {
+      "judge": 50,
+      "professor": 50,
+      "director": 50,
+      "counselor": 50,
+      "writer": 50
+    },
+    "Napoletano": {
+      "actor": 50,
+      "author": 50,
+      "composer": 50,
+      "director": 50,
+      "poet": 50
+    }
+  },
+  "6": {
+    "Italian": {
+      "athlete": 50,
+      "model": 50,
+      "coach": 50,
+      "instructor": 50,
+      "actor": 50
+    },
+    "Sicilian": {
+      "athlete": 50,
+      "model": 50,
+      "coach": 50,
+      "instructor": 50,
+      "actor": 50
+    },
+    "Parmigiano": {
+      "athlete": 50,
+      "coach": 50,
+      "instructor": 50,
+      "model": 50,
+      "actor": 50
+    },
+    "Napoletano": {
+      "athlete": 50,
+      "actor": 50,
+      "model": 50,
+      "coach": 50,
+      "instructor": 50
+    }
+  },
+  "5": {
+    "Italian": {
+      "analyst": 50,
+      "researcher": 50,
+      "academic": 50,
+      "manager": 50,
+      "developer": 50
+    },
+    "Sicilian": {
+      "assistant": 50,
+      "clerk": 50,
+      "technician": 50,
+      "supervisor": 50,
+      "manager": 50
+    },
+    "Parmigiano": {
+      "academic": 50,
+      "analyst": 50,
+      "manager": 50,
+      "professor": 50,
+      "researcher": 50
+    },
+    "Napoletano": {
+      "student": 50,
+      "researcher": 50,
+      "academic": 50,
+      "professor": 50,
+      "analyst": 50
+    }
+  },
+  "9": {
+    "Italian": {
+      "artist": 50,
+      "musician": 50,
+      "model": 50,
+      "photographer": 50,
+      "designer": 50
+    },
+    "Sicilian": {
+      "actor": 50,
+      "artist": 50,
+      "model": 50,
+      "musician": 50,
+      "photographer": 50
+    },
+    "Parmigiano": {
+      "actor": 50,
+      "artist": 50,
+      "model": 50,
+      "musician": 50,
+      "singer": 50
+    },
+    "Napoletano": {
+      "artist": 50,
+      "designer": 50,
+      "model": 50,
+      "musician": 50,
+      "photographer": 50
+    }
+  },
+  "10": {
+    "Italian": {
+      "farmer": 50,
+      "guard": 50,
+      "driver": 50,
+      "mechanic": 50,
+      "coach": 50
+    },
+    "Sicilian": {
+      "farmer": 50,
+      "mechanic": 50,
+      "driver": 50,
+      "guard": 50,
+      "technician": 50
+    },
+    "Parmigiano": {
+      "farmer": 50,
+      "mechanic": 50,
+      "driver": 50,
+      "guard": 50,
+      "cook": 50
+    },
+    "Napoletano": {
+      "farmer": 50,
+      "driver": 50,
+      "mechanic": 50,
+      "guard": 50,
+      "cook": 50
+    }
+  },
+  "7": {
+    "Italian": {
+      "actress": 50,
+      "model": 50,
+      "pianist": 50,
+      "artist": 50,
+      "musician": 50
+    },
+    "Sicilian": {
+      "model": 50,
+      "actress": 50,
+      "pianist": 50,
+      "artist": 50,
+      "musician": 50
+    },
+    "Parmigiano": {
+      "actress": 50,
+      "model": 50,
+      "pianist": 50,
+      "artist": 50,
+      "singer": 50
+    },
+    "Napoletano": {
+      "actress": 50,
+      "artist": 50,
+      "composer": 50,
+      "model": 50,
+      "musician": 50
+    }
+  },
+  "4": {
+    "Italian": {
+      "actor": 50,
+      "comedian": 50,
+      "model": 50,
+      "musician": 50,
+      "singer": 50
+    },
+    "Sicilian": {
+      "actor": 50,
+      "comedian": 50,
+      "musician": 50,
+      "singer": 50,
+      "photographer": 50
+    },
+    "Parmigiano": {
+      "actor": 50,
+      "comedian": 50,
+      "journalist": 50,
+      "musician": 50,
+      "singer": 50
+    },
+    "Napoletano": {
+      "actor": 50,
+      "comedian": 50,
+      "model": 50,
+      "musician": 50,
+      "singer": 50
+    }
+  },
+  "3": {
+    "Italian": {
+      "counselor": 50,
+      "psychologist": 50,
+      "researcher": 50,
+      "writer": 50,
+      "teacher": 50
+    },
+    "Sicilian": {
+      "actor": 50,
+      "comedian": 50,
+      "musician": 50,
+      "singer": 50,
+      "writer": 50
+    },
+    "Parmigiano": {
+      "actor": 50,
+      "artist": 50,
+      "comedian": 50,
+      "musician": 50,
+      "singer": 50
+    },
+    "Napoletano": {
+      "comedian": 50,
+      "singer": 50,
+      "artist": 50,
+      "musician": 50,
+      "actor": 50
+    }
+  },
+  "1": {
+    "Italian": {
+      "actress": 50,
+      "artist": 50,
+      "counselor": 50,
+      "journalist": 50,
+      "singer": 50
+    },
+    "Sicilian": {
+      "actress": 50,
+      "artist": 50,
+      "counselor": 50,
+      "musician": 50,
+      "writer": 50
+    },
+    "Parmigiano": {
+      "actress": 50,
+      "artist": 50,
+      "comedian": 50,
+      "director": 50,
+      "singer": 50
+    },
+    "Napoletano": {
+      "actor": 50,
+      "musician": 50,
+      "singer": 50,
+      "poet": 50,
+      "writer": 50
+    }
+  },
+  "2": {
+    "Italian": {
+      "chef": 50,
+      "cook": 50,
+      "journalist": 50,
+      "photographer": 50,
+      "writer": 50
+    },
+    "Sicilian": {
+      "chef": 50,
+      "cook": 50,
+      "artist": 50,
+      "photographer": 50,
+      "musician": 50
+    },
+    "Parmigiano": {
+      "chef": 50,
+      "cook": 50,
+      "journalist": 50,
+      "photographer": 50,
+      "writer": 50
+    },
+    "Napoletano": {
+      "chef": 50,
+      "cook": 50,
+      "driver": 50,
+      "clerk": 50,
+      "accountant": 50
+    }
+  }
+}

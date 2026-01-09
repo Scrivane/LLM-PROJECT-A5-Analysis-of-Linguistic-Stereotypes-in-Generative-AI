@@ -1,16 +1,17 @@
-from google import genai
+#from google import genai
 import json
 from datetime import datetime
 import os
 from openai import OpenAI
+import yaml
 import base64
-from groq import Groq
-from ollama import chat
-from ollama import ChatResponse
+#from groq import Groq
+#from ollama import chat
+#from ollama import ChatResponse
 import os
-from mistralai import Mistral
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import torch
+#from mistralai import Mistral
+#from transformers import AutoModelForCausalLM, AutoTokenizer
+#import torch
 """
 change the following keys with yoru own you cna generate them in the respective sites
 """
@@ -225,19 +226,15 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
 
 def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200):
 
-
-        
 ###################### OPENAI      
     
     ###################### OPENAI      
-    
-    API_KEY="./test_opposite_adjective_gio/key.yaml"
+    with open("./test_opposite_adjective_gio/key.yaml", "r") as f:
+        config = yaml.safe_load(f)
+        API_KEY = config["openai"]["api_key"]
 
-
-
-
-    
     model_name="gpt-5.1"
+    print(prompt)
     messages = [
         {   "role": "user",
             "content": prompt

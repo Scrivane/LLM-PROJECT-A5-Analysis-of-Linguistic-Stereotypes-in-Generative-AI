@@ -92,8 +92,9 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
                 prompt = create_prompt(character_desc, jobs_list, lang_name)
                 
                 print(f"Calling LLAMA model for {lang_name}...")
+                Path(log_file).touch(exist_ok=True)
                 call_api_gpt_by_gio(prompt, log_file, lingua=lang_name)
-                
+
                 # Read the result from log file (last entry for this prompt)
                 with open(log_file, 'r', encoding='utf-8') as f:
                     lines = f.readlines()

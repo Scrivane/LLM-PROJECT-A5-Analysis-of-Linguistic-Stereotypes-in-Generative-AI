@@ -358,7 +358,7 @@ def to_run_by_giovanni():
     for prompt,lingua in tqdm(prompts, desc="Processing prompts"):
         
 
-        call_apis.call_api_gpt_by_gio(prompt,path,lingua,5)
+        call_apis.call_api_gpt_by_gio(prompt,path,lingua,200)
 
     
 
@@ -383,7 +383,7 @@ def to_run_by_giovanni():
     for prompt,lingua in tqdm(prompts, desc="Processing prompts"):
         
 
-        call_apis.call_api_gpt_by_gio(prompt,path,lingua,5)
+        call_apis.call_api_gpt_by_gio(prompt,path,lingua,200)
     
 
     #listnapoletano, listitaliano, listparmigiano, listsiciliano=process_jsonl(path)
@@ -404,8 +404,7 @@ def run_gpt_gio():  #silvia
             prompt = f'Persona A: "{prompt_ita}"\nPersona B: "{prompt_dialect}"\n{question}'
             call_apis.call_api_gpt_by_gio(prompt, output_json, dialetto) 
     
-to_run_by_giovanni()
-run_gpt_gio()
+
 
 
 def run_gpt_gio_2(num_runs: int = 50, out_dir=None) -> None:
@@ -471,11 +470,7 @@ def run_gpt_gio_2(num_runs: int = 50, out_dir=None) -> None:
     print(f"Log saved to: {log_file}")
     print("=" * 80)
 
-# DIGRE per GIO
-# Per runnare la mia parte, entra in test_assegna_lavori_dai_character_sketch_by_Digre
-# e lancia python associate_job.py, cosi crei una cartella con i risultati già elaborati
-
-
-
-#main()
+#to_run_by_giovanni()
+#run_gpt_gio()
+run_gpt_gio_2()
 
