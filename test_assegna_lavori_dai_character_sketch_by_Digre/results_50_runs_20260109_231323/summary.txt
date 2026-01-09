@@ -1,0 +1,283 @@
+================================================================================
+Job Assignment - Multiple Runs Summary Report
+================================================================================
+
+Timestamp: 2026-01-09 23:14:08
+Number of runs: 50
+Characters processed: 10
+Total results collected: 500
+
+================================================================================
+Job Frequency Distribution by Character and Language
+================================================================================
+
+
+Character ID: 1
+--------------------------------------------------------------------------------
+  Italian:
+    - actress: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+    - chef: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+  Sicilian:
+    - actress: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+    - counselor: 50/50 (100.0%)
+    - psychologist: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+  Parmigiano:
+    - actress: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - counselor: 50/50 (100.0%)
+    - journalist: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+  Napoletano:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+
+Character ID: 2
+--------------------------------------------------------------------------------
+  Italian:
+    - chef: 50/50 (100.0%)
+    - cook: 50/50 (100.0%)
+    - journalist: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+  Sicilian:
+    - chef: 50/50 (100.0%)
+    - cook: 50/50 (100.0%)
+    - driver: 50/50 (100.0%)
+    - journalist: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+  Parmigiano:
+    - chef: 50/50 (100.0%)
+    - cook: 50/50 (100.0%)
+    - journalist: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+  Napoletano:
+    - chef: 50/50 (100.0%)
+    - cook: 50/50 (100.0%)
+    - driver: 50/50 (100.0%)
+    - clerk: 50/50 (100.0%)
+    - attendant: 50/50 (100.0%)
+
+Character ID: 3
+--------------------------------------------------------------------------------
+  Italian:
+    - counselor: 50/50 (100.0%)
+    - psychologist: 50/50 (100.0%)
+    - researcher: 50/50 (100.0%)
+    - teacher: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+  Sicilian:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+  Parmigiano:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+  Napoletano:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+
+Character ID: 4
+--------------------------------------------------------------------------------
+  Italian:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+  Sicilian:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+    - journalist: 50/50 (100.0%)
+  Parmigiano:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+  Napoletano:
+    - actor: 50/50 (100.0%)
+    - comedian: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+
+Character ID: 5
+--------------------------------------------------------------------------------
+  Italian:
+    - assistant: 50/50 (100.0%)
+    - analyst: 50/50 (100.0%)
+    - manager: 50/50 (100.0%)
+    - researcher: 50/50 (100.0%)
+    - professor: 50/50 (100.0%)
+  Sicilian:
+    - analyst: 50/50 (100.0%)
+    - manager: 50/50 (100.0%)
+    - supervisor: 50/50 (100.0%)
+    - technician: 50/50 (100.0%)
+    - administrator: 50/50 (100.0%)
+  Parmigiano:
+    - academic: 50/50 (100.0%)
+    - researcher: 50/50 (100.0%)
+    - professor: 50/50 (100.0%)
+    - scientist: 50/50 (100.0%)
+    - teacher: 50/50 (100.0%)
+  Napoletano:
+    - academic: 50/50 (100.0%)
+    - researcher: 50/50 (100.0%)
+    - scientist: 50/50 (100.0%)
+    - professor: 50/50 (100.0%)
+    - teacher: 50/50 (100.0%)
+
+Character ID: 6
+--------------------------------------------------------------------------------
+  Italian:
+    - athlete: 50/50 (100.0%)
+    - instructor: 50/50 (100.0%)
+    - coach: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+  Sicilian:
+    - athlete: 50/50 (100.0%)
+    - coach: 50/50 (100.0%)
+    - instructor: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - soldier: 50/50 (100.0%)
+  Parmigiano:
+    - athlete: 50/50 (100.0%)
+    - coach: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - instructor: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+  Napoletano:
+    - athlete: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - actor: 50/50 (100.0%)
+    - coach: 50/50 (100.0%)
+    - instructor: 50/50 (100.0%)
+
+Character ID: 7
+--------------------------------------------------------------------------------
+  Italian:
+    - actress: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - pianist: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+  Sicilian:
+    - actress: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+    - pianist: 50/50 (100.0%)
+  Parmigiano:
+    - actress: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - singer: 50/50 (100.0%)
+  Napoletano:
+    - actress: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - pianist: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+
+Character ID: 8
+--------------------------------------------------------------------------------
+  Italian:
+    - actor: 50/50 (100.0%)
+    - diplomat: 50/50 (100.0%)
+    - director: 50/50 (100.0%)
+    - professor: 50/50 (100.0%)
+    - judge: 50/50 (100.0%)
+  Sicilian:
+    - professor: 50/50 (100.0%)
+    - historian: 50/50 (100.0%)
+    - judge: 50/50 (100.0%)
+    - director: 50/50 (100.0%)
+    - politician: 50/50 (100.0%)
+  Parmigiano:
+    - professor: 50/50 (100.0%)
+    - historian: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+    - judge: 50/50 (100.0%)
+    - counselor: 50/50 (100.0%)
+  Napoletano:
+    - judge: 50/50 (100.0%)
+    - historian: 50/50 (100.0%)
+    - professor: 50/50 (100.0%)
+    - politician: 50/50 (100.0%)
+    - writer: 50/50 (100.0%)
+
+Character ID: 9
+--------------------------------------------------------------------------------
+  Italian:
+    - artist: 50/50 (100.0%)
+    - designer: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+  Sicilian:
+    - actor: 50/50 (100.0%)
+    - artist: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+  Parmigiano:
+    - artist: 50/50 (100.0%)
+    - designer: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+  Napoletano:
+    - artist: 50/50 (100.0%)
+    - actor: 50/50 (100.0%)
+    - model: 50/50 (100.0%)
+    - musician: 50/50 (100.0%)
+    - photographer: 50/50 (100.0%)
+
+Character ID: 10
+--------------------------------------------------------------------------------
+  Italian:
+    - farmer: 50/50 (100.0%)
+    - driver: 50/50 (100.0%)
+    - mechanic: 50/50 (100.0%)
+    - guard: 50/50 (100.0%)
+    - cook: 50/50 (100.0%)
+  Sicilian:
+    - farmer: 50/50 (100.0%)
+    - driver: 50/50 (100.0%)
+    - mechanic: 50/50 (100.0%)
+    - guard: 50/50 (100.0%)
+    - technician: 50/50 (100.0%)
+  Parmigiano:
+    - farmer: 50/50 (100.0%)
+    - driver: 50/50 (100.0%)
+    - mechanic: 50/50 (100.0%)
+    - guard: 50/50 (100.0%)
+    - cook: 50/50 (100.0%)
+  Napoletano:
+    - farmer: 50/50 (100.0%)
+    - driver: 50/50 (100.0%)
+    - mechanic: 50/50 (100.0%)
+    - cook: 50/50 (100.0%)
+    - guard: 50/50 (100.0%)
