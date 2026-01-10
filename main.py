@@ -179,7 +179,7 @@ def process_jsonl(file_path):
 
 
 
-def main():
+def main2():
     lista_aggettivi=["sporca","pulita","rumorosa","fredda","affettuosa","ritardataria","pia","onesta","furba","precisa","divertente","noiosa"]
 
     path="test_multiple_napoli_question_english/all_answers_with_english_questions.jsonl"
@@ -358,7 +358,7 @@ def to_run_by_giovanni():
     for prompt,lingua in tqdm(prompts, desc="Processing prompts"):
         
 
-        call_apis.call_api_gpt_by_gio(prompt,path,lingua,200)
+        call_apis.call_api_gpt_by_gio(prompt,path,lingua,2)
 
     
 
@@ -383,7 +383,7 @@ def to_run_by_giovanni():
     for prompt,lingua in tqdm(prompts, desc="Processing prompts"):
         
 
-        call_apis.call_api_gpt_by_gio(prompt,path,lingua,200)
+        call_apis.call_api_gpt_by_gio(prompt,path,lingua,2)
     
 
     #listnapoletano, listitaliano, listparmigiano, listsiciliano=process_jsonl(path)
