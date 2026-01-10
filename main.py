@@ -407,7 +407,7 @@ def run_gpt_gio():  #silvia
 
 
 
-def run_gpt_gio_2(num_runs: int = 50, out_dir=None) -> None:
+def run_gpt_gio_2(num_runs: int = 30, out_dir=None) -> None:
     
     base_dir = Path(__file__).parent / "test_assegna_lavori_dai_character_sketch_by_Digre"
     csv_file = base_dir / "descrizioni.csv"

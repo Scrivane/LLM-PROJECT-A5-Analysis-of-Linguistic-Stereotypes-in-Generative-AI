@@ -233,8 +233,7 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
         config = yaml.safe_load(f)
         API_KEY = config["openai"]["api_key"]
 
-    model_name="gpt-5.1"
-    print(prompt)
+    model_name="gpt-5-mini"
     messages = [
         {   "role": "user",
             "content": prompt
