@@ -233,7 +233,7 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
         config = yaml.safe_load(f)
         API_KEY = config["openai"]["api_key"]
 
-    model_name="gpt-5-mini"
+    model_name="gpt-4.1-mini"
     messages = [
         {   "role": "user",
             "content": prompt
@@ -249,7 +249,6 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
                 max_completion_tokens=max_completion_tokens
             )
             final_output = response.choices[0].message.content
-
             log_llm_output(prompt, final_output, model_name,log_file,lingua)
 
         except Exception as e:

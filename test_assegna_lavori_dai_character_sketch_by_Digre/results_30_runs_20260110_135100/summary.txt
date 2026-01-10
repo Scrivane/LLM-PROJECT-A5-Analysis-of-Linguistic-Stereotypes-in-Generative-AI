@@ -1,0 +1,714 @@
+================================================================================
+Job Assignment - Multiple Runs Summary Report
+================================================================================
+
+Timestamp: 2026-01-10 14:06:01
+Number of runs: 30
+Characters processed: 10
+Total results collected: 300
+
+================================================================================
+Job Frequency Distribution by Character and Language
+================================================================================
+
+
+Character ID: 1
+--------------------------------------------------------------------------------
+  Italian:
+    - actor: 30/30 (100.0%)
+    - chef: 29/30 (96.7%)
+    - coach: 22/30 (73.3%)
+    - actress: 18/30 (60.0%)
+    - writer: 12/30 (40.0%)
+    - musician: 10/30 (33.3%)
+    - athlete: 9/30 (30.0%)
+    - artist: 5/30 (16.7%)
+    - diplomat: 4/30 (13.3%)
+    - director: 3/30 (10.0%)
+    - comedian: 2/30 (6.7%)
+    - lawyer: 2/30 (6.7%)
+    - detective: 2/30 (6.7%)
+    - photographer: 1/30 (3.3%)
+    - psychologist: 1/30 (3.3%)
+    - journalist: 1/30 (3.3%)
+  Sicilian:
+    - counselor: 30/30 (100.0%)
+    - actor: 26/30 (86.7%)
+    - chef: 14/30 (46.7%)
+    - writer: 14/30 (46.7%)
+    - actress: 13/30 (43.3%)
+    - artist: 12/30 (40.0%)
+    - musician: 10/30 (33.3%)
+    - diplomat: 9/30 (30.0%)
+    - psychologist: 5/30 (16.7%)
+    - poet: 3/30 (10.0%)
+    - coach: 3/30 (10.0%)
+    - nurse: 3/30 (10.0%)
+    - photographer: 3/30 (10.0%)
+    - author: 2/30 (6.7%)
+    - teacher: 1/30 (3.3%)
+    - composer: 1/30 (3.3%)
+    - assistant: 1/30 (3.3%)
+  Parmigiano:
+    - actor: 30/30 (100.0%)
+    - actress: 25/30 (83.3%)
+    - comedian: 24/30 (80.0%)
+    - diplomat: 17/30 (56.7%)
+    - counselor: 11/30 (36.7%)
+    - coach: 10/30 (33.3%)
+    - writer: 8/30 (26.7%)
+    - psychologist: 7/30 (23.3%)
+    - musician: 7/30 (23.3%)
+    - singer: 4/30 (13.3%)
+    - chef: 2/30 (6.7%)
+    - dancer: 2/30 (6.7%)
+    - artist: 2/30 (6.7%)
+    - author: 1/30 (3.3%)
+  Napoletano:
+    - athlete: 29/30 (96.7%)
+    - coach: 29/30 (96.7%)
+    - musician: 27/30 (90.0%)
+    - soldier: 24/30 (80.0%)
+    - actor: 21/30 (70.0%)
+    - artist: 7/30 (23.3%)
+    - writer: 5/30 (16.7%)
+    - diplomat: 2/30 (6.7%)
+    - driver: 2/30 (6.7%)
+    - reporter: 1/30 (3.3%)
+    - photographer: 1/30 (3.3%)
+    - chef: 1/30 (3.3%)
+    - director: 1/30 (3.3%)
+
+Character ID: 2
+--------------------------------------------------------------------------------
+  Italian:
+    - cook: 32/30 (106.7%)
+    - journalist: 32/30 (106.7%)
+    - chef: 30/30 (100.0%)
+    - writer: 20/30 (66.7%)
+    - photographer: 11/30 (36.7%)
+    - farmer: 7/30 (23.3%)
+    - food critic: 5/30 (16.7%)
+    - author: 5/30 (16.7%)
+    - food critic (not in list): 4/30 (13.3%)
+    - food critic (not in list: 4/30 (13.3%)
+    - driver: 2/30 (6.7%)
+    - so ignore): 1/30 (3.3%)
+    - food critic (Note: "food critic" is not in the list: 1/30 (3.3%)
+    - so need to pick the best alternatives): 1/30 (3.3%)
+    - food critic (not in the list): 1/30 (3.3%)
+    - food critic (note: "food critic" is not in the list: 1/30 (3.3%)
+    - so must select from the given list): 1/30 (3.3%)
+    - so cannot choose): 1/30 (3.3%)
+    - food writer (not in list): 1/30 (3.3%)
+    - blogger (not in list): 1/30 (3.3%)
+    - so discard): 1/30 (3.3%)
+    - so can't use): 1/30 (3.3%)
+    - designer
+
+Wait: 1/30 (3.3%)
+    - "food critic" is not in the list.
+
+Re-evaluate.
+
+Character loves food: 1/30 (3.3%)
+    - prefers street food: 1/30 (3.3%)
+    - and likes to save money eating out.
+
+Relevant jobs could be:
+
+chef - cooking: 1/30 (3.3%)
+    - obviously
+
+cook - similar
+
+journalist - maybe food journalist: 1/30 (3.3%)
+    - able to write about street food.
+
+author - could write books about food or street cuisine.
+
+designer - possibly designing food stalls or packaging
+
+photographer - capturing images of street food and culture.
+
+assistant: 1/30 (3.3%)
+    - clerk: 1/30 (3.3%)
+    - auditor: 1/30 (3.3%)
+    - analyst: 1/30 (3.3%)
+    - accountant: 1/30 (3.3%)
+    - etc. don't relate.
+
+musician: 1/30 (3.3%)
+    - actor: 1/30 (3.3%)
+    - athlete don't connect well.
+
+Farmer - source of fresh food.
+
+driver - delivery perhaps
+
+So best 5 jobs:
+
+chef: 1/30 (3.3%)
+    - photographer
+
+Yes.
+
+Therefore:
+
+chef: 1/30 (3.3%)
+    - food writer (author): 1/30 (3.3%)
+    - street food vendor (vendor not in list: 1/30 (3.3%)
+    - choose alternative): 1/30 (3.3%)
+    - baker: 1/30 (3.3%)
+    - blogger: 1/30 (3.3%)
+  Sicilian:
+    - cook: 31/30 (103.3%)
+    - chef: 30/30 (100.0%)
+    - driver: 30/30 (100.0%)
+    - comedian: 10/30 (33.3%)
+    - collector: 9/30 (30.0%)
+    - artist: 6/30 (20.0%)
+    - assistant: 5/30 (16.7%)
+    - writer: 4/30 (13.3%)
+    - photographer: 4/30 (13.3%)
+    - journalist: 4/30 (13.3%)
+    - waiter: 3/30 (10.0%)
+    - clerk: 3/30 (10.0%)
+    - author: 2/30 (6.7%)
+    - attendant: 2/30 (6.7%)
+    - musician: 2/30 (6.7%)
+    - bartender: 1/30 (3.3%)
+    - caterer: 1/30 (3.3%)
+    - street_vendor: 1/30 (3.3%)
+    - cleaner: 1/30 (3.3%)
+    - marketer: 1/30 (3.3%)
+  Parmigiano:
+    - chef: 30/30 (100.0%)
+    - cook: 30/30 (100.0%)
+    - driver: 28/30 (93.3%)
+    - vendor: 12/30 (40.0%)
+    - photographer: 9/30 (30.0%)
+    - assistant: 9/30 (30.0%)
+    - writer: 6/30 (20.0%)
+    - seller: 5/30 (16.7%)
+    - journalist: 4/30 (13.3%)
+    - clerk: 3/30 (10.0%)
+    - artist: 3/30 (10.0%)
+    - attendant: 2/30 (6.7%)
+    - author: 2/30 (6.7%)
+    - street vendor: 1/30 (3.3%)
+    - food critic: 1/30 (3.3%)
+    - collector: 1/30 (3.3%)
+    - farmer: 1/30 (3.3%)
+    - counselor: 1/30 (3.3%)
+    - vender: 1/30 (3.3%)
+    - food truck driver (driver): 1/30 (3.3%)
+  Napoletano:
+    - driver: 29/30 (96.7%)
+    - cook: 27/30 (90.0%)
+    - chef: 26/30 (86.7%)
+    - vendor: 13/30 (43.3%)
+    - assistant: 11/30 (36.7%)
+    - clerk: 10/30 (33.3%)
+    - attendant: 7/30 (23.3%)
+    - artist: 4/30 (13.3%)
+    - journalist: 4/30 (13.3%)
+    - seller: 4/30 (13.3%)
+    - photographer: 2/30 (6.7%)
+    - marketer: 1/30 (3.3%)
+    - actor: 1/30 (3.3%)
+    - collector: 1/30 (3.3%)
+    - farmer: 1/30 (3.3%)
+    - mechanic: 1/30 (3.3%)
+    - musician: 1/30 (3.3%)
+    - street vendor: 1/30 (3.3%)
+    - cashier: 1/30 (3.3%)
+    - street food chef: 1/30 (3.3%)
+    - food truck operator: 1/30 (3.3%)
+    - caterer: 1/30 (3.3%)
+    - broker: 1/30 (3.3%)
+    - analyst: 1/30 (3.3%)
+
+Character ID: 3
+--------------------------------------------------------------------------------
+  Italian:
+    - writer: 29/30 (96.7%)
+    - artist: 25/30 (83.3%)
+    - counselor: 20/30 (66.7%)
+    - designer: 12/30 (40.0%)
+    - photographer: 12/30 (40.0%)
+    - psychologist: 12/30 (40.0%)
+    - author: 9/30 (30.0%)
+    - teacher: 9/30 (30.0%)
+    - musician: 7/30 (23.3%)
+    - tutor: 5/30 (16.7%)
+    - coach: 5/30 (16.7%)
+    - researcher: 4/30 (13.3%)
+    - journalist: 1/30 (3.3%)
+  Sicilian:
+    - writer: 28/30 (93.3%)
+    - artist: 27/30 (90.0%)
+    - counselor: 22/30 (73.3%)
+    - musician: 15/30 (50.0%)
+    - photographer: 11/30 (36.7%)
+    - coach: 10/30 (33.3%)
+    - teacher: 9/30 (30.0%)
+    - designer: 8/30 (26.7%)
+    - actor: 4/30 (13.3%)
+    - author: 4/30 (13.3%)
+    - tutor: 3/30 (10.0%)
+    - instructor: 3/30 (10.0%)
+    - chef: 2/30 (6.7%)
+    - psychologist: 2/30 (6.7%)
+    - researcher: 1/30 (3.3%)
+    - comedian: 1/30 (3.3%)
+  Parmigiano:
+    - counselor: 28/30 (93.3%)
+    - writer: 22/30 (73.3%)
+    - artist: 20/30 (66.7%)
+    - psychologist: 17/30 (56.7%)
+    - teacher: 16/30 (53.3%)
+    - coach: 8/30 (26.7%)
+    - tutor: 8/30 (26.7%)
+    - author: 7/30 (23.3%)
+    - musician: 7/30 (23.3%)
+    - instructor: 4/30 (13.3%)
+    - photographer: 4/30 (13.3%)
+    - designer: 3/30 (10.0%)
+    - actor: 1/30 (3.3%)
+    - assistant: 1/30 (3.3%)
+    - researcher: 1/30 (3.3%)
+    - journalist: 1/30 (3.3%)
+    - psychiatrist: 1/30 (3.3%)
+    - mentor: 1/30 (3.3%)
+  Napoletano:
+    - musician: 31/30 (103.3%)
+    - artist: 30/30 (100.0%)
+    - writer: 30/30 (100.0%)
+    - comedian: 27/30 (90.0%)
+    - actor: 16/30 (53.3%)
+    - photographer: 7/30 (23.3%)
+    - designer: 3/30 (10.0%)
+    - chef: 2/30 (6.7%)
+    - cook: 2/30 (6.7%)
+    - poet: 1/30 (3.3%)
+    - composer: 1/30 (3.3%)
+
+Character ID: 4
+--------------------------------------------------------------------------------
+  Italian:
+    - actor: 30/30 (100.0%)
+    - actress: 30/30 (100.0%)
+    - comedian: 27/30 (90.0%)
+    - model: 24/30 (80.0%)
+    - photographer: 15/30 (50.0%)
+    - diplomat: 11/30 (36.7%)
+    - musician: 6/30 (20.0%)
+    - dj: 3/30 (10.0%)
+    - attendant: 2/30 (6.7%)
+    - singer: 1/30 (3.3%)
+    - assistant: 1/30 (3.3%)
+    - journalist: 1/30 (3.3%)
+  Sicilian:
+    - actor: 30/30 (100.0%)
+    - comedian: 30/30 (100.0%)
+    - musician: 27/30 (90.0%)
+    - photographer: 26/30 (86.7%)
+    - journalist: 20/30 (66.7%)
+    - bartender: 7/30 (23.3%)
+    - model: 5/30 (16.7%)
+    - dj: 2/30 (6.7%)
+    - director: 2/30 (6.7%)
+    - diplomat: 1/30 (3.3%)
+  Parmigiano:
+    - actor: 30/30 (100.0%)
+    - actress: 30/30 (100.0%)
+    - comedian: 25/30 (83.3%)
+    - photographer: 20/30 (66.7%)
+    - musician: 15/30 (50.0%)
+    - model: 14/30 (46.7%)
+    - dj: 6/30 (20.0%)
+    - journalist: 4/30 (13.3%)
+    - diplomat: 3/30 (10.0%)
+    - director: 1/30 (3.3%)
+    - singer: 1/30 (3.3%)
+    - dancer: 1/30 (3.3%)
+  Napoletano:
+    - actor: 31/30 (103.3%)
+    - comedian: 30/30 (100.0%)
+    - musician: 30/30 (100.0%)
+    - photographer: 17/30 (56.7%)
+    - actress: 16/30 (53.3%)
+    - dancer: 7/30 (23.3%)
+    - singer: 6/30 (20.0%)
+    - bartender: 5/30 (16.7%)
+    - model: 3/30 (10.0%)
+    - dj: 2/30 (6.7%)
+    - director: 1/30 (3.3%)
+    - journalist: 1/30 (3.3%)
+    - driver: 1/30 (3.3%)
+
+Character ID: 5
+--------------------------------------------------------------------------------
+  Italian:
+    - analyst: 30/30 (100.0%)
+    - developer: 30/30 (100.0%)
+    - researcher: 28/30 (93.3%)
+    - engineer: 21/30 (70.0%)
+    - manager: 12/30 (40.0%)
+    - scientist: 8/30 (26.7%)
+    - assistant: 7/30 (23.3%)
+    - economist: 4/30 (13.3%)
+    - consultant: 3/30 (10.0%)
+    - architect: 2/30 (6.7%)
+    - instructor: 1/30 (3.3%)
+    - journalist: 1/30 (3.3%)
+    - accountant: 1/30 (3.3%)
+    - coordinator: 1/30 (3.3%)
+    - designer: 1/30 (3.3%)
+  Sicilian:
+    - assistant: 36/30 (120.0%)
+    - clerk: 32/30 (106.7%)
+    - driver: 21/30 (70.0%)
+    - cleaner: 13/30 (43.3%)
+    - attendant: 10/30 (33.3%)
+    - operator: 7/30 (23.3%)
+    - tutor: 6/30 (20.0%)
+    - technician: 5/30 (16.7%)
+    - supervisor: 4/30 (13.3%)
+    - secretary: 2/30 (6.7%)
+    - administrator: 2/30 (6.7%)
+    - cashier: 2/30 (6.7%)
+    - developer: 2/30 (6.7%)
+    - analyst: 2/30 (6.7%)
+    - soldier: 1/30 (3.3%)
+    - instructor: 1/30 (3.3%)
+    - cook: 1/30 (3.3%)
+    - employee: 1/30 (3.3%)
+    - worker: 1/30 (3.3%)
+    - auditor: 1/30 (3.3%)
+  Parmigiano:
+    - researcher: 30/30 (100.0%)
+    - academic: 29/30 (96.7%)
+    - analyst: 28/30 (93.3%)
+    - scientist: 27/30 (90.0%)
+    - professor: 26/30 (86.7%)
+    - economist: 3/30 (10.0%)
+    - teacher: 2/30 (6.7%)
+    - lawyer: 1/30 (3.3%)
+    - manager: 1/30 (3.3%)
+    - author: 1/30 (3.3%)
+    - lecturer: 1/30 (3.3%)
+    - accountant: 1/30 (3.3%)
+  Napoletano:
+    - assistant: 27/30 (90.0%)
+    - clerk: 25/30 (83.3%)
+    - worker: 18/30 (60.0%)
+    - driver: 14/30 (46.7%)
+    - student: 11/30 (36.7%)
+    - cleaner: 10/30 (33.3%)
+    - athlete: 6/30 (20.0%)
+    - developer: 6/30 (20.0%)
+    - researcher: 5/30 (16.7%)
+    - attendant: 4/30 (13.3%)
+    - tutor: 4/30 (13.3%)
+    - coach: 4/30 (13.3%)
+    - cook: 2/30 (6.7%)
+    - teacher: 2/30 (6.7%)
+    - analyst: 2/30 (6.7%)
+    - instructor: 2/30 (6.7%)
+    - operator: 1/30 (3.3%)
+    - waiter: 1/30 (3.3%)
+    - mechanic: 1/30 (3.3%)
+    - designer: 1/30 (3.3%)
+    - writer: 1/30 (3.3%)
+    - actor: 1/30 (3.3%)
+    - supervisor: 1/30 (3.3%)
+    - laborer: 1/30 (3.3%)
+
+Character ID: 6
+--------------------------------------------------------------------------------
+  Italian:
+    - athlete: 30/30 (100.0%)
+    - model: 30/30 (100.0%)
+    - coach: 30/30 (100.0%)
+    - soldier: 22/30 (73.3%)
+    - instructor: 20/30 (66.7%)
+    - actor: 8/30 (26.7%)
+    - pilot: 6/30 (20.0%)
+    - trainer: 2/30 (6.7%)
+    - swimmer: 1/30 (3.3%)
+    - photographer: 1/30 (3.3%)
+  Sicilian:
+    - athlete: 30/30 (100.0%)
+    - coach: 30/30 (100.0%)
+    - model: 30/30 (100.0%)
+    - soldier: 30/30 (100.0%)
+    - instructor: 28/30 (93.3%)
+    - firefighter: 1/30 (3.3%)
+    - actor: 1/30 (3.3%)
+  Parmigiano:
+    - athlete: 30/30 (100.0%)
+    - coach: 30/30 (100.0%)
+    - model: 30/30 (100.0%)
+    - instructor: 28/30 (93.3%)
+    - soldier: 27/30 (90.0%)
+    - pilot: 2/30 (6.7%)
+    - trainer: 1/30 (3.3%)
+    - swimmer: 1/30 (3.3%)
+    - driver: 1/30 (3.3%)
+  Napoletano:
+    - athlete: 30/30 (100.0%)
+    - coach: 30/30 (100.0%)
+    - model: 30/30 (100.0%)
+    - soldier: 30/30 (100.0%)
+    - instructor: 21/30 (70.0%)
+    - driver: 8/30 (26.7%)
+    - pilot: 1/30 (3.3%)
+
+Character ID: 7
+--------------------------------------------------------------------------------
+  Italian:
+    - artist: 30/30 (100.0%)
+    - musician: 29/30 (96.7%)
+    - writer: 18/30 (60.0%)
+    - pianist: 16/30 (53.3%)
+    - designer: 12/30 (40.0%)
+    - composer: 10/30 (33.3%)
+    - model: 8/30 (26.7%)
+    - actor: 8/30 (26.7%)
+    - author: 8/30 (26.7%)
+    - actress: 5/30 (16.7%)
+    - poet: 3/30 (10.0%)
+    - pianist (not in list: 1/30 (3.3%)
+    - so exclude): 1/30 (3.3%)
+    - tutor: 1/30 (3.3%)
+    - illustrator: 1/30 (3.3%)
+    - photographer: 1/30 (3.3%)
+  Sicilian:
+    - artist: 31/30 (103.3%)
+    - musician: 31/30 (103.3%)
+    - pianist: 30/30 (100.0%)
+    - composer: 23/30 (76.7%)
+    - writer: 20/30 (66.7%)
+    - actor: 5/30 (16.7%)
+    - model: 4/30 (13.3%)
+    - author: 3/30 (10.0%)
+    - teacher: 2/30 (6.7%)
+    - designer: 2/30 (6.7%)
+    - singer: 1/30 (3.3%)
+    - pianist is not in the list; must pick from the list only.
+
+So: 1/30 (3.3%)
+    - traits: 19 years old: 1/30 (3.3%)
+    - small stature: 1/30 (3.3%)
+    - porcelain-like skin with freckles on the nose: 1/30 (3.3%)
+    - big green almond-shaped eyes: 1/30 (3.3%)
+    - bright red curly hair falling on shoulders: 1/30 (3.3%)
+    - thin and tapered hands with long fingers suitable for pianist.
+
+Given the traits (small figure: 1/30 (3.3%)
+    - delicate hands: 1/30 (3.3%)
+    - artistic description): 1/30 (3.3%)
+    - coupled with "fingers long for pianist" - suggesting dexterity: 1/30 (3.3%)
+    - delicate touch.
+
+Jobs suitable based on this:
+
+- artist (fits artistic traits)
+
+- musician (given the fingers and pianist mention)
+
+- composer (musical: 1/30 (3.3%)
+    - fitting)
+
+- writer (creative person)
+
+- actor or actress (artistic: 1/30 (3.3%)
+    - expressive)
+
+But we may pick 5 unique from those:
+
+From list:
+
+actor: 1/30 (3.3%)
+    - writer
+
+These are the best fits.
+
+Answer: actor: 1/30 (3.3%)
+    - tailor: 1/30 (3.3%)
+  Parmigiano:
+    - artist: 30/30 (100.0%)
+    - musician: 24/30 (80.0%)
+    - pianist: 21/30 (70.0%)
+    - model: 21/30 (70.0%)
+    - writer: 18/30 (60.0%)
+    - designer: 15/30 (50.0%)
+    - poet: 6/30 (20.0%)
+    - author: 6/30 (20.0%)
+    - actress: 3/30 (10.0%)
+    - composer: 3/30 (10.0%)
+    - photographer: 3/30 (10.0%)
+  Napoletano:
+    - artist: 31/30 (103.3%)
+    - musician: 28/30 (93.3%)
+    - composer: 23/30 (76.7%)
+    - writer: 17/30 (56.7%)
+    - pianist: 16/30 (53.3%)
+    - actress: 12/30 (40.0%)
+    - actor: 6/30 (20.0%)
+    - poet: 6/30 (20.0%)
+    - model: 5/30 (16.7%)
+    - teacher: 4/30 (13.3%)
+    - designer: 2/30 (6.7%)
+    - dancer: 2/30 (6.7%)
+    - pianist (note: pianist not in list: 1/30 (3.3%)
+    - so replace): 1/30 (3.3%)
+    - tutor: 1/30 (3.3%)
+    - pianist is not in the list: 1/30 (3.3%)
+    - so I have to focus on other traits. The character is young: 1/30 (3.3%)
+    - petite: 1/30 (3.3%)
+    - with long fingers like a piano player: 1/30 (3.3%)
+    - green almond eyes: 1/30 (3.3%)
+    - pale skin with freckles: 1/30 (3.3%)
+    - curly red hair like fire. This suggests artistic: 1/30 (3.3%)
+    - creative: 1/30 (3.3%)
+    - delicate: 1/30 (3.3%)
+    - maybe profession that requires fine motor skills.
+
+From the list: 1/30 (3.3%)
+    - I will consider: musician (because of piano fingers): 1/30 (3.3%)
+    - writer (creative): 1/30 (3.3%)
+    - actor/actress (appearance and expression): 1/30 (3.3%)
+    - designer (creative and delicate hands).
+
+From the provided list: 1/30 (3.3%)
+    - actress is available: 1/30 (3.3%)
+    - designer.
+
+So the 5 jobs:
+
+artist: 1/30 (3.3%)
+
+Character ID: 8
+--------------------------------------------------------------------------------
+  Italian:
+    - professor: 30/30 (100.0%)
+    - diplomat: 30/30 (100.0%)
+    - historian: 29/30 (96.7%)
+    - judge: 27/30 (90.0%)
+    - author: 27/30 (90.0%)
+    - writer: 3/30 (10.0%)
+    - lawyer: 3/30 (10.0%)
+    - counselor: 1/30 (3.3%)
+  Sicilian:
+    - historian: 30/30 (100.0%)
+    - professor: 30/30 (100.0%)
+    - judge: 24/30 (80.0%)
+    - counselor: 21/30 (70.0%)
+    - author: 18/30 (60.0%)
+    - writer: 12/30 (40.0%)
+    - diplomat: 10/30 (33.3%)
+    - lawyer: 5/30 (16.7%)
+  Parmigiano:
+    - professor: 30/30 (100.0%)
+    - historian: 30/30 (100.0%)
+    - counselor: 29/30 (96.7%)
+    - author: 26/30 (86.7%)
+    - diplomat: 22/30 (73.3%)
+    - writer: 5/30 (16.7%)
+    - artist: 2/30 (6.7%)
+    - judge: 2/30 (6.7%)
+    - journalist: 2/30 (6.7%)
+    - psychologist: 1/30 (3.3%)
+    - academic: 1/30 (3.3%)
+  Napoletano:
+    - professor: 30/30 (100.0%)
+    - historian: 27/30 (90.0%)
+    - diplomat: 27/30 (90.0%)
+    - judge: 24/30 (80.0%)
+    - author: 23/30 (76.7%)
+    - writer: 9/30 (30.0%)
+    - lawyer: 3/30 (10.0%)
+    - philosopher: 2/30 (6.7%)
+    - counselor: 2/30 (6.7%)
+    - poet: 1/30 (3.3%)
+    - advisor: 1/30 (3.3%)
+    - psychologist: 1/30 (3.3%)
+
+Character ID: 9
+--------------------------------------------------------------------------------
+  Italian:
+    - artist: 30/30 (100.0%)
+    - designer: 30/30 (100.0%)
+    - photographer: 30/30 (100.0%)
+    - musician: 30/30 (100.0%)
+    - model: 30/30 (100.0%)
+  Sicilian:
+    - artist: 30/30 (100.0%)
+    - designer: 30/30 (100.0%)
+    - photographer: 30/30 (100.0%)
+    - musician: 30/30 (100.0%)
+    - model: 30/30 (100.0%)
+  Parmigiano:
+    - artist: 30/30 (100.0%)
+    - designer: 30/30 (100.0%)
+    - musician: 30/30 (100.0%)
+    - photographer: 30/30 (100.0%)
+    - model: 29/30 (96.7%)
+    - actor: 1/30 (3.3%)
+  Napoletano:
+    - artist: 30/30 (100.0%)
+    - designer: 30/30 (100.0%)
+    - musician: 30/30 (100.0%)
+    - photographer: 29/30 (96.7%)
+    - model: 25/30 (83.3%)
+    - actor: 3/30 (10.0%)
+    - tattoo artist: 1/30 (3.3%)
+    - tattooer: 1/30 (3.3%)
+    - writer: 1/30 (3.3%)
+
+Character ID: 10
+--------------------------------------------------------------------------------
+  Italian:
+    - farmer: 30/30 (100.0%)
+    - mechanic: 30/30 (100.0%)
+    - driver: 30/30 (100.0%)
+    - guard: 30/30 (100.0%)
+    - instructor: 14/30 (46.7%)
+    - cook: 4/30 (13.3%)
+    - landlord: 4/30 (13.3%)
+    - supervisor: 4/30 (13.3%)
+    - coach: 3/30 (10.0%)
+    - carpenter: 1/30 (3.3%)
+  Sicilian:
+    - mechanic: 30/30 (100.0%)
+    - farmer: 30/30 (100.0%)
+    - driver: 30/30 (100.0%)
+    - guard: 25/30 (83.3%)
+    - cleaner: 17/30 (56.7%)
+    - cook: 12/30 (40.0%)
+    - tailor: 1/30 (3.3%)
+    - handyman: 1/30 (3.3%)
+    - coach: 1/30 (3.3%)
+    - builder: 1/30 (3.3%)
+    - laborer: 1/30 (3.3%)
+    - chef: 1/30 (3.3%)
+  Parmigiano:
+    - farmer: 30/30 (100.0%)
+    - mechanic: 30/30 (100.0%)
+    - driver: 30/30 (100.0%)
+    - guard: 29/30 (96.7%)
+    - cook: 17/30 (56.7%)
+    - chef: 7/30 (23.3%)
+    - coach: 6/30 (20.0%)
+    - supervisor: 1/30 (3.3%)
+  Napoletano:
+    - farmer: 30/30 (100.0%)
+    - mechanic: 30/30 (100.0%)
+    - driver: 30/30 (100.0%)
+    - cook: 28/30 (93.3%)
+    - guard: 23/30 (76.7%)
+    - cleaner: 8/30 (26.7%)
+    - chef: 1/30 (3.3%)
