@@ -224,7 +224,7 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
 
 
 
-def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, use_cache=True):
+def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, use_cache=False):
 
 ###################### OPENAI      
     
@@ -239,9 +239,10 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
             "content": prompt
         }
         ]
+    print("ciaoooooooo")
     if use_cache==False or check_if_output_exists(prompt, model_name,log_file,lingua)==False:
         try:
-
+            print("dentro all'api call")
             client = OpenAI(api_key=API_KEY)
             response = client.chat.completions.create(
                 model=model_name,
@@ -249,6 +250,7 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
                 max_completion_tokens=max_completion_tokens
             )
             final_output = response.choices[0].message.content
+            print("final_output: "+final_output)
             log_llm_output(prompt, final_output, model_name,log_file,lingua)
 
         except Exception as e:
