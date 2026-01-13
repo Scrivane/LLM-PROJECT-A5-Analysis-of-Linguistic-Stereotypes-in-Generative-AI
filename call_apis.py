@@ -10,8 +10,8 @@ import base64
 #from ollama import ChatResponse
 import os
 #from mistralai import Mistral
-#from transformers import AutoModelForCausalLM, AutoTokenizer
-#import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
 """
 change the following keys with yoru own you cna generate them in the respective sites
 """
@@ -21,7 +21,7 @@ api_key_minstral="placeholder"
 ###
 ###
 ###
-###
+
 
 model_name = "Qwen/Qwen3-4B-Instruct-2507-FP8"
 model_local = None
@@ -101,7 +101,22 @@ def log_llm_output(prompt, response, model_name, log_file,lingua=""):
         f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
 
 
+def check_already_present_variable_fields(field_names,field_values,log_file):
+    if not os.path.exists(log_file):
+        return False
+    with open(log_file, 'r') as f:
+        for line in f:
+            dizmod=json.loads(line)
+            compared=0
 
+            for field_name, field_value in zip(field_names, field_values):
+                  if field_name in dizmod and dizmod[field_name] == field_value:
+                      compared += 1
+                      
+            if compared == len(field_names):
+            
+                return True
+    return False
 def check_if_output_exists(prompt, model_name, log_file,lingua):
     """
     Checks whether an LLM output already exists in the log file for a given prompt, image, and model.
@@ -224,7 +239,7 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
 
 
 
-def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, use_cache=False):
+def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, use_cache=True,directly_return=False):
 
 ###################### OPENAI      
     
@@ -239,8 +254,8 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
             "content": prompt
         }
         ]
-    print("ciaoooooooo")
-    if use_cache==False or check_if_output_exists(prompt, model_name,log_file,lingua)==False:
+
+    if use_cache==False or directly_return==True or check_if_output_exists(prompt, model_name,log_file,lingua)==False :
         try:
             print("dentro all'api call")
             client = OpenAI(api_key=API_KEY)
@@ -251,6 +266,8 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
             )
             final_output = response.choices[0].message.content
             print("final_output: "+final_output)
+            if directly_return==True:
+                return final_output
             log_llm_output(prompt, final_output, model_name,log_file,lingua)
 
         except Exception as e:
