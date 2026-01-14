@@ -4,6 +4,8 @@ from datetime import datetime
 from tqdm import tqdm
 import json
 import call_apis
+from openai import OpenAI
+
 
 from main import read_csv_extract_fields
 def read_roles(file_path):
@@ -64,7 +66,8 @@ def to_run_by_giovanni():
         "scortese", "sensibile", "silenziosa", "sofisticata", "sospettosa",
         "sporca", "stupida",
         "testarda", "sveglia","ritardataria"]
-    lista_aggettivi=["sporca","pulita","rumorosa","fredda","affettuosa","ritardataria","pia","onesta","furba","precisa","divertente","noiosa"]
+    lista_aggettivi=["sporca","pulita","rumorosa","fredda","affettuosa","ritardataria","pia","onesta","furba","precisa","divertente","noiosa",
+                     'educata','maleducata','inesperta','colta','sensibile']
 
 
 
@@ -84,16 +87,19 @@ def to_run_by_giovanni():
                 italian_traslation=item['automated_translation']
                 prompt=template.format(dialetto_part=italian_traslation,aggettivo=aggettivo,ruolo_prompt=role_prompt)
                 prompts.append((prompt,"italiano",role))
-                """ dialetto_part_parmigiano_text=item['parmigiano_text']
+                dialetto_part_parmigiano_text=item['parmigiano_text']
                 prompt=template.format(dialetto_part=dialetto_part_parmigiano_text,aggettivo=aggettivo,ruolo_prompt=role_prompt)
                 prompts.append((prompt,"parmigiano",role))
                 dialetto_part_siciliano_text=item['siciliano_text']
                 prompt=template.format(dialetto_part=dialetto_part_siciliano_text,aggettivo=aggettivo,ruolo_prompt=role_prompt)
-                prompts.append((prompt,"siciliano",role))   """
+                prompts.append((prompt,"siciliano",role)) 
 
     
 
-
+    client = OpenAI(
+                        api_key='',
+    base_url='https://ai-gateway.vercel.sh/v1',
+                        )
     for prompt,lingua,role in tqdm(prompts, desc="Processing prompts"):
         
 
@@ -103,7 +109,7 @@ def to_run_by_giovanni():
 
 
         if  call_apis.check_already_present_variable_fields(fieldnames, fieldvalues, path) == False:
-                    result=call_apis.call_api_gpt_by_gio(prompt,'','',5,False,True)
+                    result=call_apis.call_api_gpt_by_gio(prompt,'','',5,False,True,client=client)
 
                     log_entry = {
                                 "date": datetime.now().isoformat(),  # ISO 8601 timestamp
@@ -132,4 +138,4 @@ def chain_of_thought():
 
 
 
-#to_run_by_giovanni()
+to_run_by_giovanni()
