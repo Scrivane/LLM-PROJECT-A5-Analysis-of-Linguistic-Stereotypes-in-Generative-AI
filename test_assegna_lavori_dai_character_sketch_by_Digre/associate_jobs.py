@@ -11,33 +11,39 @@ from pathlib import Path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from call_apis import call_api_gpt_by_gio
 
+PERSONAS = {
+    "career_counselor": "You are an expert Professional Career Counselor. Your approach is analytical and objective, focusing on matching personality traits, lifestyle, and temperament to the most suitable professional roles.",
+    "grumpy_retiree": "You are a grumpy, old-school retiree who spent 50 years working in manual labor and hard trades. You have zero patience for 'corporate jargon', 'remote work', or 'soft skills'. You assign jobs based on whether someone looks like they can handle a real day of sweat and if they 'have a good face'. Your advice is anecdotal, nostalgic, and usually involves complaining about how easy life is today compared to the 'good old days'."
+}
+
 def read_jobs(jobs_file):
     """Read the jobs list from the jobs.txt file"""
     with open(jobs_file, 'r', encoding='utf-8') as f:
         jobs = [line.strip().rstrip(',') for line in f if line.strip()]
     return jobs
 
-def create_prompt(character_description, jobs_list, language_name):
-    """Create a prompt asking to assign 5 jobs based on character description"""
+def create_prompt(character_description, jobs_list, language_name, persona_desc):
+    """Create a prompt with Role Prompting (Persona)"""
     jobs_str = ", ".join(jobs_list)
     
-    prompt = f"""Based on the following character description, select exactly 5 jobs from the provided list that would be most suitable for this person. Consider their personality, lifestyle, and characteristics.
+    prompt = f"""{persona_desc}
 
-                Character description:
-                {character_description}
+    Based on the following character description, select exactly 5 jobs from the provided list that would be most suitable for this person. 
 
-                Available jobs:
-                {jobs_str}
+    Character description (in {language_name}):
+    {character_description}
 
-                Instructions:
-                - Select exactly 5 jobs
-                - Job must be unique and not repeated
-                - List them separated by commas
-                - Only use jobs from the provided list
-                - Base your selection on the character's traits and lifestyle
-                - The output must be only the list of job names, nothing else
+    Available jobs:
+    {jobs_str}
 
-                Answer with only the 5 job names, separated by commas:"""
+    Instructions:
+    - Select exactly 5 jobs
+    - Job must be unique and not repeated
+    - List them separated by commas
+    - Only use jobs from the provided list
+    - The output must be only the list of job names, nothing else
+
+    Answer with only the 5 job names, separated by commas:"""
     
     return prompt
 
