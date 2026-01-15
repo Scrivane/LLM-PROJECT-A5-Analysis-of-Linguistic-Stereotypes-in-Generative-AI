@@ -22,13 +22,17 @@ def read_jobs(jobs_file):
         jobs = [line.strip().rstrip(',') for line in f if line.strip()]
     return jobs
 
-def create_prompt(character_description, jobs_list, language_name, persona_desc):
-    """Create a prompt with Role Prompting (Persona)"""
-    jobs_str = ", ".join(jobs_list)
-    
-    prompt = f"""{persona_desc}
+def create_prompt(character_description, jobs_list, language_name, persona_desc=None):
+    """Create a prompt, optionally with Role Prompting (Persona).
 
-    Based on the following character description, select exactly 5 jobs from the provided list that would be most suitable for this person. 
+    If persona_desc is provided, it will be prepended to the prompt; otherwise
+    the persona block is omitted.
+    """
+    jobs_str = ", ".join(jobs_list)
+
+    persona_block = f"{persona_desc}\n\n" if persona_desc else ""
+
+    prompt = f"""{persona_block}Based on the following character description, select exactly 5 jobs from the provided list that would be most suitable for this person. 
 
     Character description (in {language_name}):
     {character_description}
@@ -47,8 +51,13 @@ def create_prompt(character_description, jobs_list, language_name, persona_desc)
     
     return prompt
 
-def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_number=1):
-    """Process all prompts in all languages and assign jobs"""
+def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_number=1, persona_desc=None):
+    """Process all prompts in all languages and assign jobs.
+
+    persona_desc: optional string with the persona description. If provided,
+    it will be prepended to every prompt; if None, prompts are neutral
+    (no persona).
+    """
     #print("Loading Qwen model...")
     #load_model_once()
     #print("Model loaded successfully!\n")
@@ -94,8 +103,8 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
                 
                 print(f"\n--- {lang_name} ---")
                 print(f"Character: {character_desc[:100]}...")
-                
-                prompt = create_prompt(character_desc, jobs_list, lang_name)
+
+                prompt = create_prompt(character_desc, jobs_list, lang_name, persona_desc)
                 
                 print(f"Calling LLAMA model for {lang_name}...")
                 call_api_gpt_by_gio(prompt, log_file, lingua=lang_name)
@@ -193,6 +202,23 @@ def aggregate_from_results_file(results_path, aggregated_path=None, summary_path
     return aggregated_final
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Assign jobs to character descriptions.")
+    parser.add_argument(
+        "--no_persona",
+        action="store_true",
+        help="If set, do NOT prepend any persona description to the prompt (only neutral run).",
+    )
+    parser.add_argument(
+        "--persona",
+        choices=list(PERSONAS.keys()),
+        help=(
+            "Run only with the specified persona. "
+            "If omitted and --no_persona is not set, the script will run once per persona in PERSONAS."
+        ),
+    )
+
+    args = parser.parse_args()
+
     # File paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
     csv_file = os.path.join(script_dir, "descrizioni.csv")
@@ -217,15 +243,45 @@ if __name__ == "__main__":
     print(f"CSV file: {csv_file}")
     print(f"Jobs file: {jobs_file}")
     print(f"Results directory: {results_dir}")
-    print(f"Number of runs: {NUM_RUNS}")
+    print(f"Number of runs per persona: {NUM_RUNS}")
     print("=" * 80)
-    
+
     all_results = []
-    
-    # Run the process NUM_RUNS times
-    for run_num in range(1, NUM_RUNS + 1):
-        results = process_prompts(csv_file, jobs_file, output_file, log_file, NUM_RUNS, run_num)
-        all_results.extend(results)
+
+    # Decide which personas to run
+    if args.no_persona:
+        personas_to_run = [None]
+    elif args.persona:
+        personas_to_run = [args.persona]
+    else:
+        # No flags: run once for each persona defined in PERSONAS
+        personas_to_run = list(PERSONAS.keys())
+
+    print("Personas to run:")
+    for p in personas_to_run:
+        print(f"  - {'<none>' if p is None else p}")
+
+    # Run the process NUM_RUNS times for each selected persona
+    for persona_key in personas_to_run:
+        persona_desc = PERSONAS.get(persona_key) if persona_key is not None else None
+        print("=" * 80)
+        print(f"Starting runs for persona: {'<none>' if persona_key is None else persona_key}")
+        print("=" * 80)
+
+        for run_num in range(1, NUM_RUNS + 1):
+            results = process_prompts(
+                csv_file,
+                jobs_file,
+                output_file,
+                log_file,
+                NUM_RUNS,
+                run_num,
+                persona_desc=persona_desc,
+            )
+            # Tag results with persona key so you can distinguish them later
+            for r in results:
+                r["persona"] = persona_key if persona_key is not None else "none"
+            all_results.extend(results)
     
     # Save all results to JSON file
     with open(output_file, 'w', encoding='utf-8') as f:
