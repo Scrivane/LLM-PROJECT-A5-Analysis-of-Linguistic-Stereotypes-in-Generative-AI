@@ -239,14 +239,19 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
 
 
 
-def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, use_cache=True,directly_return=False):
+def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, use_cache=True,directly_return=False,client=False):
 
 ###################### OPENAI      
     
     ###################### OPENAI      
-    with open("./test_opposite_adjective_gio/key.yaml", "r") as f:
-        config = yaml.safe_load(f)
-        API_KEY = config["openai"]["api_key"]
+    if client==False:
+        with open("./test_opposite_adjective_gio/key.yaml", "r") as f:
+            config = yaml.safe_load(f)
+            API_KEY = config["openai"]["api_key"]
+        
+        client = OpenAI(api_key=API_KEY)
+ 
+    
 
     model_name="gpt-4.1-mini"
     messages = [
@@ -254,18 +259,16 @@ def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, us
             "content": prompt
         }
         ]
+    
 
     if use_cache==False or directly_return==True or check_if_output_exists(prompt, model_name,log_file,lingua)==False :
         try:
-            print("dentro all'api call")
-            client = OpenAI(api_key=API_KEY)
             response = client.chat.completions.create(
                 model=model_name,
                 messages=messages,
                 max_completion_tokens=max_completion_tokens
             )
             final_output = response.choices[0].message.content
-            print("final_output: "+final_output)
             if directly_return==True:
                 return final_output
             log_llm_output(prompt, final_output, model_name,log_file,lingua)
