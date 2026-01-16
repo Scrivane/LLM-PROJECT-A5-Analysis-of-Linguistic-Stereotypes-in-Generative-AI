@@ -182,7 +182,7 @@ def aggregate_results(all_results, num_runs, language_order=None):
     return aggregated_final, summary_text
 
 
-def aggregate_from_results_file(results_path, aggregated_path=None, summary_path=None, num_runs=50, language_order=None):
+def aggregate_from_results_file(results_path, aggregated_path=None, summary_path=None, num_runs=30, language_order=None):
     """Aggregate directly from an existing job_assignments_results.json without rerunning prompts."""
     if language_order is None:
         language_order = ['Italian', 'Sicilian', 'Parmigiano', 'Napoletano']
@@ -226,7 +226,7 @@ if __name__ == "__main__":
     jobs_file = os.path.join(script_dir, "jobs.txt")
     
     # Number of runs (change this to 100 or any other number)
-    NUM_RUNS = 50
+    NUM_RUNS = 30
     
     # Create timestamped output directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

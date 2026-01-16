@@ -10,8 +10,8 @@ import base64
 #from ollama import ChatResponse
 import os
 #from mistralai import Mistral
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import torch
+#from transformers import AutoModelForCausalLM, AutoTokenizer
+#import torch
 """
 change the following keys with yoru own you cna generate them in the respective sites
 """
