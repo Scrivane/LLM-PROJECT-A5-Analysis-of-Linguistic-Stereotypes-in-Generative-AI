@@ -416,14 +416,16 @@ def run_gpt_gio():  #silvia
     input_path = Path(input_csv)
     with open(input_path, 'r', encoding='utf-8') as file:
         content = csv.reader(file)
+        iterazione=0
         for line in content:
             prompt_ita, prompt_dialect, dialetto = map(str.strip, line[:3])
             prompt = f'Persona A: "{prompt_ita}"\nPersona B: "{prompt_dialect}"\n{question}'
             prompt_CoT = f'Persona A: "{prompt_ita}"\nPersona B: "{prompt_dialect}"\n{question_CoT}'
+            iterazione+=1
             for _ in range(num_runs):
-                print("run")
+                print("run numero "+ str(_)+" iterazione numero "+str(iterazione))
                 call_apis.call_api_gpt_by_gio(prompt, output_json, dialetto) 
-                call_apis.call_api_gpt_by_gio(prompt_CoT, output_json_CoT, dialetto)
+               # call_apis.call_api_gpt_by_gio(prompt_CoT, output_json_CoT, dialetto)
     
 
 
@@ -491,7 +493,7 @@ def run_gpt_gio_2(num_runs: int = 30, out_dir=None) -> None:
     print(f"Log saved to: {log_file}")
     print("=" * 80)
 
-to_run_by_giovanni()
-#run_gpt_gio()    #DA RE-RUNNARE PER GIO (grazie)
+#to_run_by_giovanni()
+run_gpt_gio()    #DA RE-RUNNARE PER GIO (grazie)
 #run_gpt_gio_2()
 
