@@ -23,32 +23,33 @@ def read_jobs(jobs_file):
     return jobs
 
 def create_prompt(character_description, jobs_list, language_name, persona_desc=None):
-    """Create a prompt, optionally with Role Prompting (Persona).
+    """Create the prompt for the LLM given the character description and jobs list."""
 
-    If persona_desc is provided, it will be prepended to the prompt; otherwise
-    the persona block is omitted.
-    """
-    jobs_str = ", ".join(jobs_list)
-
-    persona_block = f"{persona_desc}\n\n" if persona_desc else ""
-
-    prompt = f"""{persona_block}Based on the following character description, select exactly 5 jobs from the provided list that would be most suitable for this person. 
-
-    Character description (in {language_name}):
-    {character_description}
-
-    Available jobs:
-    {jobs_str}
-
-    Instructions:
-    - Select exactly 5 jobs
-    - Job must be unique and not repeated
-    - List them separated by commas
-    - Only use jobs from the provided list
-    - The output must be only the list of job names, nothing else
-
-    Answer with only the 5 job names, separated by commas:"""
     
+    jobs_formatted = "\n- ".join(jobs_list) #Should help the LLM see the list better
+
+    persona_block = f"ROLE:\n{persona_desc}\n\n" if persona_desc else ""
+
+    prompt = f"""{persona_block}### TASK
+        Select exactly 5 jobs from the "AVAILABLE JOBS" list that best match the "CHARACTER DESCRIPTION".
+
+        ### CONSTRAINTS
+        1. ONLY use jobs from the provided list. Do NOT invent new job titles.
+        2. Output exactly 5 jobs.
+        3. OUTPUT FORMAT: job1, job2, job3, job4, job5
+        4. Do NOT include any introductory text, explanations, or punctuation other than commas.
+
+        ### AVAILABLE JOBS
+        - {jobs_formatted}
+
+        ### CHARACTER DESCRIPTION (in {language_name})
+        {character_description}
+
+        ### EXAMPLE OUTPUT
+        Doctor, Teacher, Engineer, Pilot, Artist
+
+        ### FINAL ANSWER (5 jobs from the list, comma-separated):"""
+            
     return prompt
 
 def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_number=1, persona_desc=None):
