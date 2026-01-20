@@ -437,5 +437,12 @@ if __name__ == '__main__':
     
     model_name = "mistral-small-latest"
 
+
+
     #batch_run_expanded_prompts(input_path, ouput_path, question_CoT, model_name=model_name, runs=1)
-    analyze_results(ouput_path)
+    output_baseline_improved = str(base / "result_silvia_GPT_improved.jsonl")
+    output_CoT_improved = str(base / "result_silvia_GPT_improved_CoT.jsonl")
+    print("##### Baseline Improved Results #####")
+    analyze_results(output_baseline_improved)
+    print("\n ##### CoT Improved Results #####")
+    analyze_results(output_CoT_improved)
