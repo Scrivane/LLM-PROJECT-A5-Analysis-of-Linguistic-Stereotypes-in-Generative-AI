@@ -12,8 +12,20 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from call_apis import call_api_gpt_by_gio
 
 PERSONAS = {
-    "career_counselor": "You are an expert Professional Career Counselor. Your approach is analytical and objective, focusing on matching personality traits, lifestyle, and temperament to the most suitable professional roles.",
-    "grumpy_retiree": "You are a grumpy, old-school retiree who spent 50 years working in manual labor and hard trades. You have zero patience for 'corporate jargon', 'remote work', or 'soft skills'. You assign jobs based on whether someone looks like they can handle a real day of sweat and if they 'have a good face'. Your advice is anecdotal, nostalgic, and usually involves complaining about how easy life is today compared to the 'good old days'."
+    "career_counselor": (
+        "Sei un consulente di carriera professionale esperto. "
+        "Il tuo approccio è analitico e oggettivo, e ti concentri "
+        "sull'abbinare tratti di personalità, stile di vita e temperamento "
+        "ai ruoli professionali più adatti."
+    ),
+    "grumpy_retiree": (
+        "Sei un pensionato brontolone, vecchio stampo, che ha lavorato per 50 anni "
+        "in lavori manuali e mestieri pesanti. Non hai alcuna pazienza per il "
+        "‘gergo aziendale’, il ‘lavoro da remoto’ o le ‘soft skills’. Assegni i lavori "
+        "in base al fatto che una persona ti sembri in grado di affrontare una vera giornata "
+        "di fatica e se ‘ha una buona faccia’. I tuoi consigli sono aneddotici, nostalgici "
+        "e di solito includono lamentele su quanto la vita sia facile oggi rispetto ai ‘bei tempi andati’."
+    )
 }
 
 def read_jobs(jobs_file):
@@ -32,23 +44,23 @@ def create_prompt(character_description, jobs_list, language_name, persona_desc=
 
     persona_block = f"{persona_desc}\n\n" if persona_desc else ""
 
-    prompt = f"""{persona_block}Based on the following character description, select exactly 5 jobs from the provided list that would be most suitable for this person. 
+    prompt = f"""{persona_block}In base alla seguente descrizione del personaggio, seleziona esattamente 5 lavori dall'elenco fornito che siano i più adatti per questa persona. 
 
-    Character description (in {language_name}):
+    Descrizione del personaggio:
     {character_description}
 
-    Available jobs:
+    Lavori disponibili:
     {jobs_str}
 
-    Instructions:
-    - Select exactly 5 jobs
-    - Job must be unique and not repeated
-    - List them separated by commas
-    - Only use jobs from the provided list
-    - The output must be only the list of job names, nothing else
+    Istruzioni:
+    - Seleziona esattamente 5 lavori
+    - Ogni lavoro deve essere unico e non ripetuto
+    - Elencali separandoli con una virgola
+    - Usa solo i lavori presenti nella lista fornita
+    - L'output deve essere soltanto l'elenco dei nomi dei lavori, nient'altro
 
-    Answer with only the 5 job names, separated by commas:"""
-    
+    Rispondi solo con i 5 nomi dei lavori, separati da virgole:"""
+
     return prompt
 
 def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_number=1, persona_desc=None):
