@@ -61,6 +61,13 @@ la normalizzazione è fatta per il total_count , ma non so se ha senso farla.
 
 ![alt text](image-2.png)
 
+Qui invece normalizzo calcolando standard deviazione , ovvero faccio sqrt(delta_..._sq)/neleemnt for that lenguage
+![alt text](image-6.png)
+
+
+
+non so che normalizzazione è più sensata fa
+
 anche dal seguente grafico si puo vedere la stessa cosa , ovvvero che facndo role prompting usando il prompt del giudice e ancora più se si usa quello del uomo di paese si ha minore bias . 
 ( uomo di paese con frase in dialetto - uomo di paese con frase in italiano ) < 
 ( no role prompting dialetto - no role prompting italiano )
