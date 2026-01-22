@@ -1,8 +1,8 @@
 import os
 import re
 from typing import Dict, List, Optional
-from translation.Siciliano.scripts.translate_it_to_sicilian import build_mapping_from_tsv, try_parse_ttl_for_mappings
-from translation.Parmigiano.scripts.translate_it_to_parmigiano import build_mapping_from_parm_csv
+from .Siciliano.scripts.translate_it_to_sicilian import build_mapping_from_tsv, try_parse_ttl_for_mappings
+from .Parmigiano.scripts.translate_it_to_parmigiano import build_mapping_from_parm_csv
 
 
 def translate (text: str,
@@ -190,11 +190,12 @@ def translate_it_to_parmigiano(text: str, csv_path: Optional[str] = None) -> str
     return ''.join(output_parts)
 
 
-""" 
-if __name__ == '__main__':
-    A = "Io lavoro in un azienda che si occupa di costruzioni e appalti, la mia azienda fattura molti soldi grazie agli appalti statali"
-    B = translate(A, dialect='parmigiano')
-    print('IN :', A)
-    print('OUT:', B)
 
-"""
+if __name__ == '__main__':
+    A = "Mi chiamo Francesca, ho 23 anni e studio filosofia all'università. Lavoro part-time come barista in un bar, ho turni regolari che mi permettono di pagare l'affitto senza troppi problemi, così da poter proseguire gli studi, continuo a sognare di scrivere un romanzo."
+    Parm  = translate(A, dialect='parmigiano')
+    Sic = translate(A, dialect='siciliano')
+    print('SIC :', Sic)
+    #print('IN :', A)
+    print('PARM:', Parm)
+

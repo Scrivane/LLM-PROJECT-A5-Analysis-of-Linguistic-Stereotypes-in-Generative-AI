@@ -1,16 +1,17 @@
-from google import genai
+#from google import genai
 import json
 from datetime import datetime
 import os
 from openai import OpenAI
+import yaml
 import base64
-from groq import Groq
-from ollama import chat
-from ollama import ChatResponse
+#from groq import Groq
+#from ollama import chat
+#from ollama import ChatResponse
 import os
-from mistralai import Mistral
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import torch
+#from mistralai import Mistral
+#from transformers import AutoModelForCausalLM, AutoTokenizer
+#import torch
 """
 change the following keys with yoru own you cna generate them in the respective sites
 """
@@ -20,7 +21,7 @@ api_key_minstral="placeholder"
 ###
 ###
 ###
-###
+
 
 model_name = "Qwen/Qwen3-4B-Instruct-2507-FP8"
 model_local = None
@@ -100,7 +101,22 @@ def log_llm_output(prompt, response, model_name, log_file,lingua=""):
         f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
 
 
+def check_already_present_variable_fields(field_names,field_values,log_file):
+    if not os.path.exists(log_file):
+        return False
+    with open(log_file, 'r') as f:
+        for line in f:
+            dizmod=json.loads(line)
+            compared=0
 
+            for field_name, field_value in zip(field_names, field_values):
+                  if field_name in dizmod and dizmod[field_name] == field_value:
+                      compared += 1
+                      
+            if compared == len(field_names):
+            
+                return True
+    return False
 def check_if_output_exists(prompt, model_name, log_file,lingua):
     """
     Checks whether an LLM output already exists in the log file for a given prompt, image, and model.
@@ -223,42 +239,42 @@ def call_local_qwen(prompt, log_file,maxnew_token=15,lingua=""):
 
 
 
-def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200):
+def call_api_gpt_by_gio(prompt, log_file,lingua="",max_completion_tokens=200, use_cache=True,directly_return=False,client=False):
 
-
-        
 ###################### OPENAI      
     
     ###################### OPENAI      
+    if client==False:
+        with open("./test_opposite_adjective_gio/key.yaml", "r") as f:
+            config = yaml.safe_load(f)
+            API_KEY = config["openai"]["api_key"]
+        
+        client = OpenAI(api_key=API_KEY)
+ 
     
-    API_KEY="./test_opposite_adjective_gio/key.yaml"
 
-
-
-
-    
-    model_name="gpt-5.1"
+    model_name="gpt-4.1-mini"
     messages = [
         {   "role": "user",
             "content": prompt
         }
         ]
-    if check_if_output_exists(prompt, model_name,log_file,lingua)==False:
-        try:
+    
 
-            client = OpenAI(api_key=API_KEY)
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                max_completion_tokens=max_completion_tokens
-            )
-            final_output = response.choices[0].message.content
+    try:
+        response = client.chat.completions.create(
+            model=model_name,
+            messages=messages,
+            max_completion_tokens=max_completion_tokens
+        )
+        final_output = response.choices[0].message.content
+        if directly_return==True:
+            return final_output
+        log_llm_output(prompt, final_output, model_name,log_file,lingua)
 
-            log_llm_output(prompt, final_output, model_name,log_file,lingua)
-
-        except Exception as e:
-            print("Errore during API call!", e)
-            return None 
+    except Exception as e:
+        print("Errore during API call!", e)
+        return None 
         
 
 def call_multiple_apis_only_text(prompt, log_file,lingua=""):

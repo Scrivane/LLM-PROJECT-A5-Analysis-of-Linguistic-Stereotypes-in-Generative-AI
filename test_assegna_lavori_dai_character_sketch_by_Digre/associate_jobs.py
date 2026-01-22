@@ -35,14 +35,12 @@ def read_jobs(jobs_file):
     return jobs
 
 def create_prompt(character_description, jobs_list, language_name, persona_desc=None):
-    """Create a prompt, optionally with Role Prompting (Persona).
+    """Create the prompt for the LLM given the character description and jobs list."""
 
-    If persona_desc is provided, it will be prepended to the prompt; otherwise
-    the persona block is omitted.
-    """
-    jobs_str = ", ".join(jobs_list)
+    
+    jobs_formatted = "\n- ".join(jobs_list) #Should help the LLM see the list better
 
-    persona_block = f"{persona_desc}\n\n" if persona_desc else ""
+    persona_block = f"ROLE:\n{persona_desc}\n\n" if persona_desc else ""
 
     prompt = f"""{persona_block}In base alla seguente descrizione del personaggio, seleziona esattamente 5 lavori dall'elenco fornito che siano i più adatti per questa persona. 
 
@@ -119,8 +117,9 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
                 prompt = create_prompt(character_desc, jobs_list, lang_name, persona_desc)
                 
                 print(f"Calling LLAMA model for {lang_name}...")
-                call_api_gpt_by_gio(prompt, log_file, lingua=lang_name)
-                
+                Path(log_file).touch(exist_ok=True)
+                call_api_gpt_by_gio(prompt, log_file, lingua=lang_name, use_cache=False)
+
                 # Read the result from log file (last entry for this prompt)
                 with open(log_file, 'r', encoding='utf-8') as f:
                     lines = f.readlines()
@@ -193,7 +192,7 @@ def aggregate_results(all_results, num_runs, language_order=None):
     return aggregated_final, summary_text
 
 
-def aggregate_from_results_file(results_path, aggregated_path=None, summary_path=None, num_runs=50, language_order=None):
+def aggregate_from_results_file(results_path, aggregated_path=None, summary_path=None, num_runs=30, language_order=None):
     """Aggregate directly from an existing job_assignments_results.json without rerunning prompts."""
     if language_order is None:
         language_order = ['Italian', 'Sicilian', 'Parmigiano', 'Napoletano']
@@ -237,7 +236,7 @@ if __name__ == "__main__":
     jobs_file = os.path.join(script_dir, "jobs.txt")
     
     # Number of runs (change this to 100 or any other number)
-    NUM_RUNS = 50
+    NUM_RUNS = 30
     
     # Create timestamped output directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
