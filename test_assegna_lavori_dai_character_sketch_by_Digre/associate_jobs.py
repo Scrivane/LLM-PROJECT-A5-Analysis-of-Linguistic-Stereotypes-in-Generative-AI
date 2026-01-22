@@ -48,7 +48,7 @@ def create_prompt(character_description, jobs_list, language_name, persona_desc=
     {character_description}
 
     Lavori disponibili:
-    {jobs_str}
+    {jobs_formatted}
 
     Istruzioni:
     - Seleziona esattamente 5 lavori

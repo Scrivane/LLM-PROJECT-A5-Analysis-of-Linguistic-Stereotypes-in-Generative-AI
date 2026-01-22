@@ -1,0 +1,565 @@
+Conscientious,Open-minded,Friendly,Urban,Calm,Educated,Language,Original_Row,Text_Snippet
+2,2,2,3,2,2,Napoletano,0,E chesto capisce tu: 'e denare
+2,2,1,3,1,3,Italiano (Auto),0,E questo capisci tu: i soldi!
+2,2,2,3,2,2,Parmigiano,0,E còst capisci ti: i sóld!
+2,2,2,2,2,2,Siciliano,0,E chistu capisci tu: li quibbu
+2,2,2,3,2,2,Napoletano,1,E cu' 'e denare t'he accattato
+2,3,2,4,2,3,Italiano (Auto),1,E con i soldi ti sei comprato 
+2,3,2,2,2,2,Parmigiano,1,E cón i sóld ti séz comprato i
+2,3,4,2,3,2,Siciliano,1,E chî quibbus ti sei accattatu
+3,3,4,3,3,2,Napoletano,2,Ma Filumena Marturano ha fatto
+3,3,4,3,3,3,Italiano (Auto),2,Ma Filumena Marturano è corsa 
+4,3,4,3,3,4,Parmigiano,2,Ma Filumena Marturano è corsa 
+3,3,4,2,3,3,Siciliano,2,Ma Filumena Marturano è cursa 
+3,2,2,3,1,2,Napoletano,3,"E ancora he 'a correre, ancora"
+4,2,2,3,1,4,Italiano (Auto),3,"E ancora deve correre, ancora "
+3,2,1,2,1,2,Parmigiano,3,"E ancòrra deve còrror, ancòrra"
+3,2,2,2,1,2,Siciliano,3,"E àncura deve cùrriri, àncura "
+3,3,3,2,3,2,Napoletano,4,O miédeco nun sapeva niente.
+3,3,3,3,4,3,Italiano (Auto),4,Il medico non sapeva niente.
+3,3,3,3,4,2,Parmigiano,4,Il medico non sapeva niént.
+2,3,3,1,3,2,Siciliano,4,Lu mèdicu nun sapeva necca.
+2,2,2,3,2,2,Napoletano,5,"Ce ha creduto pur'isso, e ce a"
+2,2,2,3,2,3,Italiano (Auto),5,"Ci ha creduto anche lui, e ci "
+2,2,2,2,2,2,Parmigiano,5,"Agh ha creduto an’ al, e agh d"
+2,2,2,2,2,2,Siciliano,5,"Cci ha crittu azzanìa iddu, e "
+2,2,2,3,2,2,Napoletano,6,"Qualunque femmena, doppo vinti"
+2,2,1,3,2,3,Italiano (Auto),6,"Qualsiasi donna, dopo venticin"
+2,1,1,3,2,2,Parmigiano,6,"Qualsiasi dònna, dòp venticinq"
+2,2,2,2,2,2,Siciliano,6,"Quarsiasi mugghieri, doppu ven"
+2,3,2,3,2,2,Napoletano,7,T'aggio fatto 'a serva!
+2,2,1,3,1,3,Italiano (Auto),7,Ti ho fatto la serva!
+2,3,4,3,4,2,Parmigiano,7,Ti ho fat la sarvètta!
+2,2,1,2,1,2,Siciliano,7,Ti ho fattu a serva!
+4,3,3,3,3,2,Napoletano,8,A serva ll'aggio fatta pè vint
+4,3,2,3,3,3,Italiano (Auto),8,La serva l’ho fatta per ventic
+4,3,3,2,4,2,Parmigiano,8,La sarvètta l’ho fatta per ven
+4,3,3,2,3,2,Siciliano,8,A serva l’ho fatta pi venticin
+2,2,2,3,2,2,Napoletano,9,E maie ca t'avesse visto sotto
+3,3,3,3,3,3,Italiano (Auto),9,E mai che ti avessi visto sott
+2,3,2,3,2,2,Parmigiano,9,E mäi che ti avessi vist sotto
+2,3,2,2,3,2,Siciliano,9,E mai ca ti avessi vistu sotto
+2,3,2,4,2,2,Napoletano,10,E avev' 'a chiagnere pe' te?
+3,3,2,3,2,3,Italiano (Auto),10,E dovevi piangere per te?
+2,3,2,2,2,2,Parmigiano,10,E dovevi cridär per te?
+2,2,2,2,2,2,Siciliano,10,E dovevi chiànciri pi te?
+3,3,3,3,3,2,Napoletano,11,Era troppo bello 'o mobile.
+3,3,3,3,4,3,Italiano (Auto),11,Era troppo bello il mobile.
+3,3,4,2,4,3,Parmigiano,11,Era tròp bél il tolètta.
+3,3,4,2,4,2,Siciliano,11,Era troppu beddu lu mobile.
+2,3,3,4,3,2,Napoletano,12,E quanno me vulive vedé 'e dur
+3,3,4,3,4,3,Italiano (Auto),12,E quando volevo vederti dormir
+3,3,3,3,4,3,Parmigiano,12,"E quand volevo vederti dormìr,"
+3,3,4,3,4,3,Siciliano,12,E quannu volevo vederti dòrmir
+3,3,3,3,3,2,Napoletano,13,A strada d' 'a casa t' 'a scur
+2,3,2,3,2,3,Italiano (Auto),13,La strada di casa te la scorda
+2,3,2,2,2,2,Parmigiano,13,La strada di ca te la scordavi
+2,3,2,2,3,2,Siciliano,13,A strata di casa te a scordavi
+3,3,2,4,2,2,Napoletano,14,"E mmeglie feste, 'e meglie Nat"
+3,4,2,4,2,3,Italiano (Auto),14,"E le feste migliori, i miglior"
+2,3,2,4,3,2,Parmigiano,14,"E il feste migliori, i miglior"
+2,3,2,2,2,2,Siciliano,14,"E li feste migliori, li miglio"
+2,3,3,4,3,2,Napoletano,15,Saie quanno se chiagne?
+3,3,3,3,3,3,Italiano (Auto),15,Sai quando si piange?
+3,3,3,2,3,2,Parmigiano,15,Sai quand agh piange?
+3,3,3,2,3,2,Siciliano,15,Sai quannu si piange?
+3,3,3,4,2,2,Napoletano,16,Quanno se cunosce 'o bbene e n
+3,3,3,3,2,3,Italiano (Auto),16,Quando si conosce il bene e no
+4,3,3,2,3,3,Parmigiano,16,Quand agh conosce il bén e non
+3,3,3,2,3,2,Siciliano,16,Quannu si conosce lu bonu e nu
+3,3,3,4,3,2,Napoletano,17,Ma Filumena Marturano bene nun
+4,3,3,4,4,4,Italiano (Auto),17,Ma Filumena Marturano bene non
+4,2,2,2,3,2,Parmigiano,17,Ma Filumena Marturano bén non 
+4,3,3,2,3,3,Siciliano,17,Ma Filumena Marturano bonu nun
+3,3,2,4,2,3,Napoletano,18,"A suddisfazione 'e chiagnere, "
+4,3,3,4,2,4,Italiano (Auto),18,"La soddisfazione di piangere, "
+4,3,2,3,2,3,Parmigiano,18,"La sodisfasión di cridär, Filu"
+4,3,2,3,2,3,Siciliano,18,"A soddisfazione di chiànciri, "
+2,2,1,2,1,2,Napoletano,19,Comm' all'ultima femmena m' he
+3,2,1,4,1,3,Italiano (Auto),19,Come all’ultima donna mi hai t
+2,2,1,3,1,2,Parmigiano,19,Cme all’ultima dònna am hai tr
+2,2,1,2,1,2,Siciliano,19,Comu all’ultima mugghieri mi h
+2,2,1,3,1,2,Napoletano,20,"Ma mo, all'urdemo all'urdemo, "
+3,2,2,4,1,4,Italiano (Auto),20,"Ma ora, all’ultimo all’ultimo,"
+2,3,2,2,2,2,Parmigiano,20,"Ma òra, all’ùltom all’ùltom, a"
+2,2,1,3,1,2,Siciliano,20,"Ma ora, all’ùrtimu all’ùrtimu,"
+1,2,2,2,2,1,Napoletano,21,"A chella chi? .,. A chella chi"
+2,3,2,3,2,3,Italiano (Auto),21,A quella chi?.. A quella chi?
+2,3,2,3,2,3,Parmigiano,21,A còlla chi?.. A còlla chi?
+2,3,2,3,2,2,Siciliano,21,A dda cu?.. A dda cu?
+2,2,1,4,1,2,Napoletano,22,Appriesso a chella schifosa!
+2,2,1,3,1,2,Italiano (Auto),22,Dietro a quella schifosa!
+2,2,1,3,1,2,Parmigiano,22,Dadardè a còlla schifosa!
+2,1,1,4,1,2,Siciliano,22,Dietro a dda schifosa!
+2,2,2,4,2,2,Napoletano,23,Che te cride ca nun l'avevo ca
+3,3,2,4,2,3,Italiano (Auto),23,Che credi che non l’avessi cap
+3,2,2,4,2,3,Parmigiano,23,Che credi che non l’avessi cap
+2,3,2,4,2,2,Siciliano,23,Ca credi ca nun l’avessi capit
+2,2,2,3,2,2,Napoletano,24,"Tu buscie nun ne saie dicere, "
+3,3,2,3,3,3,Italiano (Auto),24,"Tu bugie non sai dire, e quest"
+3,3,2,2,3,2,Parmigiano,24,"Ti bugie non sai dìr, e còst è"
+3,3,2,2,3,2,Siciliano,24,"Tu bugie nun sai diri, e chist"
+2,2,2,3,2,2,Napoletano,25,"Cinquantaduie anne, e se perme"
+2,1,1,3,1,3,Italiano (Auto),25,"Cinquantadue anni, e si permet"
+2,2,2,2,2,2,Parmigiano,25,"Cinquantadue anni, e agh perme"
+3,1,2,2,1,2,Siciliano,25,"Cinquantadue anni, e si permet"
+3,3,3,3,3,2,Napoletano,26,Nun se ne mette scuorno
+3,3,2,3,2,3,Italiano (Auto),26,Non si vergogna
+2,2,1,2,1,2,Parmigiano,26,Non agh vargògna
+2,3,2,2,2,2,Siciliano,26,Nun si affruntu
+2,3,3,4,2,2,Napoletano,27,"E mm' 'a mette dint' 'a casa, "
+3,3,3,3,3,3,Italiano (Auto),27,"E me la mette in casa, dicendo"
+3,3,3,2,3,2,Parmigiano,27,"E am la mette in ca, dicendo c"
+2,3,3,2,3,2,Siciliano,27,"E mâ mette ndi casa, dicendo c"
+2,2,1,3,1,2,Napoletano,28,Madonna... quanto me faie schi
+2,1,1,3,1,2,Italiano (Auto),28,Madonna... quanto mi fai schif
+2,2,1,4,1,3,Parmigiano,28,Madònna... quant am fai schifo
+2,2,1,3,1,2,Siciliano,28,Madonna... quantu mi fai schif
+2,2,2,3,1,2,Napoletano,29,E se io stevo murenno overamen
+4,3,2,3,2,4,Italiano (Auto),29,E se io stessi davvero morendo
+2,3,2,2,2,2,Parmigiano,29,"E se mi stessi dabón morendo, "
+2,2,1,2,1,2,Siciliano,29,E siddu mianu stissi dammiru m
+2,2,2,4,1,2,Napoletano,30,"Ma pecché, tu murive e io nun "
+3,3,2,3,2,3,Italiano (Auto),30,"Ma perché, tu morivi e io non "
+2,2,1,2,2,2,Parmigiano,30,"Ma parchè, ti morivi e mi non "
+2,2,1,2,1,2,Siciliano,30,"Ma pirchì, tu morivi e mianu n"
+2,3,2,3,2,2,Napoletano,31,Nun m'avev' 'a sustené?
+3,3,3,3,3,3,Italiano (Auto),31,Non dovevo sostenere?
+3,3,3,3,3,3,Parmigiano,31,Non dovevo insprocär?
+2,3,3,3,3,2,Siciliano,31,Nun dovevo sostenere?
+2,3,3,2,3,2,Napoletano,32,Ch'e rrose mmiez' 'a tavula?
+3,3,3,3,4,3,Italiano (Auto),32,Con le rose in mezzo alla tavo
+3,3,3,2,4,2,Parmigiano,32,Cón il rose daméz a la tävla?
+3,3,4,2,3,2,Siciliano,32,Chî rosi ndi menzu â tàvula?
+3,3,3,4,2,2,Napoletano,33,"Ma pecché, nun ero padrone d' "
+3,2,2,3,2,3,Italiano (Auto),33,"Ma perché, non ero padrone di "
+2,3,2,3,2,2,Parmigiano,33,"Ma parchè, non ero padrón di m"
+2,2,2,3,2,2,Siciliano,33,"Ma pirchì, nun ero patruni di "
+2,3,4,3,4,3,Napoletano,34,Quanto me faie ridere!
+3,3,4,3,4,3,Italiano (Auto),34,Quanto mi fai ridere!
+2,3,3,2,3,2,Parmigiano,34,Quant am fai rìddor!
+3,3,4,2,4,3,Siciliano,34,Quantu mi fai rìdiri!
+2,2,2,4,2,2,Napoletano,35,"Ma che me ne mporta 'e te, d' "
+2,2,1,3,2,3,Italiano (Auto),35,"Ma che me ne importa di te, de"
+2,2,1,2,1,2,Parmigiano,35,"Ma che am in importa di te, de"
+2,2,1,2,1,2,Siciliano,35,"Ma ca mìa ndi importa di te, d"
+2,3,2,3,2,2,Napoletano,36,Ma tu te cride overo ca io ll'
+3,3,2,3,2,3,Italiano (Auto),36,Ma tu credi davvero che l’ho f
+2,2,2,3,2,2,Parmigiano,36,Ma ti credi dabón che l’ho fat
+2,2,2,2,2,2,Siciliano,36,Ma tu credi dammiru ca l’ho fa
+2,2,1,4,2,2,Napoletano,37,"Ma io nun te curo, nun t'aggio"
+2,2,1,3,2,3,Italiano (Auto),37,"Ma io non ti curo, non ti ho m"
+2,2,1,3,2,3,Parmigiano,37,"Ma mi non ti curo, non ti ho m"
+2,3,2,2,2,2,Siciliano,37,"Ma mianu nun ti curo, nun ti h"
+2,3,3,4,2,3,Napoletano,38,"Na femmena comm' a mme, ll'he "
+4,3,3,4,3,4,Italiano (Auto),38,"Una donna come me, l’hai detto"
+2,2,2,2,2,2,Parmigiano,38,"’n dònna cme am, l’hai detto t"
+3,3,3,2,3,2,Siciliano,38,"Na mugghieri comu mìa, l’hai d"
+2,3,2,3,3,2,Napoletano,39,"Me sierve... Tu, me sierve!"
+3,3,3,3,2,3,Italiano (Auto),39,"Mi serve... Tu, mi serve!"
+2,3,2,4,2,2,Parmigiano,39,"Am serve... Ti, am serve!"
+3,3,2,3,2,3,Siciliano,39,"Mi serve... Tu, mi serve!"
+2,3,2,4,2,2,Napoletano,40,E denare! E nun te l'avarria d
+2,3,2,4,2,3,Italiano (Auto),40,E soldi! E non te li avrei dat
+3,3,2,3,2,3,Parmigiano,40,E sóld! E non te li avrei dati
+2,3,3,2,2,2,Siciliano,40,E quibbus! E nun te li avrei d
+2,3,2,2,2,2,Napoletano,41,"Filume', tu afforza me vuo pòg"
+3,3,3,3,2,3,Italiano (Auto),41,"Filumè, tu davvero vuoi farmi "
+2,3,2,2,2,2,Parmigiano,41,"Filumè, ti dabón vuoi farmi ru"
+2,3,3,2,2,2,Siciliano,41,"Filumè, tu dammiru vuoi farmi "
+2,3,3,4,3,2,Napoletano,42,"Ma pecché nun avev' 'a mangià,"
+3,3,3,3,2,3,Italiano (Auto),42,Ma perché non avevo da mangiar
+2,3,3,2,2,2,Parmigiano,42,"Ma parchè non avevo da paciär,"
+2,3,2,2,2,2,Siciliano,42,Ma pirchì nun avevo pi mangiar
+2,3,3,3,3,2,Napoletano,43,Qua sta 'a cena.
+3,3,3,3,3,3,Italiano (Auto),43,Qua sta la cena.
+2,3,3,2,3,2,Parmigiano,43,Qua sta la sén’na.
+2,3,3,2,3,2,Siciliano,43,Ccà sta a cena.
+3,3,3,3,4,2,Napoletano,44,Quanno site venuto ogge p'urdi
+4,3,4,3,4,4,Italiano (Auto),44,Quando siete venuti oggi a ord
+3,3,4,2,4,2,Parmigiano,44,Quand siete venuti incò a ordi
+3,3,4,2,4,2,Siciliano,44,Quannu siete venuti oi a ordin
+3,3,3,2,3,2,Napoletano,45,Cient’anne arreto ch’era viva 
+3,3,3,2,4,2,Italiano (Auto),45,"Cento anni fa che viveva Vava,"
+3,3,3,3,3,2,Parmigiano,45,"Sént anni fa che viveva Vava,"
+3,3,3,2,3,2,Siciliano,45,"Centu anni fa ca viveva Vava,"
+2,2,1,3,2,2,Napoletano,46,nnante che ffosse Vartommeo Co
+2,3,1,3,2,2,Italiano (Auto),46,prima che fosse Vartommeo Cogl
+2,2,1,3,1,2,Parmigiano,46,prìmma che bòdri Vartommeo Cog
+2,2,1,3,1,2,Siciliano,46,prima ca fosse Vartommeo Cogli
+2,3,3,1,3,2,Napoletano,47,dicea no cierto che l’auciello
+3,3,3,3,3,3,Italiano (Auto),47,diceva un certo che l’uccello 
+3,3,3,2,4,3,Parmigiano,47,diceva un certo che l’ozlón ar
+3,3,3,1,3,2,Siciliano,47,diceva nu nga ca l’aceddu arav
+3,3,3,2,3,2,Napoletano,48,a ttiempo che sguigliaje lo Sc
+4,3,3,3,4,4,Italiano (Auto),48,a tempo che sgocciolava lo Sci
+4,3,3,2,4,3,Parmigiano,48,a tempàs che sgocciolava lo Sc
+3,3,3,2,4,2,Siciliano,48,a tempu ca sgocciolava lu Scia
+4,3,3,2,3,3,Napoletano,49,Nc’era lo Rre Marruocco che s’
+3,3,3,3,3,3,Italiano (Auto),49,C’era il Re Marruocco che si a
+3,3,3,2,3,2,Parmigiano,49,C’era il Re Marruocco che agh 
+3,3,3,2,3,2,Siciliano,49,C’era lu Re Marruocco ca si ar
+3,3,2,2,2,3,Napoletano,50,"panzera, lanza longa e toracon"
+3,3,3,3,3,3,Italiano (Auto),50,"panziera, lancia lunga e torac"
+3,3,3,3,3,3,Parmigiano,50,"panziera, zagaja longa e torac"
+3,3,3,3,3,3,Siciliano,50,"panziera, lanza lunga e torace"
+2,3,3,2,3,2,Napoletano,51,e po’ jeva a ttrovà li Mammalu
+3,3,3,3,3,3,Italiano (Auto),51,e poi andava a trovare i Mamma
+3,3,3,2,3,2,Parmigiano,51,e poi andava a catär i Mammalu
+2,3,3,2,3,2,Siciliano,51,e poi andava a aççiari li Mamm
+3,3,3,2,3,2,Napoletano,52,"co balestre, spigarde, e co tt"
+3,3,3,2,3,3,Italiano (Auto),52,"con balestre, spigarde, e con "
+4,3,3,2,3,3,Parmigiano,52,"cón balestre, spigarde, e cón "
+3,3,3,2,3,3,Siciliano,52,"cu balestre, spigarde, e cu tr"
+4,3,3,2,4,4,Napoletano,53,Chillo fu tiempo che Berta fil
+4,3,3,3,4,4,Italiano (Auto),53,Quello fu tempo che Berta fila
+4,3,3,2,4,3,Parmigiano,53,Còll fu tempàs che Berta filav
+3,3,3,2,4,3,Siciliano,53,"Ddu fu tempu ca Berta filava,"
+3,3,4,3,4,3,Napoletano,54,co chillo doce vivere a l’anti
+4,3,4,3,4,4,Italiano (Auto),54,con quello dolce vivere all’an
+4,4,3,3,4,4,Parmigiano,54,cón còll intrigón zvivasär all
+3,3,3,3,4,3,Siciliano,54,cu ddu duci campari all’antica
+3,3,3,3,3,3,Napoletano,55,"Portave brache, e nullo delleg"
+4,3,3,3,3,4,Italiano (Auto),55,"Portava brache, e nulla delegg"
+4,3,3,2,3,3,Parmigiano,55,"Portava brache, e blìcter dele"
+4,3,3,3,3,4,Siciliano,55,"Portava brache, e nulla delegg"
+4,3,3,3,4,4,Napoletano,56,"Ogn’anno, il due novembre, c’è"
+4,3,3,3,4,4,Italiano (Auto),56,"Ogni anno, il due novembre, c’"
+4,3,3,2,4,3,Parmigiano,56,"Ogni an, il dò novembor, c’è l"
+4,3,4,2,4,3,Siciliano,56,"Ogni annu, lu dù nuvèmmiru, c’"
+3,3,3,2,3,2,Napoletano,57,Si pe la via na femmena passav
+4,3,3,3,4,4,Italiano (Auto),57,Se per la via una donna passav
+4,3,3,2,3,3,Parmigiano,57,Se per la via ’n dònna passava
+3,3,3,2,3,2,Siciliano,57,Siddu pâ fia na mugghieri pass
+3,3,4,2,4,3,Napoletano,58,le dicevano: “Ddio la benedica
+4,3,4,3,4,4,Italiano (Auto),58,le dicevano: “Dio la benedica!
+3,3,4,1,4,2,Parmigiano,58,il dicevano: “Creatôr la bened
+3,3,4,2,4,3,Siciliano,58,li dicevano: “Deu a benedica!”
+2,3,2,3,2,2,Napoletano,59,"Mo, s’uno parla, e chella se c"
+2,2,2,3,2,3,Italiano (Auto),59,"Ora, se uno parla, e quella si"
+2,3,2,2,2,2,Parmigiano,59,"Òra, se ’n parla, e còlla agh "
+2,3,3,2,2,2,Siciliano,59,"Ora, siddu nu parla, e dda si "
+2,2,2,3,3,2,Napoletano,60,Chi te pienze che ssia? Monna 
+3,3,3,3,4,3,Italiano (Auto),60,Chi pensi che sia? Monna Maruz
+3,3,3,3,4,3,Parmigiano,60,Chi pensi che sia? Monna Maruz
+3,3,3,2,4,2,Siciliano,60,Cu pensi ca sia? Monna Maruzza
+3,3,4,4,4,3,Napoletano,61,"O bell’ausanza, e ddove si’ sq"
+4,3,3,4,4,4,Italiano (Auto),61,"Oh bella usanza, e dove sei sv"
+3,3,3,3,3,3,Parmigiano,61,"Oibéla uzansa, e dòvva séz sva"
+3,3,4,2,4,3,Siciliano,61,"Oh bedda usanza, e duvi sei sv"
+4,3,3,3,4,4,Napoletano,62,"Pecchè non tuorne, o doce tiem"
+4,3,3,3,4,4,Italiano (Auto),62,"Perché non torni, oh dolce tem"
+4,3,3,2,4,3,Parmigiano,62,"Parchè non torni, oh intrigón "
+4,3,4,2,5,4,Siciliano,62,"Pirchì nun torni, oh duci temp"
+2,3,3,2,2,2,Napoletano,63,"Pigliave co lo bisco, a na chi"
+3,3,3,3,3,3,Italiano (Auto),63,"Prendeva con il bisco, a una c"
+2,3,3,2,2,2,Parmigiano,63,"Prendeva cón il bisco, a ’n ch"
+3,3,3,2,3,2,Siciliano,63,"Prendeva cû bisco, a na chiama"
+2,2,1,1,1,2,Napoletano,64,cient’aucelluzze a no trunco d
+3,3,4,3,4,3,Italiano (Auto),64,cento uccellini a un tronco di
+2,2,1,2,1,2,Parmigiano,64,sént uccellini a un cavas di f
+2,3,2,2,2,2,Siciliano,64,centu uccellini a nu tronco di
+3,3,3,2,3,3,Napoletano,65,"Le ffemmene, addorose de colat"
+4,3,3,4,4,4,Italiano (Auto),65,"Le donne, addormentate di cola"
+4,3,3,4,4,4,Parmigiano,65,"Il donne, addormentate di cola"
+4,3,3,3,4,4,Siciliano,65,"Li donni, addormentate di cola"
+2,3,2,4,1,2,Napoletano,66,"Ma chi te cride d’essere, nu d"
+2,2,1,4,1,3,Italiano (Auto),66,"Ma chi credi di essere, un dio"
+2,2,1,3,1,3,Parmigiano,66,"Ma chi credi di esor, un creat"
+2,2,1,2,1,2,Siciliano,66,"Ma cu credi di èssiri, nu deu?"
+2,3,4,3,3,2,Napoletano,67,"danzanno tutte ‘n chietta, (oh"
+4,3,4,3,4,4,Italiano (Auto),67,"danzando tutte in fila, (oh bu"
+4,3,4,2,4,3,Parmigiano,67,"danzando tutte in fila, (oh bó"
+3,3,4,2,4,3,Siciliano,67,"danzando tutti ndi ringu, (oh "
+2,3,3,3,2,2,Napoletano,68,"Madonna, si ce penzo che paura"
+3,3,3,3,3,3,Italiano (Auto),68,"Madonna, se ci penso che paura"
+2,3,4,3,2,2,Parmigiano,68,"Madònna, se agh penso che fifa"
+2,3,4,2,3,2,Siciliano,68,"Madonna, siddu cci penso ca as"
+3,3,3,3,3,3,Napoletano,69,Dove se trova mai tanta lianza
+4,3,3,4,4,4,Italiano (Auto),69,Dove si trova mai tanta allean
+3,3,2,3,2,3,Parmigiano,69,Dòvva agh trova mäi tanta alle
+3,3,3,2,2,2,Siciliano,69,Duvi si trova mai tanta allean
+3,3,3,2,3,2,Napoletano,70,Lo marito sì ccaro a la moglie
+4,3,4,3,4,4,Italiano (Auto),70,"Il marito sì caro alla moglie,"
+3,3,4,2,4,2,Parmigiano,70,Il marí sì carinón a la mojéra
+2,2,2,2,2,2,Siciliano,70,"Lu maritu sini caru â moglie,"
+3,3,3,2,4,2,Napoletano,71,che a mano a mano ‘ntravano a 
+4,3,4,3,5,4,Italiano (Auto),71,che a mano a mano entravano in
+2,3,3,2,4,2,Parmigiano,71,che a man a man entravano in ’
+3,3,4,2,4,2,Siciliano,71,ca a manu a manu entravano ndi
+3,3,4,2,4,3,Napoletano,72,co chella ciaramella tant’alle
+4,3,5,2,5,4,Italiano (Auto),72,con quella ciaramella tanto al
+3,3,4,2,4,3,Parmigiano,72,cón còlla ciaramella tant alle
+2,3,4,2,4,2,Siciliano,72,cu dda ciaramedda tantu allegr
+2,3,3,3,3,2,Napoletano,73,"Vedive, a chioppa a chioppa, n"
+4,3,3,3,4,3,Italiano (Auto),73,"Vedete, a poco a poco, una par"
+2,3,3,2,3,2,Parmigiano,73,"Vedete, a zbrizlén a zbrizlén,"
+2,3,3,3,3,2,Siciliano,73,"Vedete, addesi, na paranza"
+3,3,3,2,4,2,Napoletano,74,co chell’antica e semprece man
+3,3,3,3,3,3,Italiano (Auto),74,con quella antica e sempre la 
+2,2,2,2,2,2,Parmigiano,74,cón còlla antica e sémpor la s
+2,3,2,2,2,2,Siciliano,74,cu dda antica e sempri a stiss
+3,3,3,2,3,2,Napoletano,75,Lo viecchio a chillo tiempo er
+3,3,3,2,4,3,Italiano (Auto),75,Il vecchio a quel tempo era zi
+2,3,3,2,3,2,Parmigiano,75,Il véc’ a quel tempàs era zite
+3,3,3,2,3,2,Siciliano,75,Lu vecchio a ddu tempu era zit
+3,3,3,3,3,3,Napoletano,76,co le brache stringate e ‘n jo
+3,3,3,3,4,3,Italiano (Auto),76,con le brache strette e un giu
+2,3,3,2,3,2,Parmigiano,76,cón il brache strette e un giu
+2,3,2,2,3,2,Siciliano,76,chî brache stritti e nu matalo
+2,3,3,2,2,2,Napoletano,77,Chillo non era tiempo ammagagn
+4,3,3,3,2,4,Italiano (Auto),77,Quello non era tempo ingannato
+4,3,3,2,2,4,Parmigiano,77,Còll non era tempàs ingannato!
+3,3,3,2,2,2,Siciliano,77,Ddu nun era tempu ingannato!
+3,3,3,2,3,2,Napoletano,78,Le ffemmene assettate mmiezo c
+3,3,3,3,3,3,Italiano (Auto),78,Le donne sedute in mezzo piazz
+3,3,3,3,3,3,Parmigiano,78,"Il donne sedute daméz piasa,"
+3,3,3,2,4,2,Siciliano,78,Li donni sedute ndi menzu chia
+3,3,3,2,3,2,Napoletano,79,non c’era n’ommo ch’avesse par
+4,3,3,3,4,4,Italiano (Auto),79,non c’era un uomo che avesse p
+2,3,3,2,3,2,Parmigiano,79,non c’era un bonòmm che avesse
+3,3,3,2,3,2,Siciliano,79,nun c’era nu omu ca avesse par
+2,3,3,1,3,2,Napoletano,80,ca vernava ‘n cajola la cajazz
+2,3,2,3,3,2,Italiano (Auto),80,che portava una cazzuola alla 
+3,3,3,2,3,2,Parmigiano,80,che portava ’n casôla a la caz
+2,3,3,2,3,2,Siciliano,80,ca portava na cazzuola â cazza
+2,3,2,2,3,2,Napoletano,81,era tenuto pe gallo de razza.
+3,3,3,3,3,3,Italiano (Auto),81,Era tenuto per gallo di razza.
+3,3,3,2,3,2,Parmigiano,81,Era tenuto per ciarètt di rasa
+2,3,3,2,3,2,Siciliano,81,Era tenuto pi addu di inìa.
+4,3,3,2,3,3,Napoletano,82,Ll’uno co ll’autro lo mostrav’
+4,3,2,3,2,4,Italiano (Auto),82,L’uno con l’altro lo mostrava 
+3,3,3,3,3,3,Parmigiano,82,L’’n cón l’ätor lo mostrava a 
+3,3,3,2,3,2,Siciliano,82,L’nu cu l’antru lu mostrava a 
+2,3,4,4,4,2,Napoletano,83,"“Chillo che passa mo, chill’è "
+3,3,3,3,3,3,Italiano (Auto),83,"“Quello che passa ora, quello "
+3,3,3,2,3,2,Parmigiano,83,"“Còll che passa òra, còll è lo"
+2,2,2,2,2,1,Siciliano,83,"“Ddu ca passa ora, ddu è lu ma"
+3,3,2,2,2,2,Napoletano,84,Tutte le bon’ausanze so’ lassa
+2,2,2,3,2,3,Italiano (Auto),84,Tutte le buone usanze sono las
+2,3,2,3,3,2,Parmigiano,84,Tutte il buone usanze sono las
+4,3,2,2,2,3,Siciliano,84,Tutti li puliti usanze sono la
+2,3,3,2,4,2,Napoletano,85,Le rose mo deventano papagne!
+3,3,3,3,4,3,Italiano (Auto),85,Le rose ora diventano panni!
+3,3,3,3,3,3,Parmigiano,85,Il rose òra diventano pàgn!
+3,3,3,3,3,3,Siciliano,85,Li rosi ora diventano panni!
+3,3,3,2,4,2,Napoletano,86,"Lo vicenato, ‘n chietta e ‘n l"
+4,3,3,3,4,3,Italiano (Auto),86,"Il vicinato, in fila e in libe"
+4,3,4,3,4,3,Parmigiano,86,"Il vicinato, in fila e in liba"
+3,3,4,2,3,2,Siciliano,86,"Lu vicinatu, ndi ringu e ndi l"
+2,3,3,2,3,2,Napoletano,87,a chillo tiempo jevano a li va
+3,3,3,3,4,3,Italiano (Auto),87,a quel tempo andava alle bagni
+3,3,3,2,4,2,Parmigiano,87,"a quel tempàs andava al bagni,"
+2,3,3,2,4,2,Siciliano,87,"a ddu tempu andava ê bagni,"
+2,1,1,4,1,2,Napoletano,88,Pecché ‘ncopp’a sta terra femm
+3,2,1,3,2,3,Italiano (Auto),88,Perché su questa terra donne c
+2,1,1,2,1,2,Parmigiano,88,Parchè su còsta téra donne cme
+2,1,1,2,1,2,Siciliano,88,Pirchì cadà chista terra donni
+3,3,4,2,4,2,Napoletano,89,Si ddoce comme ‘o zucchero
+3,3,5,3,4,3,Italiano (Auto),89,Sei dolce come lo zucchero
+2,3,2,2,3,2,Parmigiano,89,Séz intrigón cme lo sùccor
+3,3,5,2,4,2,Siciliano,89,Sei duci comu lu zùccaru
+3,3,4,2,4,2,Napoletano,90,"E ghievano abbracciate a otto,"
+3,3,3,3,3,3,Italiano (Auto),90,"E venivano abbracciate a otto,"
+4,3,3,2,4,3,Parmigiano,90,"E venivano abbracciate a òt, a"
+3,3,3,3,3,3,Siciliano,90,"E venivano abbracciate a otto,"
+3,3,3,2,3,2,Napoletano,91,cchiù ghianche e rosse che le 
+3,3,3,3,3,3,Italiano (Auto),91,più bianche e rosse che le mel
+2,3,2,2,3,2,Parmigiano,91,pu bianche e rosse che il mele
+2,3,3,1,3,2,Siciliano,91,cchiù bianche e rosse ca li pu
+3,3,3,2,4,2,Napoletano,92,Chella co la gonnella de scarl
+3,3,3,3,4,3,Italiano (Auto),92,Quella con la gonnellina di sc
+4,3,3,3,4,3,Parmigiano,92,Còlla cón la gonnellina di sca
+3,3,3,2,4,3,Siciliano,92,Dda câ gonnellina di scarlatto
+3,3,2,2,3,2,Napoletano,93,portava perne grosse comm’antr
+2,3,2,2,3,2,Italiano (Auto),93,portava gambe grosse come antr
+1,3,2,2,3,1,Parmigiano,93,portava furli grosse cme antri
+2,3,2,2,3,2,Siciliano,93,portava jammi grosse comu antr
+4,3,4,5,4,3,Napoletano,94,O Puorto 'e Napule è nu puorto
+5,3,3,5,5,4,Italiano (Auto),94,Il Porto di Napoli è un porto 
+3,3,3,4,4,3,Parmigiano,94,Il Porto di Napoli è un porto 
+4,3,4,4,5,4,Siciliano,94,Lu Portu di Napoli è nu portu 
+3,3,3,4,4,3,Napoletano,95,È uno d''e cchiù mpurtanti puo
+4,3,3,4,4,4,Italiano (Auto),95,È uno dei porti più importanti
+3,3,3,3,4,2,Parmigiano,95,È ’n di porti pu importanti d'
+3,3,3,4,4,3,Siciliano,95,È nu dî porti cchiù importanti
+4,3,3,5,4,3,Napoletano,96,Melito 'e Napule (ditto Mêlito
+3,2,3,4,3,3,Italiano (Auto),96,Melito di Napoli (detto Mêlito
+2,3,3,4,4,2,Parmigiano,96,Melito di Napoli (detto Mêlito
+3,3,4,4,4,3,Siciliano,96,Melito di Napoli (detto Mêlito
+4,3,3,4,4,4,Napoletano,97,O Regno 'e Napule (nomme uffic
+5,3,3,4,5,5,Italiano (Auto),97,Il Regno di Napoli (nome uffic
+5,3,3,4,5,5,Parmigiano,97,Il Regno di Napoli (nòmm uffic
+4,3,3,3,4,4,Siciliano,97,Lu Regno di Napoli (nomu offic
+5,3,3,4,5,4,Napoletano,98,O gurfo 'e Napule è na 'nzenat
+5,3,3,4,5,5,Italiano (Auto),98,Il golfo di Napoli è un‘insena
+5,3,3,4,5,5,Parmigiano,98,Il golfo di Napoli è un‘insena
+4,3,3,3,4,4,Siciliano,98,Lu golfo di Napoli è nu‘insena
+4,3,4,5,4,3,Napoletano,99,A Zona Nnustriale (o Gianturco
+4,2,3,5,4,4,Italiano (Auto),99,La Zona Industriale (o Giantur
+4,3,3,5,4,4,Parmigiano,99,La Zona Industriale (o Giantur
+3,3,3,4,4,3,Siciliano,99,A Ària Industriale (o Gianturc
+4,3,3,4,4,3,Napoletano,100,O nomme Gianturco vene d''a vi
+4,3,3,4,5,4,Italiano (Auto),100,Il nome Gianturco viene dalla 
+4,3,3,4,5,3,Parmigiano,100,Il nòmm Gianturco viene dalla 
+4,3,3,3,4,3,Siciliano,100,Lu nomu Gianturco viene dâ dro
+4,5,4,3,5,3,Napoletano,101,Tutte 'e cristiane nasceno lib
+5,5,5,4,5,5,Italiano (Auto),101,Tutte le persone nascono liber
+4,5,4,3,5,4,Parmigiano,101,Tutte il persone nascono liber
+4,5,4,2,5,3,Siciliano,101,Tutti li persone nascono liber
+4,3,4,3,4,3,Napoletano,102,O nnapulitano è na lengua ruma
+5,4,3,4,5,5,Italiano (Auto),102,Il napoletano è una lingua rom
+4,4,3,3,4,4,Parmigiano,102,Il napoletano è ’n lengua roma
+4,4,3,3,4,3,Siciliano,102,Lu napulitanu è na rumànica ca
+4,4,3,3,4,4,Napoletano,103,"Soletamente, però, so' cchiamm"
+4,4,3,4,5,4,Italiano (Auto),103,"Solitamente, però, così sono c"
+4,4,3,3,4,4,Parmigiano,103,"Solitamente, però, acsí sono c"
+4,4,3,3,4,4,Siciliano,103,"Solitamente, però, accussì son"
+4,4,3,5,4,4,Napoletano,104,Chesta idea nun è 'a stessa pe
+5,4,3,4,5,5,Italiano (Auto),104,Questa idea non è la stessa pe
+4,3,3,3,4,4,Parmigiano,104,Còsta idea non è la stessa per
+4,4,3,3,4,4,Siciliano,104,Chista idea nun è a stissa pi 
+3,4,3,4,4,3,Napoletano,105,O Nnapulitano è na lengua o nu
+3,3,3,4,4,3,Italiano (Auto),105,Il Napoletano è una lingua o u
+4,3,3,4,3,3,Parmigiano,105,Il Napoletano è ’n lengua o un
+3,4,3,3,4,3,Siciliano,105,Lu Napulitanu è na lingua o nu
+2,3,3,3,3,2,Napoletano,106,Chi 'o pparla e addò?​
+4,3,3,3,4,3,Italiano (Auto),106,Chi la parla e dove?​
+3,3,3,2,3,3,Parmigiano,106,Chi la parla e dòvva?​
+2,3,3,2,3,2,Siciliano,106,Cu a parla e duvi?​
+3,4,3,3,4,3,Napoletano,107,"E ancora, quanno s'avess' 'a p"
+4,4,3,4,4,4,Italiano (Auto),107,"E ancora, quando si dovrebbe p"
+3,3,3,3,3,3,Parmigiano,107,"E ancòrra, quand agh dovrebbe "
+3,3,3,2,3,2,Siciliano,107,"E àncura, quannu si dovrebbe p"
+2,3,3,5,3,2,Napoletano,108,Nun ce sta periculo ca 'stu fa
+3,3,3,4,4,3,Italiano (Auto),108,Non c’è pericolo che questo su
+3,3,4,4,4,3,Parmigiano,108,Non c’è perìccol che còst succ
+3,3,3,4,4,3,Siciliano,108,Nun c’è pirìculu ca chistu suc
+4,4,4,5,4,4,Napoletano,109,O fatto è ca ê ffamiglie e ê p
+4,3,4,4,5,4,Italiano (Auto),109,Il fatto è che alle famiglie e
+4,3,3,4,4,4,Parmigiano,109,Il fat è che al famiglie e ai 
+4,3,4,4,5,4,Siciliano,109,Lu fattu è ca ê famiglie e ê n
+3,3,3,3,3,3,Napoletano,110,"Museciste e judece, chianchier"
+4,3,3,3,4,4,Italiano (Auto),110,"Musiciste e giudici, chiacchie"
+4,4,4,3,4,4,Parmigiano,110,"Musiciste e giudici, chiacchie"
+4,3,3,3,4,3,Siciliano,110,"Musiciste e giudici, chiacchie"
+5,5,4,5,4,4,Napoletano,111,Pe tutte ll'anne ca io songo s
+4,5,4,5,4,5,Italiano (Auto),111,Per tutti gli anni che io sono
+4,5,4,4,4,4,Parmigiano,111,Per tutti agh anni che mi sono
+3,4,4,3,4,3,Siciliano,111,Pi tutti li anni ca mianu sono
+3,3,3,2,3,2,Napoletano,112,Ogni scarrafone è bello 'a mam
+3,3,3,3,4,3,Italiano (Auto),112,Ogni scarafaggio è bello a sua
+3,4,3,2,4,3,Parmigiano,112,Ogni scarafàs è bél a sòa mama
+3,3,4,2,4,2,Siciliano,112,Ogni mappapani è beddu a sò nu
+4,3,4,2,4,3,Napoletano,113,A cucina piccerella fa la casa
+4,4,4,3,5,4,Italiano (Auto),113,La cucina piccola fa la casa g
+3,3,4,2,4,3,Parmigiano,113,La cucina piccola fa la ca gra
+3,3,4,2,4,2,Siciliano,113,A cucina picciridda fa a casa 
+3,3,3,4,3,3,Napoletano,114,Ccà nisciuno è fesso.​
+3,3,2,4,2,3,Italiano (Auto),114,Qui nessuno è fesso.​
+2,2,1,2,2,2,Parmigiano,114,Csichenchì nisón è fesso.​
+3,2,2,3,2,2,Siciliano,114,Ccà nuddu è fissa.​
+3,4,3,2,4,3,Napoletano,115,Chi nun sape chiagnere nun sap
+4,4,3,3,4,4,Italiano (Auto),115,Chi non sa piangere non sa nea
+4,3,3,2,4,3,Parmigiano,115,Chi non sa cridär non sa neanc
+4,3,3,2,3,3,Siciliano,115,Cu nun sa chiànciri nun sa nea
+4,3,4,5,4,4,Napoletano,116,"Vide Napule, e po' muore.​"
+4,3,3,4,3,4,Italiano (Auto),116,"Vedi Napoli, e poi muori.​"
+4,3,3,4,4,4,Parmigiano,116,"Vedi Napoli, e poi muori.​"
+4,3,3,4,3,4,Siciliano,116,"Vedi Napoli, e poi muori.​"
+3,4,3,3,4,3,Napoletano,117,A 'o core nun se cumanna.
+3,4,4,3,4,3,Italiano (Auto),117,Al cuore non si comanda.
+3,4,3,2,4,3,Parmigiano,117,Al cór non agh comanda.
+3,4,4,2,4,2,Siciliano,117,Ô cori nun si comanda.
+3,3,3,2,3,2,Napoletano,118,Tutto 'o lassato è perduto.
+4,3,3,3,4,4,Italiano (Auto),118,Tutto ciò che è lasciato è per
+4,3,3,3,3,3,Parmigiano,118,Incósa ciò che è lasciato è pe
+3,3,3,2,3,2,Siciliano,118,Tuttu nzoccu è lassatu è perdu
+4,3,3,2,3,3,Napoletano,119,"Chiù 'a capa è vacante, chiù '"
+3,2,2,3,3,3,Italiano (Auto),119,"Più la testa è vuota, più la l"
+2,2,2,2,2,2,Parmigiano,119,"Pu la paracúl è vuota, pu la l"
+3,2,2,2,3,2,Siciliano,119,"Cchiù a caramonia è vacanti, c"
+3,2,2,2,3,2,Napoletano,120,"Si sí felice, tienetello pe te"
+4,2,2,3,3,3,Italiano (Auto),120,"Se sei felice, tienitelo per t"
+3,2,2,2,3,2,Parmigiano,120,"Se séz felice, tienitelo per t"
+4,2,2,2,3,2,Siciliano,120,"Siddu sei filici, tienitelo pi"
+3,3,3,2,3,2,Napoletano,121,"Vulesse, potesse e facesse, er"
+4,3,2,3,3,4,Italiano (Auto),121,"Volere, potere e fare, erano t"
+3,3,3,2,3,2,Parmigiano,121,"Vrèr, potere e conzubiär, eran"
+4,3,3,3,4,3,Siciliano,121,"Vuliri, pòtisi e fari, erano t"
+3,2,3,2,4,2,Napoletano,122,Nun ve 'ntricate tra marito e 
+4,2,2,3,3,3,Italiano (Auto),122,Non vi intromettete tra marito
+3,2,2,2,3,2,Parmigiano,122,Non av intromettete tra marí e
+2,2,2,2,2,2,Siciliano,122,Nun vi intromettete ntra marit
+4,3,3,3,4,3,Napoletano,123,"Chi bella vo' paré', pene e gu"
+3,2,2,2,3,2,Italiano (Auto),123,"Chi vuole apparire bella, pene"
+4,3,3,2,3,3,Parmigiano,123,"Chi vuole apparire béla, viané"
+4,2,3,1,3,2,Siciliano,123,"Cu vuole apparire bedda, acedd"
+2,3,3,2,3,2,Napoletano,124,Se mangiaie duie chile d'uva '
+2,3,3,3,4,3,Italiano (Auto),124,Mangiai due chili d’uva nascos
+2,3,3,2,4,2,Parmigiano,124,Mangiai dò chili d’jàdga scond
+2,3,3,2,4,2,Siciliano,124,Mangiai dù chili d’racina ammu
+2,3,3,3,3,2,Napoletano,125,"Già, me faceva male 'o pede."
+3,3,3,3,4,3,Italiano (Auto),125,"Già, mi faceva male il piede."
+3,3,3,2,4,2,Parmigiano,125,"Zà, am faceva mäl il pè."
+2,3,3,2,4,2,Siciliano,125,"Jà, mi faceva mali lu peri."
+2,3,2,4,2,2,Napoletano,126,E pecché avess' 'a ji' malamen
+3,3,3,3,4,3,Italiano (Auto),126,E perché mai dovrei andare mal
+2,2,2,3,2,2,Parmigiano,126,E parchè mäi dovrei andär a bi
+3,3,3,3,3,2,Siciliano,126,E pirchì mai dovrei annari mal
+3,3,2,4,3,2,Napoletano,127,Nu mumento... Io nun me so' sb
+4,2,2,3,3,4,Italiano (Auto),127,Un momento... Io non mi sono s
+3,3,3,3,4,3,Parmigiano,127,Un momintén... Mi non am sono 
+3,3,3,2,3,2,Siciliano,127,Nu momento... Mianu nun mi son
+3,3,2,3,2,3,Napoletano,128,Ma a me mi pare che si abusi d
+4,3,2,4,2,4,Italiano (Auto),128,Ma a me mi pare che si abusi d
+3,3,2,3,2,3,Parmigiano,128,Ma a am am pare che agh abusi 
+3,2,2,2,2,2,Siciliano,128,Ma mi mi pare ca si abusi dâ c
+3,3,2,4,2,2,Napoletano,129,"Guè, ccà se tratta 'e na cosa "
+4,3,2,4,2,3,Italiano (Auto),129,"Guè, qui si tratta di una cosa"
+3,3,2,3,2,2,Parmigiano,129,"Guè, csichenchì agh tratta di "
+3,3,3,4,2,2,Siciliano,129,"Guè, ccà si tratta di na cosa "
+3,3,2,4,2,2,Napoletano,130,Nun tene 'o curaggio d'ascì cc
+3,2,1,4,2,3,Italiano (Auto),130,Non hai il coraggio di uscire 
+2,2,2,3,2,3,Parmigiano,130,Non hai il corag’ di sortìr cs
+3,2,2,2,2,2,Siciliano,130,Nun hai lu curaggiu di nèsciri
+2,2,1,3,1,2,Napoletano,131,"Statte zitto, ca manco tu he c"
+2,2,1,4,1,3,Italiano (Auto),131,"Stai zitto, che neanche tu hai"
+2,2,1,3,2,2,Parmigiano,131,"Stai sìtt, che neanche ti hai "
+2,2,1,3,1,3,Siciliano,131,"Stai zittu, ca neanche tu hai "
+2,2,2,3,2,1,Napoletano,132,Io nun saccio leggere e po' ca
+2,2,2,3,2,2,Italiano (Auto),132,Io non so leggere e poi carte 
+2,2,2,2,2,2,Parmigiano,132,Mi non so lézor e poi cärti no
+2,2,1,2,1,2,Siciliano,132,Mianu nun so lèiri e poi carte
+4,3,2,3,2,2,Napoletano,133,Allora io aggio spiso na vita 
+4,3,3,4,2,4,Italiano (Auto),133,Allora io ho speso una vita pe
+4,2,2,2,2,2,Parmigiano,133,Alóra mi ho speso ’n vitasa pe
+2,2,2,2,2,2,Siciliano,133,Ntonzi mianu ho speso na vita 
+2,2,1,3,1,2,Napoletano,134,"E chi si' tu, ca me vuò mpedì "
+3,2,2,3,2,3,Italiano (Auto),134,"E chi sei tu, che vuoi impedir"
+3,2,2,2,1,3,Parmigiano,134,"E chi séz ti, che vuoi impedir"
+2,2,1,2,1,2,Siciliano,134,"E cu sei tu, ca vuoi impedirmi"
+2,2,2,3,1,2,Napoletano,135,"E va bbuono, mo basta!"
+3,3,2,3,2,3,Italiano (Auto),135,"E va bene, ora basta!"
+2,3,2,2,2,3,Parmigiano,135,"E va bén, òra basta!"
+2,2,2,2,2,2,Siciliano,135,"E va bonu, ora abbasta!"
+2,3,3,3,2,2,Napoletano,136,Dimane me manno a piglià 'a rr
+3,3,3,3,3,3,Italiano (Auto),136,Domani mi mandano a prendere l
+3,3,2,2,4,2,Parmigiano,136,Dmàn am mandano a ruscär il mi
+2,3,3,2,3,2,Siciliano,136,Dumani mi mandano a pigghiari 
+2,2,2,3,2,2,Napoletano,137,Te putevo dicere ca tutt'e tre
+3,2,1,3,2,3,Italiano (Auto),137,Ti avrei potuto dire che tutte
+2,3,2,2,2,2,Parmigiano,137,Ti avrei potuto dìr che tutte 
+2,3,2,2,2,2,Siciliano,137,Ti avrei potuto diri ca tutti 
+2,2,1,2,1,2,Napoletano,138,"No una, ma ciento vote, me l'a"
+2,2,1,3,1,3,Italiano (Auto),138,"No una, ma cento volte, me l’a"
+2,2,2,2,1,2,Parmigiano,138,"No ’n, ma sént volte, am l’avr"
+2,2,2,2,1,2,Siciliano,138,"Nicci na, ma centu volte, mìa "
+2,3,3,3,2,2,Napoletano,139,Me mettette appaura 'e t' 'o d
+3,3,3,3,2,3,Italiano (Auto),139,Mi hai messo paura a dirtelo! 
+3,3,4,2,3,2,Parmigiano,139,Am hai messo fifa a dirtelo! S
+2,3,3,2,2,2,Siciliano,139,Mi hai misizzu assumbru a dirt
+2,3,2,4,3,2,Napoletano,140,Hann’ ‘a essere eguale tutt' '
+4,2,2,3,2,3,Italiano (Auto),140,Devono essere uguali tutte e t
+2,3,2,2,2,2,Parmigiano,140,Devono esor uguali tutte e tri
+2,3,2,2,2,2,Siciliano,140,Devono èssiri uguali tutti e t
