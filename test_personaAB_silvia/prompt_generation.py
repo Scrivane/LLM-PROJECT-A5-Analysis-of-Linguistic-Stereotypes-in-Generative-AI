@@ -17,7 +17,7 @@ import csv
 
 api_key_google="placeholder"
 groq_token="placeholder"
-api_key_minstral="CfOQqZpCn8TcnIdNjwpOdkE1kuzvnFFc"
+api_key_minstral="placeholder"
 
 
 def convert_prompt_silvia_to_csv(input_path: str = "translation/prompt_Silvia.md", output_path: str = "translation/prompt_Silvia.csv") -> int:
