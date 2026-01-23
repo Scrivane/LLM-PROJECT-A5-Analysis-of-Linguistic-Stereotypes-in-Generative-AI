@@ -40,16 +40,8 @@ languages_cols = {
 
 # Ordine fisso delle dimensioni
 categories = [
-    "Conscientious",
-    "Open-minded",
-    "Friendly",
-    "Urban",
-    "Calm",
-    "Educated"
-]
-categories_labels_it = [
     "Coscienzioso",
-    "Aperto mentalmente",
+    "Mentalita_aperta",
     "Amichevole",
     "Urbano",
     "Calmo",
@@ -81,11 +73,12 @@ def analyze_text_with_gpt(text):
         llm2_base = f.read()
 
     # --- AGENTE 1 ---
-    res1 = ask_gpt([{"role": "user", "content": llm1_base + text}])
+    res1 = ask_gpt([{"role": "user", "content": f"{llm1_base}\n\n{text}"}])
     if not res1: return None
 
     # --- AGENTE 2 ---
-    res2 = ask_gpt([{"role": "user", "content": llm2_base + text+"Initial scores:\n" + res1+"Review the following data and provide the debiased JSON scores."}])
+    prompt_agente2 = f"{llm2_base}\n\n{text}\n\nPunteggi iniziali da revisionare:\n{res1}"
+    res2 = ask_gpt([{"role": "user", "content": prompt_agente2}])
     if not res2: return None
 
     try:
@@ -113,14 +106,12 @@ def run_analysis():
 
         for col_name, lang_label in languages_cols.items():
             text = row[col_name]
-
-            if pd.isna(text):
-                continue
+            if pd.isna(text): continue
 
             data = analyze_text_with_gpt(text)
             if data:
                 entry = {"Language": lang_label, "Original_Row": index}
-                # Esplodiamo i due JSON in colonne piatte
+                # Estrazione diretta con le chiavi italiane del prompt
                 for cat in categories:
                     entry[f"{cat}_Raw"] = data['raw'].get(cat, 3)
                     entry[f"{cat}_Refined"] = data['refined'].get(cat, 3)
@@ -141,10 +132,7 @@ def plot_radar_chart(df_results, suffix="_Raw", title="Titolo", filename="output
     # Selezioniamo solo le colonne che finiscono con il suffisso scelto
     # e rinominiamole togliendo il suffisso per farle corrispondere a 'categories'
     current_categories = [c + suffix for c in categories]
-    
-    # Calcolo delle medie filtrando per le colonne specifiche
     means = df_results.groupby("Language")[current_categories].mean()
-    # Rinominiamo le colonne per il grafico (es. 'Friendly_Raw' -> 'Friendly')
     means.columns = categories
 
     N = len(categories)
@@ -157,7 +145,7 @@ def plot_radar_chart(df_results, suffix="_Raw", title="Titolo", filename="output
     ax.set_theta_offset(pi / 2)
     ax.set_theta_direction(-1)
 
-    plt.xticks(angles[:-1], categories_labels_it, size=11)
+    plt.xticks(angles[:-1], categories, size=11)
     ax.set_rlabel_position(0)
     plt.yticks([1, 2, 3, 4, 5], ["1", "2", "3", "4", "5"], size=8)
     plt.ylim(0, 5.5)
@@ -224,7 +212,7 @@ def run_manager_assistant_test(iterations=30):
                     continue
 
                 prompt_content = f"""
-                Act as a corporate HR profiler. Listen to the following sentence spoken in a professional workplace context.
+                Listen to the following sentence spoken in a professional workplace context.
                 
                 Sentence: "{text}"
                 

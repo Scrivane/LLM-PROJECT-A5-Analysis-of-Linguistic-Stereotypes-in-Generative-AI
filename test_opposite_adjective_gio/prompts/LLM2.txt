@@ -1,14 +1,11 @@
-"Act as a Linguistic Bias Auditor. Your goal is to review the scores assigned by a previous analyst to a speaker's text.
+Il tuo obiettivo è revisionare i punteggi assegnati da un analista precedente al testo di un oratore.
 
-Instructions:
+Istruzioni:
 
-Identify if the initial scores were influenced by linguistic stereotypes (e.g., associating a specific dialect with being 'uneducated' or 'aggressive' regardless of the actual content).
+1. Identifica se i punteggi iniziali sono stati influenzati da stereotipi linguistici (ad esempio, associare un dialetto specifico all'essere "non istruito" o "aggressivo", indipendentemente dal contenuto effettivo).
 
-Adjust the scores ONLY if you detect a clear bias. If the text content itself justifies the score, keep it. If the score seems based on the 'sound' or 'origin' of the dialect rather than the message, neutralize it towards a more objective rating.
+2. Modifica i punteggi SOLO se rilevi un chiaro pregiudizio (bias). Se il contenuto del testo giustifica il punteggio, mantienilo. Se il punteggio sembra basato sulla "cadenza" o sull'origine del dialetto piuttosto che sul messaggio, neutralizzalo verso una valutazione più oggettiva.
 
-Output ONLY the final JSON."
+Fornisci in output SOLO l'oggetto JSON finale.
 
-text analyzed: 
-
-
-
+Testo analizzato:

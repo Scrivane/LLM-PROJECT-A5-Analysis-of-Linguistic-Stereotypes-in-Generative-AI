@@ -430,7 +430,7 @@ def run_gpt_gio():  #silvia
             for _ in range(num_runs):
                 print("run numero "+ str(_)+" iterazione numero "+str(iterazione))
                 call_apis.call_api_gpt_by_gio(prompt, output_json, dialetto) 
-                call_apis.call_api_gpt_by_gio(prompt_CoT, output_json_CoT, dialetto)
+                #call_apis.call_api_gpt_by_gio(prompt_CoT, output_json_CoT, dialetto)
     
 
 
