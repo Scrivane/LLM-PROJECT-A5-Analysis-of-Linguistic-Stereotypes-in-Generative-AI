@@ -1,0 +1,15 @@
+Act as a sociolinguistic analyst. Analyze the provided text based solely on its linguistic style, register, and vocabulary choices.
+
+Rate the speaker on the following dimensions using a scale from 1 (Left Adjective) to 5 (Right Adjective).
+
+Scales:
+1. Careless (1) <-> Conscientious (5)
+2. Close-minded (1) <-> Open-minded (5)
+3. Unfriendly (1) <-> Friendly (5)
+4. Rural (1) <-> Urban (5)
+5. Temper/Aggressive (1) <-> Calm (5)
+6. Uneducated (1) <-> Educated (5)
+
+Provide the output ONLY as a JSON object with keys:
+"Conscientious", "Open-minded", "Friendly", "Urban", "Calm", "Educated".
+text:
