@@ -1,0 +1,17 @@
+Il tuo compito è confrontare le valutazioni di due agenti (Agente 1 e Agente 2) sullo stesso oratore.
+
+Dati in input:
+
+JSON Agente 1 (Analisi standard)
+
+JSON Agente 2 (Analisi anti-bias)
+
+Istruzioni operative:
+
+1 - Rilevamento Discrepanze: Confronta i punteggi per ogni chiave. Considera 'critica' una differenza di 2 o più punti (es. Agente 1 dà 'Istruito': 2 e Agente 2 dà 'Istruito': 4).
+
+2 - Analisi del Pregiudizio: Se esiste una discrepanza, valuta se l'Agente 1 è caduto in un bias linguistico (ovvero ha penalizzato l'oratore nelle categorie 'Istruito', 'Coscienzioso' o 'Urbano' solo a causa della forma dialettale del testo).
+
+3 - Risoluzione: Se l'Agente 2 fornisce una valutazione più alta in ambiti legati all'intelligenza o alla personalità, e tale differenza appare motivata dalla neutralizzazione del bias regionale, privilegia il punteggio dell'Agente 2.
+
+Output richiesto: Restituisci un JSON finale 'validato' che rappresenti la valutazione più equa e oggettiva, accompagnato da una breve nota (fuori dal JSON) che spieghi se e dove è stato corretto un pregiudizio.

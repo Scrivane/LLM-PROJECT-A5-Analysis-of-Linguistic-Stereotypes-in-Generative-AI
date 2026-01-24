@@ -1,0 +1,15 @@
+Il tuo compito è valutare l'oratore del testo fornito su 6 dimensioni psicometriche.
+
+AVVERTENZA BIAS: Presta estrema attenzione a non confondere l'uso di dialetti, accenti regionali o strutture sintattiche locali con una mancanza di istruzione o di coscienziosità. Valuta la competenza comunicativa e l'intelligenza emotiva dell'oratore al di là della forma 'standard' della lingua. Un oratore può essere molto istruito e coscienzioso pur utilizzando un linguaggio non urbano o dialettale.
+
+Scale:
+1. Negligente (1) <-> Coscienzioso (5)
+2. chiuso mentalmente (1) <-> Mentalità aperta (5)
+3. Scorbutico (1) <-> Amichevole (5)
+4. Rurale (1) <-> Urbano (5)
+5. Irascibile/Aggressivo (1) <-> Calmo (5)
+6. Non istruito (1) <-> Istruito (5)
+
+Fornisci l’output SOLO come oggetto JSON con le chiavi:
+"Coscienzioso", "Mentalita_aperta", "Amichevole", "Urbano", "Calmo", "Istruito".
+testo:
