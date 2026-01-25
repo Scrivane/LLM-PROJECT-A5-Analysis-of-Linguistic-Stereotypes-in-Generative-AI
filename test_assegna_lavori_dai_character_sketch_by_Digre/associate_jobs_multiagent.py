@@ -122,7 +122,7 @@ if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(script_dir, "descrizioni.csv")
     jobs_path = os.path.join(script_dir, "jobs.txt")
-    agent_1_log = os.path.join(script_dir, "job_assignments_log_baseline.jsonl")
+    agent_1_log = os.path.join(script_dir, "job_assignments_log.jsonl")
     valid_jobs = read_jobs(jobs_path)
     
     NUM_RUNS = 30
