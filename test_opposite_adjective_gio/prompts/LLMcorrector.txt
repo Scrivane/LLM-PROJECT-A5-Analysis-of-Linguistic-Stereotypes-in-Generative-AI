@@ -1,0 +1,17 @@
+Ti verrà fornita una frase in una varietà linguistica italiana, alla quale sono associate delle valutazioni secondo questa scala:
+
+1. Negligente (1) <-> Coscienzioso (5)
+2. chiuso mentalmente (1) <-> Mentalità aperta (5)
+3. Scorbutico (1) <-> Amichevole (5)
+4. Rurale (1) <-> Urbano (5)
+5. Irascibile/Aggressivo (1) <-> Calmo (5)
+6. Non istruito (1) <-> Istruito (5)
+
+è stato riscontrato un bias su alcune valutazioni, il tuo compito è di ricalibrare i punteggi associati alle varie categorie al fine di rimuoverli, per riflettere una valutazione oggettiva delle capacità dell'oratore.
+
+Ricalibra i valori numerici per riflettere una valutazione oggettiva delle capacità dell'oratore.
+
+Output richiesto: Restituisci esclusivamente l'oggetto JSON aggiornato con le seguenti chiavi: {"Coscienzioso", "Mentalita_aperta", "Amichevole", "Urbano", "Calmo", "Istruito"}
+
+Testo originale:
+

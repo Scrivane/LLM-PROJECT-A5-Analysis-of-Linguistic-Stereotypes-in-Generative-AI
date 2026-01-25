@@ -273,10 +273,104 @@ def run_manager_assistant_test(iterations=30):
     print(f"Grafico salvato in: {output_img}")
     plt.show()
 
-# --- MAIN ---
+
+def run_3agents():
+    """
+    Legge i risultati dell'Agente 1 da CSV, esegue il Giudice (Agente 2) 
+    e il Correttore (Agente 3). Salva i punteggi e il ragionamento del giudice.
+    """
+    # 1. Caricamento dati Agente 1 e Testo originale
+    df_raw = pd.read_csv("./test_opposite_adjective_gio/2agents/risultati_analisi_completi.csv")
+    df_texts = pd.read_csv(INPUT_FILE)
+    
+    # Caricamento Prompt
+    with open("./test_opposite_adjective_gio/prompts/LLMjudge.txt", "r", encoding="utf-8") as f:
+        prompt_giudice_base = f.read()
+    with open("./test_opposite_adjective_gio/prompts/LLMcorrector.txt", "r", encoding="utf-8") as f:
+        prompt_correttore_base = f.read()
+
+    final_results = []
+    inv_map = {v: k for k, v in languages_cols.items()}
+
+    print(f"Inizio revisione su {len(df_raw)} valutazioni...")
+
+    for index, row in df_raw.iterrows():
+        lang_label = row['Language']
+        orig_row_idx = int(row['Original_Row'])
+        
+        # Recupero testo originale (con check di sicurezza)
+        col_name = inv_map.get(lang_label)
+        if col_name and col_name in df_texts.columns:
+            text_content = df_texts.iloc[orig_row_idx][col_name]
+        else:
+            print(f"Salto riga {index}: colonna testo non trovata per {lang_label}")
+            continue
+
+        # Costruisco oggetto punteggi Agente 1
+        agent1_scores = {cat: row[f"{cat}_Raw"] for cat in categories}
+        
+        print(f"--- Revisione Riga {index} ({lang_label}) ---")
+
+        # --- AGENTE 2: IL GIUDICE ---
+        prompt_a2 = f"{prompt_giudice_base}\n\nTesto: {text_content}\npunteggi Agente 1: {json.dumps(agent1_scores)}"
+        res_a2 = ask_gpt([{"role": "user", "content": prompt_a2}], max_completion_tokens=500)
+        
+        # Pulizia del ragionamento per il CSV (rimozione newline per leggibilità)
+        judge_reasoning = res_a2.strip().replace("\n", " ") if res_a2 else "Errore nella risposta del giudice"
+        needs_revision = "REVISIONE NECESSARIA" in judge_reasoning.upper()
+        
+        # --- AGENTE 3: IL CORRETTORE ---
+        if needs_revision:
+            print(f"Bias rilevato dal Giudice. Attivazione Correttore...")
+            prompt_a3 = f"{prompt_correttore_base}\n\nTesto: {text_content}\npunteggi da ricalibrare: {json.dumps(agent1_scores)}\nNota Giudice: {judge_reasoning}"
+            res_a3 = ask_gpt([{"role": "user", "content": prompt_a3}])
+            try:
+                clean_a3 = res_a3.replace("```json", "").replace("```", "").strip()
+                final_scores = json.loads(clean_a3)
+            except:
+                print("Errore parsing JSON Agente 3, mantengo punteggi originali.")
+                final_scores = agent1_scores
+        else:
+            print(f"Nessun bias rilevato dal Giudice.")
+            final_scores = agent1_scores
+
+        # Costruzione entry per il CSV
+        entry = {
+            "Language": lang_label, 
+            "Original_Row": orig_row_idx,
+            "Ragionamento_Giudice": judge_reasoning
+        }
+        
+        for cat in categories:
+            entry[f"{cat}_Raw"] = agent1_scores[cat]
+            entry[f"{cat}_Final"] = final_scores.get(cat, agent1_scores[cat])
+        
+        final_results.append(entry)
+
+    # Salvataggio CSV Finale
+    df_final = pd.DataFrame(final_results)
+    output_path = "./test_opposite_adjective_gio/3agents/risultati_finali_multiagente.csv"
+    
+    # Assicurati che la cartella esista
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    df_final.to_csv(output_path, index=False)
+    
+    # Radar finale
+    plot_radar_chart(
+        df_final, 
+        suffix="_Final", 
+        title="Analisi Finale Multi-Agente (Post-Correzione)", 
+        filename="./test_opposite_adjective_gio/3agents/radar_finale.png"
+    )
+    
+    print(f"Processo completato. File salvato in: {output_path}")
+    return df_final
+
 if __name__ == "__main__":
-    df_results = run_analysis()
+    #df_results = run_analysis()
+    run_3agents()
     #  Genera il grafico per l'Agente 1 (Raw Response)
+    ''''
     plot_radar_chart(
         df_results, 
         suffix="_Raw", 
@@ -290,7 +384,9 @@ if __name__ == "__main__":
         title="Agente 2: Dopo Audit di Bias (Refined)", 
         filename="./test_opposite_adjective_gio/radar_agente2_refined.png"
     )
-    plot_radar_chart(df_results)
+    '''
+
+    #plot_radar_chart(df_results)
     #df_results = pd.read_csv(OUTPUT_DATA_FILE)
     #run_manager_assistant_test()
     # plot_radar_chart(df_results)

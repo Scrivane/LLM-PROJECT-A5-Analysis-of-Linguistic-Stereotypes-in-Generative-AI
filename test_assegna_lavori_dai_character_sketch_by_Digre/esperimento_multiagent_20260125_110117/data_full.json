@@ -1,0 +1,2102 @@
+[
+  {
+    "id": 1,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "administrator, assistant, clerk, operator, supervisor",
+    "jobs_Parmigiano": "accountant, analyst, administrator, manager, technician",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "manager, counselor, psychologist, coach, instructor",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "assistant, counselor, clerk, instructor, manager",
+    "jobs_Parmigiano": "farmer, mechanic, driver, guard, supervisor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "clerk, assistant, supervisor, driver, technician",
+    "jobs_Parmigiano": "administrator, analyst, manager, teacher, technician",
+    "jobs_Napoletano": "administrator, analyst, manager, supervisor, technician"
+  },
+  {
+    "id": 1,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete, coach, instructor, counselor, manager",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "manager, supervisor, assistant, clerk, technician",
+    "jobs_Parmigiano": "administrator, manager, supervisor, counselor, analyst",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "athlete, bartender, promoter, musician, instructor",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "assistant, administrator, clerk, supervisor, tutor",
+    "jobs_Parmigiano": "accountant, analyst, manager, engineer, teacher",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "author, counselor, manager, psychologist, teacher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "accountant, analyst, manager, instructor, researcher",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, developer, instructor, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "assistant, clerk, driver, supervisor, operator",
+    "jobs_Parmigiano": "administrator, manager, professor, researcher, analyst",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, counselor, psychologist, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "administrator, assistant, clerk, instructor, supervisor",
+    "jobs_Parmigiano": "administrator, analyst, manager, researcher, supervisor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "accountant, analyst, administrator, developer, manager",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "advisor, consultant, analyst, counselor, researcher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "administrator, manager, supervisor, analyst, developer",
+    "jobs_Napoletano": "manager, technician, supervisor, developer, analyst"
+  },
+  {
+    "id": 1,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, psychologist, pilot, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "assistant, clerk, assistant, operator, technician",
+    "jobs_Parmigiano": "accountant, administrator, analyst, manager, instructor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "coach, counselor, manager, instructor, psychologist",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "advisor, counselor, coach, mentor, instructor",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "manager, marketer, event planner, customer service representative, public relations specialist",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "administrator, assistant, clerk, supervisor, manager",
+    "jobs_Parmigiano": "farmer, mechanic, driver, guard, supervisor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "assistant, clerk, instructor, supervisor, technician",
+    "jobs_Parmigiano": "accountant, administrator, analyst, manager, technician",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "administrator, manager, engineer, counselor, teacher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "administrator, manager, supervisor, technician, assistant",
+    "jobs_Parmigiano": "farmer, mechanic, driver, guard, supervisor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, developer, instructor, manager, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "administrator, analyst, manager, supervisor, instructor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "assistant, attendant, clerk, counselor, supervisor",
+    "jobs_Parmigiano": "administrator, manager, inspector, accountant, engineer",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, researcher, manager, psychologist, teacher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "administrator, manager, inspector, counselor, instructor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, instructor, developer, pilot",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "farmer, mechanic, driver, guard, supervisor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, counselor, developer, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "farmer, mechanic, driver, guard, supervisor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "bartender, musician, model, photographer, artist",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "administrator, manager, counselor, technician, teacher",
+    "jobs_Napoletano": "administrator, assistant, clerk, manager, supervisor"
+  },
+  {
+    "id": 1,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, doctor, manager, developer, teacher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "administrator, assistant, clerk, supervisor, counselor",
+    "jobs_Parmigiano": "administrator, analyst, manager, researcher, teacher",
+    "jobs_Napoletano": "manager, instructor, technician, supervisor, developer"
+  },
+  {
+    "id": 1,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "coach, counselor, manager, instructor, psychologist",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "accountant, manager, instructor, technician, researcher",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "manager, entrepreneur, counselor, psychologist, teacher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "analyst, manager, engineer, teacher, researcher",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "administrator, analyst, manager, inspector, technician",
+    "jobs_Napoletano": "administrator, manager, technician, supervisor, developer"
+  },
+  {
+    "id": 1,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "consultant, counselor, coach, advisor, mentor",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "accountant, administrator, analyst, manager, researcher",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "analyst, counselor, developer, manager, psychologist",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "assistant, clerk, attendant, supervisor, assistant",
+    "jobs_Parmigiano": "accountant, administrator, analyst, manager, engineer",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, developer, pilot, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "accountant, administrator, analyst, manager, tutor",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, counselor, psychologist, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "manager, administrator, supervisor, analyst, consultant",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, developer, teacher, researcher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "farmer, mechanic, driver, cleaner, operator",
+    "jobs_Parmigiano": "accountant, manager, engineer, instructor, technician",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "athlete,coach,actor,model,soldier",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "administrator, assistant, clerk, counselor, manager",
+    "jobs_Parmigiano": "administrator, analyst, manager, supervisor, technician",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  },
+  {
+    "id": 1,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "athlete,actor,model,coach,soldier",
+    "jobs_Sicilian": "athlete,coach,model,actor,driver",
+    "jobs_Parmigiano": "engineer, manager, developer, researcher, teacher",
+    "jobs_Napoletano": "athlete, model, coach, actor, driver"
+  },
+  {
+    "id": 2,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "actress,pianist,chef,cook,artist",
+    "jobs_Sicilian": "pianist, chef, musician, cook, artist",
+    "jobs_Parmigiano": "artist,chef,assistant,designer,student",
+    "jobs_Napoletano": "artist,chef,cook,musician,writer"
+  },
+  {
+    "id": 3,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "administrator,advisor,counselor,manager,consultant",
+    "jobs_Sicilian": "advisor, counselor, professor, manager, writer",
+    "jobs_Parmigiano": "administrator,advisor,consultant,manager,teacher",
+    "jobs_Napoletano": "advisor,consultant,author,teacher,advisor"
+  },
+  {
+    "id": 4,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artist,designer,photographer,musician,model",
+    "jobs_Sicilian": "artist,actor,musician,photographer,model",
+    "jobs_Parmigiano": "artist, bartender, musician, model, photographer",
+    "jobs_Napoletano": "artist,actor,musician,dj,model"
+  },
+  {
+    "id": 5,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "engineer, manager, instructor, supervisor, technician",
+    "jobs_Sicilian": "accountant, administrator, analyst, manager, supervisor",
+    "jobs_Parmigiano": "administrator, analyst, manager, teacher, researcher",
+    "jobs_Napoletano": "farmer, mechanic, driver, cleaner, operator"
+  }
+]
