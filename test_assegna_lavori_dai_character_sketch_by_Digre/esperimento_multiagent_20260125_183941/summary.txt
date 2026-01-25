@@ -15,8 +15,7 @@ FREQUENZA LAVORI PER LINGUA/DIALETTO
 LAVORO                         | ITA   | SIC   | PAR   | NAP  
 --------------------------------------------------------------------------------
 accademico                     | 0     | 0     | 0     | 0    
-addetto alle pulizie           | 0     | 1     | 0     | 0    
-addetto/assistente             | 0     | 12    | 0     | 0    
+addetto alle pulizie           | 0     | 1     | 0     | 0      
 agricoltore                    | 30    | 9     | 22    | 17   
 allenatore                     | 30    | 30    | 27    | 30   
 amministratore                 | 0     | 3     | 34    | 37   
@@ -86,7 +85,7 @@ regista                        | 0     | 0     | 0     | 0
 revisore dei conti             | 0     | 0     | 30    | 0    
 ricercatore                    | 0     | 0     | 5     | 0    
 sarto                          | 0     | 0     | 0     | 0    
-sarto/cucitore                 | 0     | 0     | 29    | 0    
+sarto                          | 0     | 0     | 29    | 0    
 scienziato                     | 0     | 0     | 0     | 0    
 scrittore                      | 30    | 30    | 0     | 60   
 segretario                     | 0     | 1     | 0     | 0    

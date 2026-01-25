@@ -97,7 +97,7 @@ teacher                        | 0     | 0     | 40    | 30
 technician                     | 30    | 5     | 8     | 4    
 tutor                          | 0     | 1     | 1     | 0    
 veterinarian                   | 0     | 0     | 0     | 0    
-writer.                        | 0     | 0     | 0     | 0    
+writer                         | 0     | 30    | 0     | 30    
 
 ================================================================================
 REPORT ALLUCINAZIONI (Lavori non presenti in jobs.txt)
@@ -111,7 +111,6 @@ ITALIAN (Totale: 90):
 SICILIAN (Totale: 90):
   - pianist: 30 volte
   - advisor: 30 volte
-  - writer: 30 volte
 
 PARMIGIANO (Totale: 97):
   - advisor: 30 volte
@@ -127,6 +126,5 @@ PARMIGIANO (Totale: 97):
 
 NAPOLETANO (Totale: 150):
   - advisor: 60 volte
-  - writer: 30 volte
   - consultant: 30 volte
   - dj: 30 volte
