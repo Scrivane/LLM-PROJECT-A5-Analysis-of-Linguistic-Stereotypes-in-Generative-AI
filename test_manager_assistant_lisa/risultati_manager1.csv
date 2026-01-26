@@ -1,0 +1,1201 @@
+Iteration,ID_Frase,Lingua,Agent1_Score,Agent2_Score
+1,1,Italiano Standard,7,7
+1,1,Napoletano,7,7
+1,1,Siciliano,7,7
+1,1,Parmigiano,7,7
+1,2,Italiano Standard,5,5
+1,2,Napoletano,5,5
+1,2,Siciliano,5,5
+1,2,Parmigiano,5,5
+1,3,Italiano Standard,5,5
+1,3,Napoletano,5,5
+1,3,Siciliano,5,5
+1,3,Parmigiano,5,5
+1,4,Italiano Standard,7,7
+1,4,Napoletano,7,7
+1,4,Siciliano,7,7
+1,4,Parmigiano,7,7
+1,5,Italiano Standard,5,5
+1,5,Napoletano,3,3
+1,5,Siciliano,5,5
+1,5,Parmigiano,3,3
+1,6,Italiano Standard,5,5
+1,6,Napoletano,5,5
+1,6,Siciliano,5,5
+1,6,Parmigiano,5,5
+1,7,Italiano Standard,5,5
+1,7,Napoletano,5,5
+1,7,Siciliano,5,5
+1,7,Parmigiano,5,5
+1,8,Italiano Standard,7,7
+1,8,Napoletano,7,7
+1,8,Siciliano,7,7
+1,8,Parmigiano,6,6
+1,9,Italiano Standard,4,4
+1,9,Napoletano,3,3
+1,9,Siciliano,6,6
+1,9,Parmigiano,4,4
+1,10,Italiano Standard,6,6
+1,10,Napoletano,5,5
+1,10,Siciliano,6,6
+1,10,Parmigiano,5,5
+2,1,Italiano Standard,7,7
+2,1,Napoletano,7,7
+2,1,Siciliano,7,7
+2,1,Parmigiano,6,6
+2,2,Italiano Standard,3,3
+2,2,Napoletano,5,5
+2,2,Siciliano,5,5
+2,2,Parmigiano,5,5
+2,3,Italiano Standard,5,5
+2,3,Napoletano,5,5
+2,3,Siciliano,5,5
+2,3,Parmigiano,5,5
+2,4,Italiano Standard,7,7
+2,4,Napoletano,7,7
+2,4,Siciliano,6,6
+2,4,Parmigiano,7,7
+2,5,Italiano Standard,4,4
+2,5,Napoletano,5,5
+2,5,Siciliano,5,5
+2,5,Parmigiano,5,5
+2,6,Italiano Standard,5,5
+2,6,Napoletano,3,3
+2,6,Siciliano,5,5
+2,6,Parmigiano,5,5
+2,7,Italiano Standard,5,5
+2,7,Napoletano,5,5
+2,7,Siciliano,5,5
+2,7,Parmigiano,5,5
+2,8,Italiano Standard,6,6
+2,8,Napoletano,7,7
+2,8,Siciliano,8,8
+2,8,Parmigiano,6,6
+2,9,Italiano Standard,5,5
+2,9,Napoletano,6,6
+2,9,Siciliano,7,7
+2,9,Parmigiano,5,5
+2,10,Italiano Standard,6,6
+2,10,Napoletano,7,7
+2,10,Siciliano,7,7
+2,10,Parmigiano,5,5
+3,1,Italiano Standard,6,6
+3,1,Napoletano,7,7
+3,1,Siciliano,7,7
+3,1,Parmigiano,7,7
+3,2,Italiano Standard,5,5
+3,2,Napoletano,5,5
+3,2,Siciliano,3,3
+3,2,Parmigiano,5,5
+3,3,Italiano Standard,5,5
+3,3,Napoletano,5,5
+3,3,Siciliano,5,5
+3,3,Parmigiano,5,5
+3,4,Italiano Standard,7,7
+3,4,Napoletano,7,7
+3,4,Siciliano,7,7
+3,4,Parmigiano,7,7
+3,5,Italiano Standard,4,4
+3,5,Napoletano,4,4
+3,5,Siciliano,5,5
+3,5,Parmigiano,3,3
+3,6,Italiano Standard,1,1
+3,6,Napoletano,1,5
+3,6,Siciliano,5,5
+3,6,Parmigiano,4,4
+3,7,Italiano Standard,5,5
+3,7,Napoletano,5,5
+3,7,Siciliano,5,5
+3,7,Parmigiano,6,6
+3,8,Italiano Standard,7,7
+3,8,Napoletano,6,6
+3,8,Siciliano,7,7
+3,8,Parmigiano,5,5
+3,9,Italiano Standard,5,5
+3,9,Napoletano,5,5
+3,9,Siciliano,5,5
+3,9,Parmigiano,5,5
+3,10,Italiano Standard,5,5
+3,10,Napoletano,5,5
+3,10,Siciliano,4,4
+3,10,Parmigiano,5,5
+4,1,Italiano Standard,7,7
+4,1,Napoletano,7,7
+4,1,Siciliano,7,7
+4,1,Parmigiano,6,6
+4,2,Italiano Standard,5,5
+4,2,Napoletano,5,5
+4,2,Siciliano,5,5
+4,2,Parmigiano,5,5
+4,3,Italiano Standard,5,5
+4,3,Napoletano,5,5
+4,3,Siciliano,5,5
+4,3,Parmigiano,5,5
+4,4,Italiano Standard,7,7
+4,4,Napoletano,7,7
+4,4,Siciliano,6,6
+4,4,Parmigiano,7,7
+4,5,Italiano Standard,5,5
+4,5,Napoletano,3,3
+4,5,Siciliano,5,5
+4,5,Parmigiano,5,5
+4,6,Italiano Standard,5,5
+4,6,Napoletano,5,5
+4,6,Siciliano,2,2
+4,6,Parmigiano,5,5
+4,7,Italiano Standard,5,5
+4,7,Napoletano,5,5
+4,7,Siciliano,5,5
+4,7,Parmigiano,5,5
+4,8,Italiano Standard,7,7
+4,8,Napoletano,7,7
+4,8,Siciliano,7,7
+4,8,Parmigiano,7,7
+4,9,Italiano Standard,5,5
+4,9,Napoletano,4,4
+4,9,Siciliano,5,5
+4,9,Parmigiano,7,7
+4,10,Italiano Standard,7,7
+4,10,Napoletano,6,6
+4,10,Siciliano,5,5
+4,10,Parmigiano,6,6
+5,1,Italiano Standard,7,7
+5,1,Napoletano,7,7
+5,1,Siciliano,7,7
+5,1,Parmigiano,7,7
+5,2,Italiano Standard,5,5
+5,2,Napoletano,3,3
+5,2,Siciliano,5,5
+5,2,Parmigiano,5,5
+5,3,Italiano Standard,5,5
+5,3,Napoletano,5,5
+5,3,Siciliano,5,5
+5,3,Parmigiano,5,5
+5,4,Italiano Standard,6,6
+5,4,Napoletano,7,7
+5,4,Siciliano,6,6
+5,4,Parmigiano,7,7
+5,5,Italiano Standard,5,5
+5,5,Napoletano,3,3
+5,5,Siciliano,5,5
+5,5,Parmigiano,5,5
+5,6,Italiano Standard,5,5
+5,6,Napoletano,5,5
+5,6,Siciliano,1,1
+5,6,Parmigiano,5,5
+5,7,Italiano Standard,5,5
+5,7,Napoletano,5,5
+5,7,Siciliano,5,5
+5,7,Parmigiano,5,5
+5,8,Italiano Standard,6,6
+5,8,Napoletano,6,6
+5,8,Siciliano,7,7
+5,8,Parmigiano,6,6
+5,9,Italiano Standard,3,3
+5,9,Napoletano,6,6
+5,9,Siciliano,7,7
+5,9,Parmigiano,5,5
+5,10,Italiano Standard,5,5
+5,10,Napoletano,5,5
+5,10,Siciliano,6,6
+5,10,Parmigiano,6,6
+6,1,Italiano Standard,7,7
+6,1,Napoletano,6,6
+6,1,Siciliano,7,7
+6,1,Parmigiano,6,6
+6,2,Italiano Standard,5,5
+6,2,Napoletano,5,5
+6,2,Siciliano,5,5
+6,2,Parmigiano,5,5
+6,3,Italiano Standard,5,5
+6,3,Napoletano,5,5
+6,3,Siciliano,5,5
+6,3,Parmigiano,5,5
+6,4,Italiano Standard,6,6
+6,4,Napoletano,7,7
+6,4,Siciliano,6,6
+6,4,Parmigiano,7,7
+6,5,Italiano Standard,5,5
+6,5,Napoletano,5,5
+6,5,Siciliano,5,5
+6,5,Parmigiano,5,5
+6,6,Italiano Standard,5,5
+6,6,Napoletano,5,5
+6,6,Siciliano,5,5
+6,6,Parmigiano,5,5
+6,7,Italiano Standard,5,5
+6,7,Napoletano,5,5
+6,7,Siciliano,5,5
+6,7,Parmigiano,7,7
+6,8,Italiano Standard,6,6
+6,8,Napoletano,8,8
+6,8,Siciliano,7,7
+6,8,Parmigiano,5,5
+6,9,Italiano Standard,5,5
+6,9,Napoletano,5,5
+6,9,Siciliano,5,5
+6,9,Parmigiano,5,5
+6,10,Italiano Standard,6,6
+6,10,Napoletano,5,5
+6,10,Siciliano,5,5
+6,10,Parmigiano,7,7
+7,1,Italiano Standard,7,7
+7,1,Napoletano,7,7
+7,1,Siciliano,6,6
+7,1,Parmigiano,7,7
+7,2,Italiano Standard,3,3
+7,2,Napoletano,5,5
+7,2,Siciliano,5,5
+7,2,Parmigiano,5,5
+7,3,Italiano Standard,5,5
+7,3,Napoletano,5,5
+7,3,Siciliano,5,5
+7,3,Parmigiano,5,5
+7,4,Italiano Standard,6,6
+7,4,Napoletano,7,7
+7,4,Siciliano,6,6
+7,4,Parmigiano,7,7
+7,5,Italiano Standard,5,5
+7,5,Napoletano,3,3
+7,5,Siciliano,5,5
+7,5,Parmigiano,1,1
+7,6,Italiano Standard,5,5
+7,6,Napoletano,3,3
+7,6,Siciliano,5,5
+7,6,Parmigiano,5,5
+7,7,Italiano Standard,5,5
+7,7,Napoletano,5,5
+7,7,Siciliano,5,5
+7,7,Parmigiano,5,5
+7,8,Italiano Standard,6,6
+7,8,Napoletano,7,7
+7,8,Siciliano,7,7
+7,8,Parmigiano,5,5
+7,9,Italiano Standard,5,5
+7,9,Napoletano,4,4
+7,9,Siciliano,4,4
+7,9,Parmigiano,5,5
+7,10,Italiano Standard,7,7
+7,10,Napoletano,6,6
+7,10,Siciliano,5,5
+7,10,Parmigiano,5,5
+8,1,Italiano Standard,7,7
+8,1,Napoletano,7,7
+8,1,Siciliano,6,6
+8,1,Parmigiano,7,7
+8,2,Italiano Standard,4,4
+8,2,Napoletano,5,5
+8,2,Siciliano,5,5
+8,2,Parmigiano,5,5
+8,3,Italiano Standard,5,5
+8,3,Napoletano,5,5
+8,3,Siciliano,5,5
+8,3,Parmigiano,5,5
+8,4,Italiano Standard,7,7
+8,4,Napoletano,7,7
+8,4,Siciliano,7,7
+8,4,Parmigiano,6,6
+8,5,Italiano Standard,5,5
+8,5,Napoletano,1,1
+8,5,Siciliano,5,5
+8,5,Parmigiano,5,5
+8,6,Italiano Standard,5,5
+8,6,Napoletano,4,4
+8,6,Siciliano,5,5
+8,6,Parmigiano,2,2
+8,7,Italiano Standard,5,5
+8,7,Napoletano,5,5
+8,7,Siciliano,5,5
+8,7,Parmigiano,5,5
+8,8,Italiano Standard,5,5
+8,8,Napoletano,7,7
+8,8,Siciliano,7,7
+8,8,Parmigiano,6,6
+8,9,Italiano Standard,5,5
+8,9,Napoletano,4,4
+8,9,Siciliano,5,5
+8,9,Parmigiano,5,5
+8,10,Italiano Standard,6,6
+8,10,Napoletano,5,5
+8,10,Siciliano,6,6
+8,10,Parmigiano,5,5
+9,1,Italiano Standard,7,7
+9,1,Napoletano,6,6
+9,1,Siciliano,7,7
+9,1,Parmigiano,6,6
+9,2,Italiano Standard,4,4
+9,2,Napoletano,4,4
+9,2,Siciliano,5,5
+9,2,Parmigiano,5,5
+9,3,Italiano Standard,5,5
+9,3,Napoletano,5,5
+9,3,Siciliano,5,5
+9,3,Parmigiano,5,5
+9,4,Italiano Standard,7,7
+9,4,Napoletano,7,7
+9,4,Siciliano,6,6
+9,4,Parmigiano,7,7
+9,5,Italiano Standard,5,5
+9,5,Napoletano,5,5
+9,5,Siciliano,5,5
+9,5,Parmigiano,7,7
+9,6,Italiano Standard,5,5
+9,6,Napoletano,5,5
+9,6,Siciliano,5,5
+9,6,Parmigiano,5,5
+9,7,Italiano Standard,5,5
+9,7,Napoletano,5,5
+9,7,Siciliano,5,5
+9,7,Parmigiano,5,5
+9,8,Italiano Standard,6,6
+9,8,Napoletano,8,8
+9,8,Siciliano,7,7
+9,8,Parmigiano,5,5
+9,9,Italiano Standard,5,5
+9,9,Napoletano,3,3
+9,9,Siciliano,5,5
+9,9,Parmigiano,6,6
+9,10,Italiano Standard,5,5
+9,10,Napoletano,5,5
+9,10,Siciliano,5,5
+9,10,Parmigiano,5,5
+10,1,Italiano Standard,7,7
+10,1,Napoletano,7,6
+10,1,Siciliano,7,7
+10,1,Parmigiano,7,7
+10,2,Italiano Standard,5,5
+10,2,Napoletano,5,5
+10,2,Siciliano,5,5
+10,2,Parmigiano,5,5
+10,3,Italiano Standard,5,5
+10,3,Napoletano,7,7
+10,3,Siciliano,5,5
+10,3,Parmigiano,5,5
+10,4,Italiano Standard,6,6
+10,4,Napoletano,7,7
+10,4,Siciliano,7,7
+10,4,Parmigiano,7,7
+10,5,Italiano Standard,3,3
+10,5,Napoletano,5,5
+10,5,Siciliano,5,5
+10,5,Parmigiano,5,5
+10,6,Italiano Standard,5,5
+10,6,Napoletano,5,5
+10,6,Siciliano,5,5
+10,6,Parmigiano,5,5
+10,7,Italiano Standard,5,5
+10,7,Napoletano,5,5
+10,7,Siciliano,5,5
+10,7,Parmigiano,5,5
+10,8,Italiano Standard,6,6
+10,8,Napoletano,7,7
+10,8,Siciliano,6,6
+10,8,Parmigiano,6,6
+10,9,Italiano Standard,4,4
+10,9,Napoletano,4,4
+10,9,Siciliano,7,7
+10,9,Parmigiano,5,5
+10,10,Italiano Standard,6,6
+10,10,Napoletano,5,5
+10,10,Siciliano,5,5
+10,10,Parmigiano,7,7
+11,1,Italiano Standard,7,7
+11,1,Napoletano,7,7
+11,1,Siciliano,6,6
+11,1,Parmigiano,7,7
+11,2,Italiano Standard,5,5
+11,2,Napoletano,5,5
+11,2,Siciliano,5,5
+11,2,Parmigiano,5,5
+11,3,Italiano Standard,5,5
+11,3,Napoletano,5,5
+11,3,Siciliano,5,5
+11,3,Parmigiano,5,5
+11,4,Italiano Standard,7,7
+11,4,Napoletano,7,7
+11,4,Siciliano,5,5
+11,4,Parmigiano,7,7
+11,5,Italiano Standard,5,5
+11,5,Napoletano,5,5
+11,5,Siciliano,5,5
+11,5,Parmigiano,4,4
+11,6,Italiano Standard,1,1
+11,6,Napoletano,3,3
+11,6,Siciliano,5,5
+11,6,Parmigiano,5,5
+11,7,Italiano Standard,5,5
+11,7,Napoletano,6,6
+11,7,Siciliano,5,5
+11,7,Parmigiano,5,5
+11,8,Italiano Standard,5,5
+11,8,Napoletano,6,6
+11,8,Siciliano,7,7
+11,8,Parmigiano,6,6
+11,9,Italiano Standard,5,5
+11,9,Napoletano,3,3
+11,9,Siciliano,5,5
+11,9,Parmigiano,5,5
+11,10,Italiano Standard,5,5
+11,10,Napoletano,5,5
+11,10,Siciliano,6,6
+11,10,Parmigiano,5,5
+12,1,Italiano Standard,7,7
+12,1,Napoletano,6,6
+12,1,Siciliano,7,7
+12,1,Parmigiano,6,6
+12,2,Italiano Standard,5,5
+12,2,Napoletano,5,5
+12,2,Siciliano,5,5
+12,2,Parmigiano,5,5
+12,3,Italiano Standard,5,5
+12,3,Napoletano,6,6
+12,3,Siciliano,5,5
+12,3,Parmigiano,5,5
+12,4,Italiano Standard,7,7
+12,4,Napoletano,7,7
+12,4,Siciliano,7,7
+12,4,Parmigiano,7,7
+12,5,Italiano Standard,5,5
+12,5,Napoletano,5,5
+12,5,Siciliano,5,5
+12,5,Parmigiano,5,5
+12,6,Italiano Standard,5,5
+12,6,Napoletano,4,4
+12,6,Siciliano,5,5
+12,6,Parmigiano,5,5
+12,7,Italiano Standard,6,6
+12,7,Napoletano,4,4
+12,7,Siciliano,5,5
+12,7,Parmigiano,5,5
+12,8,Italiano Standard,6,6
+12,8,Napoletano,7,7
+12,8,Siciliano,7,7
+12,8,Parmigiano,5,5
+12,9,Italiano Standard,4,4
+12,9,Napoletano,5,5
+12,9,Siciliano,4,4
+12,9,Parmigiano,5,5
+12,10,Italiano Standard,5,5
+12,10,Napoletano,6,6
+12,10,Siciliano,6,6
+12,10,Parmigiano,5,5
+13,1,Italiano Standard,7,7
+13,1,Napoletano,8,8
+13,1,Siciliano,7,7
+13,1,Parmigiano,5,6
+13,2,Italiano Standard,5,5
+13,2,Napoletano,5,5
+13,2,Siciliano,5,5
+13,2,Parmigiano,5,5
+13,3,Italiano Standard,5,5
+13,3,Napoletano,5,5
+13,3,Siciliano,5,5
+13,3,Parmigiano,5,5
+13,4,Italiano Standard,6,6
+13,4,Napoletano,7,7
+13,4,Siciliano,6,6
+13,4,Parmigiano,7,7
+13,5,Italiano Standard,5,5
+13,5,Napoletano,5,5
+13,5,Siciliano,5,5
+13,5,Parmigiano,5,5
+13,6,Italiano Standard,5,5
+13,6,Napoletano,2,2
+13,6,Siciliano,5,5
+13,6,Parmigiano,4,4
+13,7,Italiano Standard,6,6
+13,7,Napoletano,6,6
+13,7,Siciliano,5,5
+13,7,Parmigiano,7,7
+13,8,Italiano Standard,6,6
+13,8,Napoletano,7,7
+13,8,Siciliano,7,7
+13,8,Parmigiano,6,6
+13,9,Italiano Standard,3,4
+13,9,Napoletano,3,4
+13,9,Siciliano,5,5
+13,9,Parmigiano,3,3
+13,10,Italiano Standard,5,5
+13,10,Napoletano,5,5
+13,10,Siciliano,5,5
+13,10,Parmigiano,5,5
+14,1,Italiano Standard,7,7
+14,1,Napoletano,7,7
+14,1,Siciliano,7,7
+14,1,Parmigiano,6,6
+14,2,Italiano Standard,5,5
+14,2,Napoletano,5,5
+14,2,Siciliano,5,5
+14,2,Parmigiano,5,5
+14,3,Italiano Standard,6,6
+14,3,Napoletano,5,5
+14,3,Siciliano,5,5
+14,3,Parmigiano,5,5
+14,4,Italiano Standard,7,7
+14,4,Napoletano,6,6
+14,4,Siciliano,6,6
+14,4,Parmigiano,7,7
+14,5,Italiano Standard,5,5
+14,5,Napoletano,5,5
+14,5,Siciliano,5,5
+14,5,Parmigiano,5,5
+14,6,Italiano Standard,5,5
+14,6,Napoletano,3,3
+14,6,Siciliano,5,5
+14,6,Parmigiano,5,5
+14,7,Italiano Standard,5,5
+14,7,Napoletano,5,5
+14,7,Siciliano,5,5
+14,7,Parmigiano,7,7
+14,8,Italiano Standard,6,6
+14,8,Napoletano,7,7
+14,8,Siciliano,6,6
+14,8,Parmigiano,7,7
+14,9,Italiano Standard,5,5
+14,9,Napoletano,5,5
+14,9,Siciliano,5,5
+14,9,Parmigiano,5,5
+14,10,Italiano Standard,5,5
+14,10,Napoletano,5,5
+14,10,Siciliano,7,7
+14,10,Parmigiano,5,5
+15,1,Italiano Standard,6,6
+15,1,Napoletano,7,7
+15,1,Siciliano,7,7
+15,1,Parmigiano,7,7
+15,2,Italiano Standard,3,3
+15,2,Napoletano,5,5
+15,2,Siciliano,5,5
+15,2,Parmigiano,5,5
+15,3,Italiano Standard,5,5
+15,3,Napoletano,5,5
+15,3,Siciliano,5,5
+15,3,Parmigiano,5,5
+15,4,Italiano Standard,7,7
+15,4,Napoletano,7,7
+15,4,Siciliano,5,5
+15,4,Parmigiano,7,7
+15,5,Italiano Standard,5,5
+15,5,Napoletano,5,5
+15,5,Siciliano,5,5
+15,5,Parmigiano,5,5
+15,6,Italiano Standard,5,5
+15,6,Napoletano,5,5
+15,6,Siciliano,5,5
+15,6,Parmigiano,5,5
+15,7,Italiano Standard,5,5
+15,7,Napoletano,5,5
+15,7,Siciliano,5,5
+15,7,Parmigiano,5,5
+15,8,Italiano Standard,5,5
+15,8,Napoletano,6,6
+15,8,Siciliano,7,7
+15,8,Parmigiano,7,7
+15,9,Italiano Standard,4,4
+15,9,Napoletano,4,4
+15,9,Siciliano,5,5
+15,9,Parmigiano,5,5
+15,10,Italiano Standard,5,5
+15,10,Napoletano,5,5
+15,10,Siciliano,5,5
+15,10,Parmigiano,5,5
+16,1,Italiano Standard,7,7
+16,1,Napoletano,7,7
+16,1,Siciliano,7,7
+16,1,Parmigiano,7,7
+16,2,Italiano Standard,3,3
+16,2,Napoletano,5,5
+16,2,Siciliano,5,5
+16,2,Parmigiano,5,5
+16,3,Italiano Standard,5,5
+16,3,Napoletano,5,5
+16,3,Siciliano,5,5
+16,3,Parmigiano,5,5
+16,4,Italiano Standard,7,7
+16,4,Napoletano,7,7
+16,4,Siciliano,6,6
+16,4,Parmigiano,7,7
+16,5,Italiano Standard,5,5
+16,5,Napoletano,3,3
+16,5,Siciliano,5,5
+16,5,Parmigiano,5,5
+16,6,Italiano Standard,5,5
+16,6,Napoletano,1,1
+16,6,Siciliano,5,5
+16,6,Parmigiano,5,5
+16,7,Italiano Standard,5,5
+16,7,Napoletano,5,5
+16,7,Siciliano,5,5
+16,7,Parmigiano,5,5
+16,8,Italiano Standard,6,6
+16,8,Napoletano,7,7
+16,8,Siciliano,7,7
+16,8,Parmigiano,6,6
+16,9,Italiano Standard,5,5
+16,9,Napoletano,5,5
+16,9,Siciliano,5,5
+16,9,Parmigiano,6,6
+16,10,Italiano Standard,5,5
+16,10,Napoletano,5,5
+16,10,Siciliano,7,7
+16,10,Parmigiano,5,5
+17,1,Italiano Standard,7,7
+17,1,Napoletano,7,7
+17,1,Siciliano,7,7
+17,1,Parmigiano,7,7
+17,2,Italiano Standard,5,5
+17,2,Napoletano,5,5
+17,2,Siciliano,5,5
+17,2,Parmigiano,5,5
+17,3,Italiano Standard,5,5
+17,3,Napoletano,5,5
+17,3,Siciliano,5,5
+17,3,Parmigiano,5,5
+17,4,Italiano Standard,7,7
+17,4,Napoletano,7,7
+17,4,Siciliano,5,5
+17,4,Parmigiano,7,7
+17,5,Italiano Standard,5,5
+17,5,Napoletano,1,1
+17,5,Siciliano,4,4
+17,5,Parmigiano,5,5
+17,6,Italiano Standard,5,5
+17,6,Napoletano,5,5
+17,6,Siciliano,5,5
+17,6,Parmigiano,5,5
+17,7,Italiano Standard,5,5
+17,7,Napoletano,5,5
+17,7,Siciliano,5,5
+17,7,Parmigiano,5,5
+17,8,Italiano Standard,5,5
+17,8,Napoletano,6,6
+17,8,Siciliano,6,6
+17,8,Parmigiano,6,6
+17,9,Italiano Standard,5,5
+17,9,Napoletano,7,7
+17,9,Siciliano,5,5
+17,9,Parmigiano,5,5
+17,10,Italiano Standard,5,5
+17,10,Napoletano,5,5
+17,10,Siciliano,5,5
+17,10,Parmigiano,6,6
+18,1,Italiano Standard,7,7
+18,1,Napoletano,7,7
+18,1,Siciliano,7,7
+18,1,Parmigiano,7,7
+18,2,Italiano Standard,5,5
+18,2,Napoletano,5,5
+18,2,Siciliano,5,5
+18,2,Parmigiano,5,5
+18,3,Italiano Standard,5,5
+18,3,Napoletano,5,5
+18,3,Siciliano,5,5
+18,3,Parmigiano,5,5
+18,4,Italiano Standard,6,6
+18,4,Napoletano,6,6
+18,4,Siciliano,6,6
+18,4,Parmigiano,7,7
+18,5,Italiano Standard,7,7
+18,5,Napoletano,5,5
+18,5,Siciliano,5,5
+18,5,Parmigiano,4,4
+18,6,Italiano Standard,3,3
+18,6,Napoletano,3,3
+18,6,Siciliano,5,5
+18,6,Parmigiano,3,3
+18,7,Italiano Standard,5,5
+18,7,Napoletano,5,5
+18,7,Siciliano,5,5
+18,7,Parmigiano,7,7
+18,8,Italiano Standard,5,5
+18,8,Napoletano,7,7
+18,8,Siciliano,7,7
+18,8,Parmigiano,6,6
+18,9,Italiano Standard,4,4
+18,9,Napoletano,5,5
+18,9,Siciliano,5,5
+18,9,Parmigiano,5,5
+18,10,Italiano Standard,7,7
+18,10,Napoletano,7,7
+18,10,Siciliano,6,6
+18,10,Parmigiano,5,5
+19,1,Italiano Standard,6,6
+19,1,Napoletano,7,7
+19,1,Siciliano,5,5
+19,1,Parmigiano,6,6
+19,2,Italiano Standard,5,5
+19,2,Napoletano,5,5
+19,2,Siciliano,5,5
+19,2,Parmigiano,5,5
+19,3,Italiano Standard,5,5
+19,3,Napoletano,6,6
+19,3,Siciliano,5,5
+19,3,Parmigiano,5,5
+19,4,Italiano Standard,7,7
+19,4,Napoletano,7,7
+19,4,Siciliano,6,6
+19,4,Parmigiano,7,7
+19,5,Italiano Standard,5,5
+19,5,Napoletano,5,5
+19,5,Siciliano,5,5
+19,5,Parmigiano,5,5
+19,6,Italiano Standard,1,1
+19,6,Napoletano,3,3
+19,6,Siciliano,5,5
+19,6,Parmigiano,5,5
+19,7,Italiano Standard,5,5
+19,7,Napoletano,5,5
+19,7,Siciliano,5,5
+19,7,Parmigiano,7,7
+19,8,Italiano Standard,6,6
+19,8,Napoletano,7,7
+19,8,Siciliano,7,7
+19,8,Parmigiano,6,6
+19,9,Italiano Standard,4,4
+19,9,Napoletano,5,5
+19,9,Siciliano,5,5
+19,9,Parmigiano,5,5
+19,10,Italiano Standard,5,5
+19,10,Napoletano,5,5
+19,10,Siciliano,6,6
+19,10,Parmigiano,6,6
+20,1,Italiano Standard,7,7
+20,1,Napoletano,7,7
+20,1,Siciliano,6,6
+20,1,Parmigiano,7,7
+20,2,Italiano Standard,5,5
+20,2,Napoletano,1,1
+20,2,Siciliano,5,5
+20,2,Parmigiano,5,5
+20,3,Italiano Standard,5,5
+20,3,Napoletano,5,5
+20,3,Siciliano,5,5
+20,3,Parmigiano,5,5
+20,4,Italiano Standard,6,6
+20,4,Napoletano,7,7
+20,4,Siciliano,5,5
+20,4,Parmigiano,7,7
+20,5,Italiano Standard,5,5
+20,5,Napoletano,4,4
+20,5,Siciliano,3,3
+20,5,Parmigiano,5,5
+20,6,Italiano Standard,2,2
+20,6,Napoletano,4,4
+20,6,Siciliano,3,3
+20,6,Parmigiano,5,5
+20,7,Italiano Standard,5,5
+20,7,Napoletano,5,5
+20,7,Siciliano,5,5
+20,7,Parmigiano,7,7
+20,8,Italiano Standard,6,6
+20,8,Napoletano,7,7
+20,8,Siciliano,7,7
+20,8,Parmigiano,6,6
+20,9,Italiano Standard,4,4
+20,9,Napoletano,5,5
+20,9,Siciliano,6,6
+20,9,Parmigiano,5,5
+20,10,Italiano Standard,7,7
+20,10,Napoletano,5,5
+20,10,Siciliano,7,7
+20,10,Parmigiano,7,7
+21,1,Italiano Standard,7,7
+21,1,Napoletano,7,7
+21,1,Siciliano,7,7
+21,1,Parmigiano,7,7
+21,2,Italiano Standard,4,4
+21,2,Napoletano,5,5
+21,2,Siciliano,5,5
+21,2,Parmigiano,5,5
+21,3,Italiano Standard,5,5
+21,3,Napoletano,5,5
+21,3,Siciliano,5,5
+21,3,Parmigiano,5,5
+21,4,Italiano Standard,7,7
+21,4,Napoletano,7,7
+21,4,Siciliano,6,6
+21,4,Parmigiano,6,6
+21,5,Italiano Standard,5,5
+21,5,Napoletano,4,4
+21,5,Siciliano,5,5
+21,5,Parmigiano,6,6
+21,6,Italiano Standard,5,5
+21,6,Napoletano,5,5
+21,6,Siciliano,5,5
+21,6,Parmigiano,3,3
+21,7,Italiano Standard,5,5
+21,7,Napoletano,5,5
+21,7,Siciliano,5,5
+21,7,Parmigiano,7,7
+21,8,Italiano Standard,6,6
+21,8,Napoletano,7,7
+21,8,Siciliano,7,7
+21,8,Parmigiano,6,6
+21,9,Italiano Standard,7,7
+21,9,Napoletano,5,5
+21,9,Siciliano,5,5
+21,9,Parmigiano,5,5
+21,10,Italiano Standard,5,5
+21,10,Napoletano,5,5
+21,10,Siciliano,5,5
+21,10,Parmigiano,7,7
+22,1,Italiano Standard,7,7
+22,1,Napoletano,7,7
+22,1,Siciliano,7,7
+22,1,Parmigiano,7,7
+22,2,Italiano Standard,5,5
+22,2,Napoletano,5,5
+22,2,Siciliano,5,5
+22,2,Parmigiano,5,5
+22,3,Italiano Standard,5,5
+22,3,Napoletano,5,5
+22,3,Siciliano,5,5
+22,3,Parmigiano,7,7
+22,4,Italiano Standard,7,7
+22,4,Napoletano,7,7
+22,4,Siciliano,7,7
+22,4,Parmigiano,6,6
+22,5,Italiano Standard,5,5
+22,5,Napoletano,3,3
+22,5,Siciliano,5,5
+22,5,Parmigiano,5,5
+22,6,Italiano Standard,5,5
+22,6,Napoletano,3,3
+22,6,Siciliano,3,3
+22,6,Parmigiano,3,3
+22,7,Italiano Standard,5,5
+22,7,Napoletano,5,5
+22,7,Siciliano,5,5
+22,7,Parmigiano,5,5
+22,8,Italiano Standard,6,6
+22,8,Napoletano,7,7
+22,8,Siciliano,7,7
+22,8,Parmigiano,6,6
+22,9,Italiano Standard,4,4
+22,9,Napoletano,5,5
+22,9,Siciliano,5,5
+22,9,Parmigiano,3,4
+22,10,Italiano Standard,6,6
+22,10,Napoletano,5,5
+22,10,Siciliano,5,5
+22,10,Parmigiano,6,6
+23,1,Italiano Standard,7,7
+23,1,Napoletano,7,7
+23,1,Siciliano,7,7
+23,1,Parmigiano,7,7
+23,2,Italiano Standard,5,5
+23,2,Napoletano,5,5
+23,2,Siciliano,5,5
+23,2,Parmigiano,5,5
+23,3,Italiano Standard,5,5
+23,3,Napoletano,5,5
+23,3,Siciliano,5,5
+23,3,Parmigiano,5,5
+23,4,Italiano Standard,6,6
+23,4,Napoletano,7,7
+23,4,Siciliano,6,6
+23,4,Parmigiano,7,7
+23,5,Italiano Standard,4,4
+23,5,Napoletano,5,5
+23,5,Siciliano,5,5
+23,5,Parmigiano,5,5
+23,6,Italiano Standard,5,5
+23,6,Napoletano,4,4
+23,6,Siciliano,5,5
+23,6,Parmigiano,5,5
+23,7,Italiano Standard,5,5
+23,7,Napoletano,5,5
+23,7,Siciliano,5,5
+23,7,Parmigiano,7,7
+23,8,Italiano Standard,6,6
+23,8,Napoletano,7,7
+23,8,Siciliano,7,7
+23,8,Parmigiano,6,6
+23,9,Italiano Standard,4,4
+23,9,Napoletano,5,5
+23,9,Siciliano,5,5
+23,9,Parmigiano,5,5
+23,10,Italiano Standard,6,6
+23,10,Napoletano,7,6
+23,10,Siciliano,7,7
+23,10,Parmigiano,5,5
+24,1,Italiano Standard,7,7
+24,1,Napoletano,7,7
+24,1,Siciliano,7,7
+24,1,Parmigiano,7,7
+24,2,Italiano Standard,5,5
+24,2,Napoletano,5,5
+24,2,Siciliano,5,5
+24,2,Parmigiano,5,5
+24,3,Italiano Standard,5,5
+24,3,Napoletano,5,5
+24,3,Siciliano,4,4
+24,3,Parmigiano,5,5
+24,4,Italiano Standard,7,7
+24,4,Napoletano,7,7
+24,4,Siciliano,6,6
+24,4,Parmigiano,7,7
+24,5,Italiano Standard,5,5
+24,5,Napoletano,5,5
+24,5,Siciliano,5,5
+24,5,Parmigiano,3,3
+24,6,Italiano Standard,4,4
+24,6,Napoletano,4,4
+24,6,Siciliano,4,4
+24,6,Parmigiano,5,5
+24,7,Italiano Standard,5,5
+24,7,Napoletano,5,5
+24,7,Siciliano,5,5
+24,7,Parmigiano,7,7
+24,8,Italiano Standard,7,7
+24,8,Napoletano,7,7
+24,8,Siciliano,6,6
+24,8,Parmigiano,6,6
+24,9,Italiano Standard,5,5
+24,9,Napoletano,3,4
+24,9,Siciliano,5,5
+24,9,Parmigiano,5,5
+24,10,Italiano Standard,5,5
+24,10,Napoletano,5,5
+24,10,Siciliano,5,5
+24,10,Parmigiano,6,6
+25,1,Italiano Standard,7,7
+25,1,Napoletano,7,7
+25,1,Siciliano,6,6
+25,1,Parmigiano,7,7
+25,2,Italiano Standard,5,5
+25,2,Napoletano,5,5
+25,2,Siciliano,5,5
+25,2,Parmigiano,5,5
+25,3,Italiano Standard,5,5
+25,3,Napoletano,5,5
+25,3,Siciliano,5,5
+25,3,Parmigiano,5,5
+25,4,Italiano Standard,6,6
+25,4,Napoletano,7,7
+25,4,Siciliano,7,7
+25,4,Parmigiano,7,7
+25,5,Italiano Standard,5,5
+25,5,Napoletano,3,3
+25,5,Siciliano,5,5
+25,5,Parmigiano,5,5
+25,6,Italiano Standard,5,5
+25,6,Napoletano,4,4
+25,6,Siciliano,5,5
+25,6,Parmigiano,5,5
+25,7,Italiano Standard,5,5
+25,7,Napoletano,5,5
+25,7,Siciliano,5,5
+25,7,Parmigiano,5,5
+25,8,Italiano Standard,7,7
+25,8,Napoletano,7,7
+25,8,Siciliano,7,7
+25,8,Parmigiano,7,7
+25,9,Italiano Standard,5,5
+25,9,Napoletano,5,5
+25,9,Siciliano,5,5
+25,9,Parmigiano,6,6
+25,10,Italiano Standard,7,7
+25,10,Napoletano,5,5
+25,10,Siciliano,5,5
+25,10,Parmigiano,6,6
+26,1,Italiano Standard,6,6
+26,1,Napoletano,6,6
+26,1,Siciliano,6,6
+26,1,Parmigiano,6,6
+26,2,Italiano Standard,3,3
+26,2,Napoletano,5,5
+26,2,Siciliano,5,5
+26,2,Parmigiano,5,5
+26,3,Italiano Standard,5,5
+26,3,Napoletano,5,5
+26,3,Siciliano,5,5
+26,3,Parmigiano,5,5
+26,4,Italiano Standard,7,7
+26,4,Napoletano,7,7
+26,4,Siciliano,6,6
+26,4,Parmigiano,6,6
+26,5,Italiano Standard,5,5
+26,5,Napoletano,3,3
+26,5,Siciliano,5,5
+26,5,Parmigiano,3,3
+26,6,Italiano Standard,5,5
+26,6,Napoletano,4,4
+26,6,Siciliano,5,5
+26,6,Parmigiano,5,5
+26,7,Italiano Standard,5,5
+26,7,Napoletano,5,5
+26,7,Siciliano,5,5
+26,7,Parmigiano,7,7
+26,8,Italiano Standard,7,7
+26,8,Napoletano,7,7
+26,8,Siciliano,7,7
+26,8,Parmigiano,6,6
+26,9,Italiano Standard,6,6
+26,9,Napoletano,6,6
+26,9,Siciliano,3,3
+26,9,Parmigiano,5,5
+26,10,Italiano Standard,6,6
+26,10,Napoletano,5,5
+26,10,Siciliano,5,5
+26,10,Parmigiano,6,6
+27,1,Italiano Standard,7,7
+27,1,Napoletano,7,7
+27,1,Siciliano,7,7
+27,1,Parmigiano,7,7
+27,2,Italiano Standard,5,5
+27,2,Napoletano,5,5
+27,2,Siciliano,5,5
+27,2,Parmigiano,5,5
+27,3,Italiano Standard,5,5
+27,3,Napoletano,5,5
+27,3,Siciliano,5,5
+27,3,Parmigiano,6,6
+27,4,Italiano Standard,7,7
+27,4,Napoletano,7,7
+27,4,Siciliano,6,6
+27,4,Parmigiano,6,6
+27,5,Italiano Standard,3,3
+27,5,Napoletano,4,4
+27,5,Siciliano,5,5
+27,5,Parmigiano,2,2
+27,6,Italiano Standard,5,5
+27,6,Napoletano,5,5
+27,6,Siciliano,5,5
+27,6,Parmigiano,5,5
+27,7,Italiano Standard,5,5
+27,7,Napoletano,6,6
+27,7,Siciliano,5,5
+27,7,Parmigiano,6,6
+27,8,Italiano Standard,7,7
+27,8,Napoletano,6,6
+27,8,Siciliano,7,7
+27,8,Parmigiano,5,5
+27,9,Italiano Standard,5,5
+27,9,Napoletano,4,5
+27,9,Siciliano,5,5
+27,9,Parmigiano,5,5
+27,10,Italiano Standard,6,6
+27,10,Napoletano,5,5
+27,10,Siciliano,6,6
+27,10,Parmigiano,5,5
+28,1,Italiano Standard,7,7
+28,1,Napoletano,6,6
+28,1,Siciliano,7,7
+28,1,Parmigiano,7,7
+28,2,Italiano Standard,5,5
+28,2,Napoletano,5,5
+28,2,Siciliano,5,5
+28,2,Parmigiano,5,5
+28,3,Italiano Standard,5,5
+28,3,Napoletano,5,5
+28,3,Siciliano,5,5
+28,3,Parmigiano,5,5
+28,4,Italiano Standard,6,6
+28,4,Napoletano,6,6
+28,4,Siciliano,6,6
+28,4,Parmigiano,7,7
+28,5,Italiano Standard,5,5
+28,5,Napoletano,5,5
+28,5,Siciliano,5,5
+28,5,Parmigiano,5,5
+28,6,Italiano Standard,4,4
+28,6,Napoletano,4,4
+28,6,Siciliano,5,5
+28,6,Parmigiano,5,5
+28,7,Italiano Standard,5,5
+28,7,Napoletano,5,5
+28,7,Siciliano,4,4
+28,7,Parmigiano,7,7
+28,8,Italiano Standard,6,6
+28,8,Napoletano,7,7
+28,8,Siciliano,8,8
+28,8,Parmigiano,5,5
+28,9,Italiano Standard,4,4
+28,9,Napoletano,5,5
+28,9,Siciliano,5,5
+28,9,Parmigiano,4,4
+28,10,Italiano Standard,5,5
+28,10,Napoletano,6,6
+28,10,Siciliano,6,6
+28,10,Parmigiano,5,5
+29,1,Italiano Standard,7,7
+29,1,Napoletano,7,7
+29,1,Siciliano,6,6
+29,1,Parmigiano,7,7
+29,2,Italiano Standard,5,5
+29,2,Napoletano,4,4
+29,2,Siciliano,5,5
+29,2,Parmigiano,5,5
+29,3,Italiano Standard,5,5
+29,3,Napoletano,5,5
+29,3,Siciliano,5,5
+29,3,Parmigiano,5,5
+29,4,Italiano Standard,6,6
+29,4,Napoletano,7,7
+29,4,Siciliano,6,6
+29,4,Parmigiano,7,7
+29,5,Italiano Standard,5,5
+29,5,Napoletano,3,3
+29,5,Siciliano,5,5
+29,5,Parmigiano,5,5
+29,6,Italiano Standard,5,5
+29,6,Napoletano,4,4
+29,6,Siciliano,4,4
+29,6,Parmigiano,5,5
+29,7,Italiano Standard,5,5
+29,7,Napoletano,5,5
+29,7,Siciliano,5,5
+29,7,Parmigiano,5,5
+29,8,Italiano Standard,7,7
+29,8,Napoletano,7,7
+29,8,Siciliano,5,5
+29,8,Parmigiano,6,6
+29,9,Italiano Standard,4,4
+29,9,Napoletano,5,5
+29,9,Siciliano,5,5
+29,9,Parmigiano,5,5
+29,10,Italiano Standard,5,5
+29,10,Napoletano,5,5
+29,10,Siciliano,6,6
+29,10,Parmigiano,5,5
+30,1,Italiano Standard,7,7
+30,1,Napoletano,7,7
+30,1,Siciliano,7,7
+30,1,Parmigiano,7,7
+30,2,Italiano Standard,5,5
+30,2,Napoletano,5,5
+30,2,Siciliano,5,5
+30,2,Parmigiano,5,5
+30,3,Italiano Standard,5,5
+30,3,Napoletano,5,5
+30,3,Siciliano,5,5
+30,3,Parmigiano,5,5
+30,4,Italiano Standard,7,7
+30,4,Napoletano,7,7
+30,4,Siciliano,7,7
+30,4,Parmigiano,7,7
+30,5,Italiano Standard,4,4
+30,5,Napoletano,3,3
+30,5,Siciliano,5,5
+30,5,Parmigiano,3,3
+30,6,Italiano Standard,1,1
+30,6,Napoletano,4,4
+30,6,Siciliano,5,5
+30,6,Parmigiano,5,5
+30,7,Italiano Standard,5,5
+30,7,Napoletano,5,5
+30,7,Siciliano,5,5
+30,7,Parmigiano,7,7
+30,8,Italiano Standard,6,6
+30,8,Napoletano,7,7
+30,8,Siciliano,7,7
+30,8,Parmigiano,7,7
+30,9,Italiano Standard,5,5
+30,9,Napoletano,7,7
+30,9,Siciliano,5,5
+30,9,Parmigiano,5,5
+30,10,Italiano Standard,5,5
+30,10,Napoletano,5,5
+30,10,Siciliano,6,6
+30,10,Parmigiano,5,5

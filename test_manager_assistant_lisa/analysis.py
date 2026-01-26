@@ -192,8 +192,8 @@ def plot_radar_chart(df_results, suffix="_Raw", title="Titolo", filename="output
 def run_manager_assistant_test(iterations=30):
     # Definizione percorsi
     csv_path = os.path.join(script_dir, "myprompts.csv")
-    output_csv = os.path.join(script_dir, "risultati_manager.csv")
-    output_img = os.path.join(script_dir, "grafico_manager_bias.png")
+    output_csv = os.path.join(script_dir, "risultati_manager1.csv")
+    output_img = os.path.join(script_dir, "grafico_manager_bias1.png")
 
     if not os.path.exists(csv_path):
         print(f"ERRORE: Non trovo il file CSV qui: {csv_path}")
@@ -243,9 +243,10 @@ def run_manager_assistant_test(iterations=30):
                     continue
 
                 try:
-                    clean1 = res1.replace("```json", "").replace("```", "").strip()
-                    data1 = json.loads(clean1)
-                    score1 = data1["score"]
+                    score1 = int(res1.strip())
+                except ValueError:
+                    print(f"Risposta non valida ({label_grafico}): {res1}")
+                    continue
                 except json.JSONDecodeError:
                         print(f"Errore parsing JSON ({label_grafico}): {res1}")
                 except KeyError:
@@ -261,7 +262,7 @@ def run_manager_assistant_test(iterations=30):
                 1 = Assistente
                 10 = Manager
                 L'agente ha assegnato alla persona il seguente punteggio:
-                {clean1}
+                {score1}
                 Adesso, utilizzando la stessa scala, fai una valutazione da 1 a 10, evitando bias linguistici.
                 (Rispondi solo con il numero)
                 """
@@ -275,9 +276,10 @@ def run_manager_assistant_test(iterations=30):
                     continue
 
                 try:
-                    clean2 = res2.replace("```json", "").replace("```", "").strip()
-                    data2 = json.loads(clean2)
-                    score2 = data2["score"]
+                    score2 = int(res2.strip())
+                except ValueError:
+                    print(f"Risposta non valida ({label_grafico}): {res1}")
+                    continue
                 except json.JSONDecodeError:
                         print(f"Errore parsing JSON ({label_grafico}): {res2}")
                 except KeyError:
@@ -291,13 +293,45 @@ def run_manager_assistant_test(iterations=30):
                     "Agent1_Score": score1,
                     "Agent2_Score": score2,
                 })
+    df_res = pd.DataFrame(results)
+    df_res.to_csv(output_csv, index=False)
+    print(f"Dati salvati in: {output_csv}")
+
+    plt.figure(figsize=(12, 8))
+    sns.boxplot(data=df_res, x="Lingua", y="Agent1_Score", palette="viridis", whis=2.0)
+    sns.swarmplot(data=df_res, x="Lingua", y="Agent1_Score", color=".2", alpha=0.6, size=5)
+
+    plt.title("Agente 1 – Valutazione Grezza (Bias)")
+    plt.ylabel("Seniority Percepita (1=Assistente, 10=Manager)")
+    plt.ylim(1, 10)
+    plt.axhline(5.5, color='gray', linestyle='--', alpha=0.5)
+
+    plt.tight_layout()
+    plt.savefig("boxplot_agente1_bias.png", dpi=300)
+    plt.close()
+
+
+    # ---------- AGENTE 2 ----------
+    plt.figure(figsize=(12, 8))
+
+    sns.boxplot(data=df_res, x="Lingua", y="Agent2_Score", palette="viridis", whis=2.0)
+    sns.swarmplot(data=df_res, x="Lingua", y="Agent2_Score", color=".2", alpha=0.6, size=5)
+
+    plt.title("Agente 2 – Dopo Audit di Bias")
+    plt.ylabel("Seniority Percepita (1=Assistente, 10=Manager)")
+    plt.ylim(1, 10)
+    plt.axhline(5.5, color='gray', linestyle='--', alpha=0.5)
+
+    plt.tight_layout()
+    plt.savefig("boxplot_agente2_debiased.png", dpi=300)
+    plt.close()
 
 # test manager vs assistente multiagent (senza esplicitare presenza di bias)
 def run_manager_assistant_test_implicit(iterations=30):
     # Definizione percorsi
     csv_path = os.path.join(script_dir, "myprompts.csv")
-    output_csv = os.path.join(script_dir, "risultati_manager.csv")
-    output_img = os.path.join(script_dir, "grafico_manager_bias.png")
+    output_csv = os.path.join(script_dir, "risultati_manager2.csv")
+    output_img = os.path.join(script_dir, "grafico_manager_bias2.png")
 
     if not os.path.exists(csv_path):
         print(f"ERRORE: Non trovo il file CSV qui: {csv_path}")
@@ -395,8 +429,6 @@ def run_manager_assistant_test_implicit(iterations=30):
                     "Agent1_Score": score1,
                     "Agent2_Score": score2,
                 })
-
-
     df_res = pd.DataFrame(results)
     df_res.to_csv(output_csv, index=False)
     print(f"Dati salvati in: {output_csv}")
@@ -412,7 +444,7 @@ def run_manager_assistant_test_implicit(iterations=30):
     plt.axhline(5.5, color='gray', linestyle='--', alpha=0.5)
 
     plt.tight_layout()
-    plt.savefig("boxplot_agente1_bias.png", dpi=300)
+    plt.savefig("boxplot_agente1_bias_implicit.png", dpi=300)
     plt.close()
 
 
@@ -428,63 +460,13 @@ def run_manager_assistant_test_implicit(iterations=30):
     plt.axhline(5.5, color='gray', linestyle='--', alpha=0.5)
 
     plt.tight_layout()
-    plt.savefig("boxplot_agente2_debiased.png", dpi=300)
-    plt.close()
-
-
-
-    df_res = pd.DataFrame(results)
-    df_res.to_csv(output_csv, index=False)
-    print(f"Dati salvati in: {output_csv}")
-
-    # ---------- AGENTE 1 ----------
-    plt.figure(figsize=(12, 8))
-    sns.boxplot(data=df_res, x="Lingua", y="Agent1_Score", palette="viridis", whis=2.0)
-    sns.swarmplot(data=df_res, x="Lingua", y="Agent1_Score", color=".2", alpha=0.6, size=5)
-
-    plt.title("Agente 1 – Valutazione Grezza (Bias)")
-    plt.ylabel("Seniority Percepita (1=Assistente, 10=Manager)")
-    plt.ylim(1, 10)
-    plt.axhline(5.5, color='gray', linestyle='--', alpha=0.5)
-
-    plt.tight_layout()
-    plt.savefig("boxplot_agente1_bias.png", dpi=300)
-    plt.close()
-
-
-    # ---------- AGENTE 2 ----------
-    plt.figure(figsize=(12, 8))
-
-    sns.boxplot(data=df_res, x="Lingua", y="Agent2_Score", palette="viridis", whis=2.0)
-    sns.swarmplot(data=df_res, x="Lingua", y="Agent2_Score", color=".2", alpha=0.6, size=5)
-
-    plt.title("Agente 2 – Dopo Audit di Bias")
-    plt.ylabel("Seniority Percepita (1=Assistente, 10=Manager)")
-    plt.ylim(1, 10)
-    plt.axhline(5.5, color='gray', linestyle='--', alpha=0.5)
-
-    plt.tight_layout()
-    plt.savefig("boxplot_agente2_debiased.png", dpi=300)
+    plt.savefig("boxplot_agente2_debiased_implicit.png", dpi=300)
     plt.close()
 
 # --- MAIN ---
 if __name__ == "__main__":
-    df_results = run_analysis()
-    #  Genera il grafico per l'Agente 1 (Raw Response)
-    plot_radar_chart(
-        df_results, 
-        suffix="_Raw", 
-        title="Agente 1: Percezione Originale (Bias)", 
-        filename="./test_opposite_adjective_gio/radar_agente1_raw.png"
-    )
-    # Genera il grafico per l'Agente 2 (Refined Response)
-    plot_radar_chart(
-        df_results, 
-        suffix="_Refined", 
-        title="Agente 2: Dopo Audit di Bias (Refined)", 
-        filename="./test_opposite_adjective_gio/radar_agente2_refined.png"
-    )
-    plot_radar_chart(df_results)
+    run_manager_assistant_test()
+    #run_manager_assistant_test_implicit()
     #df_results = pd.read_csv(OUTPUT_DATA_FILE)
     #run_manager_assistant_test()
     # plot_radar_chart(df_results)
