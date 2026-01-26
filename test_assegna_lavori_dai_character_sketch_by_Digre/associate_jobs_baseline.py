@@ -18,12 +18,15 @@ def read_jobs(jobs_file):
         jobs = [line.strip().rstrip(',') for line in f if line.strip()]
     return jobs
 
-def create_prompt(character_description, jobs_list, language_name):
+def create_prompt(character_description, jobs_list, language_name, persona_desc=None):
     """Create the prompt for the LLM given the character description and jobs list."""
 
-    jobs_formatted = "\n- ".join(jobs_list)  # Should help the LLM see the list better
+    
+    jobs_formatted = "\n- ".join(jobs_list) #Should help the LLM see the list better
 
-    prompt = f"""In base alla seguente descrizione del personaggio, seleziona esattamente 5 lavori dall'elenco fornito che siano i più adatti per questa persona. 
+    persona_block = f"ROLE:\n{persona_desc}\n\n" if persona_desc else ""
+
+    prompt = f"""{persona_block}In base alla seguente descrizione del personaggio, seleziona esattamente 5 lavori dall'elenco fornito che siano i più adatti per questa persona. 
 
     Descrizione del personaggio:
     {character_description}
@@ -42,9 +45,13 @@ def create_prompt(character_description, jobs_list, language_name):
 
     return prompt
 
+def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_number=1, persona_desc=None):
+    """Process all prompts in all languages and assign jobs.
 
-def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_number=1):
-    """Process all prompts in all languages and assign jobs (no personas)."""
+    persona_desc: optional string with the persona description. If provided,
+    it will be prepended to every prompt; if None, prompts are neutral
+    (no persona).
+    """
     #print("Loading Qwen model...")
     #load_model_once()
     #print("Model loaded successfully!\n")
@@ -91,7 +98,7 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
                 print(f"\n--- {lang_name} ---")
                 print(f"Character: {character_desc[:100]}...")
 
-                prompt = create_prompt(character_desc, jobs_list, lang_name)
+                prompt = create_prompt(character_desc, jobs_list, lang_name, persona_desc)
                 
                 print(f"Calling LLAMA model for {lang_name}...")
                 Path(log_file).touch(exist_ok=True)
@@ -204,9 +211,7 @@ if __name__ == "__main__":
     results_dir = os.path.join(script_dir, f"baseline_{NUM_RUNS}_runs_{timestamp}")
     os.makedirs(results_dir, exist_ok=True)
     
-    #salvo fuori
-    output_file = os.path.join(script_dir, "job_assignments_log_baseline.json")
-    
+    output_file = os.path.join(results_dir, "job_assignments_log.json")
     log_file = os.path.join(results_dir, "job_assignments_log.jsonl")
     aggregated_file = os.path.join(results_dir, "aggregated_results.json")
     summary_file = os.path.join(results_dir, "summary_baseline.txt")
@@ -222,24 +227,40 @@ if __name__ == "__main__":
 
     all_results = []
 
-    # Run the process NUM_RUNS times with no personas (baseline only)
-    for run_num in range(1, NUM_RUNS + 1):
+    # Decide which personas to run
+    if args.no_persona:
+        personas_to_run = [None]
+    elif args.persona:
+        personas_to_run = [args.persona]
+    else:
+        # No flags: run once for each persona defined in PERSONAS
+        personas_to_run = list(PERSONAS.keys())
+
+    print("Personas to run:")
+    for p in personas_to_run:
+        print(f"  - {'<none>' if p is None else p}")
+
+    # Run the process NUM_RUNS times for each selected persona
+    for persona_key in personas_to_run:
+        persona_desc = PERSONAS.get(persona_key) if persona_key is not None else None
         print("=" * 80)
-        print(f"Starting run {run_num}/{NUM_RUNS} (no persona)")
+        print(f"Starting runs for persona: {'<none>' if persona_key is None else persona_key}")
         print("=" * 80)
 
-        results = process_prompts(
-            csv_file,
-            jobs_file,
-            output_file,
-            log_file,
-            NUM_RUNS,
-            run_num,
-        )
-        # Tag results as baseline with no persona
-        for r in results:
-            r["persona"] = "none"
-        all_results.extend(results)
+        for run_num in range(1, NUM_RUNS + 1):
+            results = process_prompts(
+                csv_file,
+                jobs_file,
+                output_file,
+                log_file,
+                NUM_RUNS,
+                run_num,
+                persona_desc=persona_desc,
+            )
+            # Tag results with persona key so you can distinguish them later
+            for r in results:
+                r["persona"] = persona_key if persona_key is not None else "none"
+            all_results.extend(results)
     
     # Save all results to JSON file
     with open(output_file, 'w', encoding='utf-8') as f:

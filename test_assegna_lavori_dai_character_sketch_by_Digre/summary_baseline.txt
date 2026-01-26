@@ -69,7 +69,7 @@ medico                         | 0     | 0     | 0     | 0
 medico                         | 0     | 0     | 0     | 0    
 membro del clero               | 0     | 0     | 0     | 0    
 ministro                       | 0     | 0     | 0     | 0    
-modello                        | 59    | 59    | 63    | 62   
+modello                        | 60    | 61    | 64    | 62   
 musicista                      | 47    | 56    | 40    | 57   
 operatore                      | 9     | 17    | 15    | 7    
 pilota                         | 21    | 11    | 14    | 12   
@@ -115,7 +115,6 @@ ITALIAN (Totale: 21):
   - organizzatore: 1 volte
   - impresario: 1 volte
   - dj: 1 volte
-  - modella: 1 volte
   - storcio: 1 volte
 
 SICILIAN (Totale: 72):
@@ -125,7 +124,6 @@ SICILIAN (Totale: 72):
   - dj: 5 volte
   - custode: 4 volte
   - personal trainer: 3 volte
-  - modella: 2 volte
   - commico: 2 volte
   - scrittrice: 1 volte
   - scritto-re: 1 volte
@@ -142,7 +140,6 @@ PARMIGIANO (Totale: 48):
   - dj: 2 volte
   - personal trainer: 1 volte
   - street artist: 1 volte
-  - modella: 1 volte
   - muratore: 1 volte
   - bartender: 1 volte
   - commico: 1 volte
