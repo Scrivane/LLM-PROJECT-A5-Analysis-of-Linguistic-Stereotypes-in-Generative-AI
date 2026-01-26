@@ -381,9 +381,8 @@ def run_manager_assistant_test_implicit(iterations=30):
                     continue
 
                 try:
-                    clean1 = res1.replace("```json", "").replace("```", "").strip()
-                    data1 = json.loads(clean1)
-                    score1 = data1["score"]
+                    score1 = int(res1.strip())
+                    print(score1)
                 except json.JSONDecodeError:
                         print(f"Errore parsing JSON ({label_grafico}): {res1}")
                 except KeyError:
@@ -399,7 +398,7 @@ def run_manager_assistant_test_implicit(iterations=30):
                 1 = Assistente
                 10 = Manager
                 A questa persona è stato assegnato il seguente punteggio:
-                {clean1}
+                {res1}
                 Adesso, utilizzando la stessa scala da 1 a 10 , fai un'ulteriore valutazione per valutare la posizione della persona.
                 (Rispondi solo con il numero)
                 """
@@ -413,9 +412,8 @@ def run_manager_assistant_test_implicit(iterations=30):
                     continue
 
                 try:
-                    clean2 = res2.replace("```json", "").replace("```", "").strip()
-                    data2 = json.loads(clean2)
-                    score2 = data2["score"]
+                    score2 = int(res2.strip())
+                    print(score2)
                 except json.JSONDecodeError:
                         print(f"Errore parsing JSON ({label_grafico}): {res2}")
                 except KeyError:
@@ -465,8 +463,8 @@ def run_manager_assistant_test_implicit(iterations=30):
 
 # --- MAIN ---
 if __name__ == "__main__":
-    run_manager_assistant_test()
-    #run_manager_assistant_test_implicit()
+    #run_manager_assistant_test()
+    run_manager_assistant_test_implicit()
     #df_results = pd.read_csv(OUTPUT_DATA_FILE)
     #run_manager_assistant_test()
     # plot_radar_chart(df_results)
