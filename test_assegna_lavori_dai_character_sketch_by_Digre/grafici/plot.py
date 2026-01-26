@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
-file_path = 'test_assegna_lavori_dai_character_sketch_by_Digre\grafici\job_divergence_baseline.csv' 
+file_path = 'job_divergence_multiagent.csv' 
 
 try:
     df = pd.read_csv(file_path)
@@ -12,38 +12,53 @@ except FileNotFoundError:
     sys.exit()
 
 dialetti = ['SIC', 'PAR', 'NAP']
+colori = {'SIC': '#3498db', 'PAR': '#e67e22', 'NAP': '#2ecc71'}
+
 for d in dialetti:
     df[f'{d}_div'] = df[d] - df['ITA']
 
-
 df['abs_sum'] = df[[f'{d}_div' for d in dialetti]].abs().sum(axis=1)
-df_filtered = df[df['abs_sum'] > 10].copy().sort_values('abs_sum', ascending=True)
+df_filtered = df[df['abs_sum'] > 10].copy().sort_values('ITA', ascending=True)
 
-df_filtered['LABELS_WITH_BASE'] = df_filtered.apply(
-    lambda x: f"{x['LAVORO']} [ITA: {x['ITA']}]", axis=1
-)
 
-# 4. Plotting
-fig, ax = plt.subplots(figsize=(13, 14))
-ind = np.arange(len(df_filtered))
-width = 0.25
+fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(18, 12), sharey=True)
+y_pos = np.arange(len(df_filtered))
 
-ax.barh(ind + width, df_filtered['SIC_div'], width, label='SIC vs ITA', color='#3498db')
-ax.barh(ind, df_filtered['PAR_div'], width, label='PAR vs ITA', color='#e67e22')
-ax.barh(ind - width, df_filtered['NAP_div'], width, label='NAP vs ITA', color='#2ecc71')
+for i, d in enumerate(dialetti):
+    ax = axes[i]
+    
 
-# 5. Estetica
-ax.axvline(0, color='black', linewidth=1.5)
-ax.set_yticks(ind)
-ax.set_yticklabels(df_filtered['LABELS_WITH_BASE'], fontsize=10) # Qui usiamo le nuove etichette
+    ax.hlines(y=y_pos, xmin=df_filtered['ITA'], xmax=df_filtered[d], 
+              color='grey', alpha=0.4, linewidth=2, zorder=1)
+    
 
-ax.set_xlabel('Divergenza (Differenza rispetto a ITA)', fontsize=12)
-ax.set_title('Divergenze Occupazionali\nI valori tra parentesi quadre [ ] indicano la base ITA', fontsize=15, pad=20)
+    ax.scatter(df_filtered['ITA'], y_pos, color='#95a5a6', s=120, 
+               label='ITA' if i == 0 else "", zorder=2, edgecolors='white')
+    
 
-# Aggiungiamo una griglia leggera per seguire meglio le barre
-ax.grid(axis='x', linestyle=':', alpha=0.6)
-ax.legend(title="Dialetto vs Base", loc='lower right')
+    ax.scatter(df_filtered[d], y_pos, color=colori[d], s=120, 
+               label=d, zorder=3, edgecolors='white')
+    
+    for y, ita, dial in zip(y_pos, df_filtered['ITA'], df_filtered[d]):
+        ax.annotate('', xy=(dial, y), xytext=(ita, y),
+                    arrowprops=dict(arrowstyle='->', color=colori[d], lw=1, alpha=0.6))
+
+
+    ax.set_title(f'ITA vs {d}', fontweight='bold', fontsize=14, pad=15)
+    ax.set_xlabel('Score')
+    ax.grid(axis='x', linestyle='--', alpha=0.3)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+
+axes[0].set_yticks(y_pos)
+axes[0].set_yticklabels(df_filtered['LAVORO'], fontweight='bold')
+
+plt.suptitle('Analisi Divergenze Occupazionali: Dialetti vs Italiano Centrale', 
+             fontsize=20, y=1.05, fontweight='bold')
+
+fig.legend(loc='upper center', bbox_to_anchor=(0.5, 1.01), ncol=4, frameon=False, fontsize=12)
 
 plt.tight_layout()
-plt.savefig('divergence_baseline_values.png', dpi=300)
+plt.savefig('divergence_multiagent_values_dumbbell.png', dpi=300, bbox_inches='tight')
 plt.show()
