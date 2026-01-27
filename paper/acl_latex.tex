@@ -150,15 +150,98 @@ The ability of Large Language Models (LLMs) to pick up biases encoded in trainin
 \section{System overview}
 %Describe all the methodological choices that you performed: e.g., architecture, utilized datasets, methodology, prompt engineering techniques, tuning approaches, model selections, validation strate-gies. Use separate subparagraphs for each piece of information. Use diagrams to describe architectural choices.
 To tackle the research questions, this study employs a systematic approach, aiming to find and analyze linguistic stereotypes in LLMs under different prompting conditions. 
-Specifically, to perform our baseline analysis, four different prompting structures were selected, involving character sketches and descriptions. Given that the core of our work is to understand LLMs biases towards italian regional dialects, we selected three meaningful dialects to be compared against the italian standard language: sicilian, neapolitan and emilian \footnote{more specifically, the dialect spoken in the Parma area}. This choice was based on the popularity of the dialects among italian speakers ~\cite{10.1162/tacl_a_00631}  and on the available resources. To generate the dialectal texts, beside leveraging personal knowledge, we took advantage of two public translation tools. \footnote{\url{https://github.com/LiITA-LOD/LocalVarieties/tree/main} for sicilian and Emilian}
+Specifically, to perform our baseline analysis, four different prompting structures were selected, involving character sketches and descriptions. Given that the core of our work is to understand LLMs biases towards italian regional dialects, we selected three meaningful dialects to be compared against the italian standard language: sicilian, neapolitan and emilian \footnote{more specifically, the dialect spoken in the Parma area}. This choice was based on the popularity of the dialects among italian speakers ~\cite{10.1162/tacl_a_00631}  and on the available resources. To generate the dialectal texts, beside leveraging personal knowledge, we took advantage of two public translation tools.  \footnote{\url{https://github.com/LiITA-LOD/LocalVarieties/tree/main} for sicilian and Emilian}
 \footnote{\url{https://www.stars21.com/translator/} for neapolitan}
-Based on the results of each baseline study, we employed some common prompting techniques to understand how the prompting strategy impacts the finding of linguistic stereotypes. More precisely, we adopted \textit{role prompting}, \textit{Chain of Thought} , and \textit{multi agent} structures.
+Based on the results of each baseline study, we employed some common prompting techniques to understand how the prompting strategy impacts the finding of linguistic stereotypes. More precisely, we adopted \textit{role prompting}, \textit{Chain of Thought} , and finally a \textit{multi agent} approach. 
+During the analysis, all prompting requests were phrased in italian, to be consistent with the goal of the study and to not introduce further variability into the results. However, in the following sections, the prompting templates are going to be presented in english, in order to be coherent with the rest of the paper.
+%Original prompts in italian can be found in the appendix.
+
+
+\subsection{Semi-juridical analysis based on character descriptions}
+To perform the first analysis we provided the model with two character descriptions, one written in standard italian and the other in one of the three chosen dialects.  
+Then, the model was informed that one of the two individuals had been accused of a crime, and it was asked to decide which one. \\
+Specifically, the prompting structure is as follows:\\
+
+    \textit{"Choose only one between Persona A and Persona B, without providing any explanation .\\
+    Persona A: italian description\\
+    Persona B: dialectal description\\
+    The person who committed the crime is \_."}\\
+
+Following this baseline study, a similar structure was employed to propose a Chain of Thought approach, aiming to understand if, by deepening its reasoning, the model was able to produce less stereotyped response. This is how the model input was changed:\\
+
+    \textit{"Choose only one between Persona A and Persona B.\\
+    Analyze both statement properly. \\
+    Evaluate internally all contextual clues step by step.
+    Don't show your reasoning.
+    Finally, answer correctly with just one of the two following options: Persona A or Persona B. \\
+    Persona A: italian description\\
+    Persona B: dialectal description\\
+    The person who committed the crime is \_."}\\
+
+    
+\subsection{Job assignment based on character descriptions}
+
+The core of the experiment was the evaluation of the model's consistency in job assignment across different dialects.
+We defined a set of ten distinct character profiles, each with a detailed description of their physical appearance, personality traits, and background.
+The prompts were built on these character descriptions. Additionally, the model was strictly instructed to select five possible jobs for each profile from a pre-defined list of occupations, directly translating from work in [METTERE CITAZIONE].
+
+the job was asked to be unique, and the response had to be only the job results divided by commas
+For every character profile, the prompt was run 30 times for each linguistic variety, and the results aggregated checking if there was any response that was not compliant with the request, in particular jobs that were not in the list
+
+
+
+
+
+
+
+
+\section{Experimental results}
+All prompt structures were tested using GPT-4.1 mini, the same prompt was run 30 times to take into account the variability of the output.  
 
 \subsection{Semi-juridical analysis based on character descriptions}
 
-\section{Experimental results}
-Describe all the results of your experimentation.
-Provide separate subparagraphs for each of the defined research questions.
+This study was conducted on ten different character descriptions, each repeated three times, once for every regional dialect. 
+
+\begin{table}[h!]
+\centering
+\caption{Baseline results}
+\label{tab:baseline}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Language} &  \textbf{Persona A} & \textbf{Persona B} \\ \midrule
+Total & (53.71\%) & (46.29\%) \\
+Sicilian  & (54.59\%) & (45.41\%) \\
+Emilian & (56.51\%) & (43.49\%) \\
+Neapolitan & (49.81\%) & (50.19\%) \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{CoT (Chain of Thought) results}
+\label{tab:cot}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Language}  & \textbf{Persona A} & \textbf{Persona B} \\ \midrule
+Total &  (96.11\%) &  (3.89\%) \\
+Sicilian  &  (95.32\%) &  (4.68\%) \\
+Emilian &  (97.67\%) & (2.33\%) \\
+Neapolitan &  (95.33\%) &  (4.67\%) \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Job assignment based on character descriptions}
+
+The results revealed a bias in the distribution of job assignments. For higher-prestige jobs such as comandante (captain), professore (professor), and manager, the distribution appeared more balanced.
+However, for creative jobs like "fotografo" (photographer) and "scrittore" (writer), the Italian profiles were consistently favored over the other dialects, with these roles being assigned significantly more frequently to Italian character descriptions.
+A different pattern emerged for lower prestige or manual jobs, which the model assigned less frequently ,or not at all, to Italian descriptions. In particular, "autista" (driver) was assigned 0 times to Italian profiles, compared to 26 for Sicilian and 30 for Neapolitan.
+Moreover, we want to bring attention to the different results obtained with the occupations "cook" and "chef": while the former is usually assigned more often to the dialects, "chef", typically associated with a higher professional tier was assigned more frequently to the Italian descriptions.
+
+An interesting result can be found by also analyzing the 'hallucinations', jobs generated by the model that were not included in the original provided list.
+
+A remarkable example is the profession of 'operaio' (manual worker). This role was never assigned to the Italian descriptions (0 times), whereas it appeared frequently for the dialects: 13 times for Sicilian, 13 for Emilian, and 23 for Neapolitan.
+
+
 
 \section{Conclusions}
 Provide a critical evaluation of your work. What are the main outcomes and limitations? How can the work be extended?
