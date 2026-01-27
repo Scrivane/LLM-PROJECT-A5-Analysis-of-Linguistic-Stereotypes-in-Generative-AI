@@ -476,6 +476,11 @@ def analyze_results(input_json):
         count_a = 0
         count_b = 0
         total = 0
+        count_per_dialect = {
+            "siciliano": {"total": 0, "persona_a": 0, "persona_b": 0},
+            "parmigiano": {"total": 0, "persona_a": 0, "persona_b": 0},
+            "napoletano": {"total": 0, "persona_a": 0, "persona_b": 0},
+        }
         for line_number, line in enumerate(f):
             # Skippa la prima riga (header)
             if line_number == 0:
@@ -486,17 +491,29 @@ def analyze_results(input_json):
 
             data = json.loads(line)
             response = data.get("response", "").strip().upper()
+            dialetto = data.get("language", "").strip().lower()
 
             if response == "PERSONA A":
                 count_a += 1
                 total += 1
+                count_per_dialect[dialetto]["persona_a"] += 1
+                count_per_dialect[dialetto]["total"] += 1
             elif response == "PERSONA B":
                 count_b += 1
                 total += 1
+                count_per_dialect[dialetto]["persona_b"] += 1
+                count_per_dialect[dialetto]["total"] += 1
 
-    print(f"Total responses: {total}")
-    print(f"PERSONA A: {count_a} ({(count_a / total * 100) if total > 0 else 0:.2f}%)")
-    print(f"PERSONA B: {count_b} ({(count_b / total * 100) if total > 0 else 0:.2f}%)")
+    print(f"CUMULATIVE results - total responses: {total}")
+    print(f"    PERSONA A: {count_a} ({(count_a / total * 100) if total > 0 else 0:.2f}%)")
+    print(f"    PERSONA B: {count_b} ({(count_b / total * 100) if total > 0 else 0:.2f}%)")
+    for dialetto, counts in count_per_dialect.items():
+        d_total = counts["total"]
+        d_a = counts["persona_a"]
+        d_b = counts["persona_b"]
+        print(f"Risultati {dialetto} - total responses: {d_total}")
+        print(f"    PERSONA A: {d_a} ({(d_a / d_total * 100) if d_total > 0 else 0:.2f}%)")
+        print(f"    PERSONA B: {d_b} ({(d_b / d_total * 100) if d_total > 0 else 0:.2f}%)")
     return total, count_a, count_b
     
 
@@ -539,13 +556,11 @@ if __name__ == '__main__':
 
 
     #batch_run_expanded_prompts(input_path, output_path_baseline, question, model_name=model_name, runs=1)
-    analyze_results(output_path_baseline)
-    #batch_run_expanded_prompts(input_path, output_path_CoT, question_CoT, model_name=model_name, runs=1)
-    #batch_run_expanded_prompts_MULTI(input_path, ouput_path_first, ouput_path_second, question_firstAgent, question_secondAgent, model_name=model_name, runs=1)
-    #output_baseline_improved = str(base / "result_silvia_GPT_improved.jsonl")
-    #output_CoT_improved = str(base / "result_silvia_GPT_improved_CoT.jsonl")
-    #print("##### Baseline Improved Results #####")
-    ##analyze_results(output_baseline_improved)
-    #print("\n ##### CoT Improved Results #####")
-    #analyze_results(output_CoT_improved)
+    print("#### Baseline results ####:")
+    analyze_results("test_personaAB_silvia/result_silvia_GPT_FINAL.jsonl")
+
+    print("\n\n#### CoT results ####:")
+    analyze_results("test_personaAB_silvia/result_silvia_GPT_FINAL_CoT.jsonl")
+
+
 
