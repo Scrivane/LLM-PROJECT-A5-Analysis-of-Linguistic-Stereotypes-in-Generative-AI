@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
-file_path = 'job_divergence_multiagent.csv' 
+file_path = 'job_divergence_baseline.csv' 
 
 try:
     df = pd.read_csv(file_path)
@@ -20,6 +20,9 @@ for d in dialetti:
 df['abs_sum'] = df[[f'{d}_div' for d in dialetti]].abs().sum(axis=1)
 df_filtered = df[df['abs_sum'] > 10].copy().sort_values('ITA', ascending=True)
 
+#fixing scale
+x_min = df_filtered[['ITA'] + dialetti].min().min()
+x_max = df_filtered[['ITA'] + dialetti].max().max()
 
 fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(18, 12), sharey=True)
 y_pos = np.arange(len(df_filtered))
@@ -51,6 +54,9 @@ for i, d in enumerate(dialetti):
     ax.spines['right'].set_visible(False)
     ax.spines['left'].set_visible(False)
 
+    #fixed scale
+    ax.set_xlim(x_min, x_max)
+
 axes[0].set_yticks(y_pos)
 axes[0].set_yticklabels(df_filtered['LAVORO'], fontweight='bold')
 
@@ -60,5 +66,5 @@ plt.suptitle('Analisi Divergenze Occupazionali: Dialetti vs Italiano Centrale',
 fig.legend(loc='upper center', bbox_to_anchor=(0.5, 1.01), ncol=4, frameon=False, fontsize=12)
 
 plt.tight_layout()
-plt.savefig('divergence_multiagent_values_dumbbell.png', dpi=300, bbox_inches='tight')
+plt.savefig('divergence_baseline_values_dumbell.png', dpi=300, bbox_inches='tight')
 plt.show()
