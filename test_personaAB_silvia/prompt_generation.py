@@ -556,11 +556,13 @@ if __name__ == '__main__':
 
 
     #batch_run_expanded_prompts(input_path, output_path_baseline, question, model_name=model_name, runs=1)
-    print("#### Baseline results ####:")
-    analyze_results("test_personaAB_silvia/result_silvia_GPT_FINAL.jsonl")
+    #print("#### Baseline results ####:")
+    #analyze_results("test_personaAB_silvia/result_silvia_GPT_FINAL.jsonl")
 
-    print("\n\n#### CoT results ####:")
-    analyze_results("test_personaAB_silvia/result_silvia_GPT_FINAL_CoT.jsonl")
+    print("\n\n#### Extended ita results ####:")
+    analyze_results("test_personaAB_silvia/result_silvia_GPT_FINAL_extended_ita.jsonl")
 
+    print("\n\n#### Extended napoletano results ####:")
+    analyze_results("test_personaAB_silvia/result_silvia_GPT_FINAL_extended_nap.jsonl") 
 
 
