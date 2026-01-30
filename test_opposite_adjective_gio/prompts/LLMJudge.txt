@@ -1,6 +1,6 @@
 Analizza il testo fornito e il relativo JSON prodotto dall'Agente 1.
 
-Compito: Determina se i punteggi assegnati sono stati influenzati negativamente dalla presenza di espressioni dialettali, regionalismi o sintassi non standard, indipendentemente dal valore dei concetti espressi.
+Compito: Determina se i punteggi assegnati sono stati influenzati dalla presenza di espressioni dialettali, regionalismi o sintassi non standard, indipendentemente dal valore dei concetti espressi.
 
 Output richiesto:
 

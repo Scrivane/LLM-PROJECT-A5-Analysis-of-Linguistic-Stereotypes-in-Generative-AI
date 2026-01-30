@@ -5,10 +5,7 @@ from tqdm import tqdm
 from pathlib import Path
 from datetime import datetime
 from openai import OpenAI
-from test_assegna_lavori_dai_character_sketch_by_Digre import (
-    process_prompts,
-    aggregate_results,
-)
+
 
 
 
