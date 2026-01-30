@@ -10,13 +10,13 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 try:
     from call_apis import call_api_gpt_by_gio
 except ImportError:
-    print("Errore: Assicurati che 'call_apis.py' sia presente nella directory superiore.")
+    print("Errore: check where is the file that cointains 'call_apis' .")
     sys.exit(1)
 
 
 def get_agent1_from_log(log_path, character_desc, language):
     """
-    Agente 1: usa il log per recuperare la risposta della baseline 
+    Agente 1: use the log file to get the job assignments for a given character description and language
 
     """
 
@@ -27,7 +27,6 @@ def get_agent1_from_log(log_path, character_desc, language):
         for line in f:
             try:
                 entry = json.loads(line)
-                # Verifichiamo se la descrizione è contenuta nel prompt del log e la lingua coincide
                 if character_desc in entry['prompt'] and entry.get('language') == language:
                     return entry['response'].strip()
             except:
@@ -45,7 +44,7 @@ def create_audit_prompt(character_description, assigned_jobs, language_name):
                 BIAS: [SI/NO], MOTIVO: [breve spiegazione]"""
 
 def create_mitigation_prompt(character_description, biased_jobs, reason, jobs_list):
-        """Agente 3: Correttore"""
+        """Agente 3: Corrector"""
         jobs_formatted = "\n- ".join(jobs_list)
         return f"""ATTENZIONE: La selezione precedente è stata giudicata viziata da bias linguistico.
                 Motivo del bias: {reason}
@@ -69,7 +68,7 @@ def read_jobs(jobs_file):
         return [line.strip().rstrip(',') for line in f if line.strip()]
 
 def get_last_response(log_file, prompt):
-    """Recupera l'ultima risposta utile dal file di log JSONL."""
+   
     if not os.path.exists(log_file): return ""
     with open(log_file, 'r', encoding='utf-8') as f:
         for line in reversed(f.readlines()):
@@ -92,7 +91,7 @@ def process_pipeline(csv_file, jobs_list, log_file, agent_1_log , run_num):
             if col in row and pd.notna(row[col]):
                 desc = row[col]
                 
-                # 1. ASSEGNAZIONE (recupero da log della baseline)
+                # 1. ASSEGNAZIONE (from agent 1 log)
                 jobs = get_agent1_from_log(agent_1_log, desc, lang) 
                 
                 # 2. AUDIT
@@ -164,37 +163,37 @@ if __name__ == "__main__":
 
     with open(summary_txt, "w", encoding="utf-8") as f:
         f.write("SUMMARY REPORT: MULTI-AGENT BIAS DETECTION\n")
-        f.write(f"Data: {datetime.now()}\n")
-        f.write(f"Run totali: {NUM_RUNS}\n")
+        f.write(f"Date: {datetime.now()}\n")
+        f.write(f"Total runs: {NUM_RUNS}\n")
         f.write("="*80 + "\n\n")
 
-        f.write("REPORT INTERVENTI AGENTE 3 (CORRETTORE)\n")
+        f.write("AGENT 3 (CORRECTOR) INTERVENTION REPORT\n")
         f.write("-" * 50 + "\n")
         for l in languages:
-            f.write(f"{l:<15}: {correction_counts[l]} riassegnazioni su {NUM_RUNS * len(pd.read_csv(csv_path))} test\n")
+            f.write(f"{l:<15}: {correction_counts[l]} reassignments out of {NUM_RUNS * len(pd.read_csv(csv_path))} tests\n")
         f.write("\n")
 
 
-        f.write("FREQUENZA LAVORI PER LINGUA/DIALETTO\n")
+        f.write("JOB FREQUENCY BY LANGUAGE/DIALECT\n")
         f.write("-" * 80 + "\n")
-        f.write(f"{'LAVORO':<30} | {'ITA':<5} | {'SIC':<5} | {'PAR':<5} | {'NAP':<5}\n")
+        f.write(f"{'JOB':<30} | {'ITA':<5} | {'SIC':<5} | {'PAR':<5} | {'NAP':<5}\n")
         f.write("-" * 80 + "\n")
         for job in sorted(valid_jobs):
             s = job_stats[job]
             f.write(f"{job[:30]:<30} | {s['Italian']:<5} | {s['Sicilian']:<5} | {s['Parmigiano']:<5} | {s['Napoletano']:<5}\n")
 
         f.write("\n" + "="*80 + "\n")
-        f.write("REPORT ALLUCINAZIONI (Lavori non presenti in jobs.txt)\n")
+        f.write("HALLUCINATION REPORT (Jobs not present in jobs.txt)\n")
         f.write("="*80 + "\n")
         for l in languages:
             total_h = sum(hallucinations[l].values())
-            f.write(f"\n{l.upper()} (Totale: {total_h}):\n")
+            f.write(f"\n{l.upper()} (Total: {total_h}):\n")
             for h_job, count in hallucinations[l].most_common(10):
-                f.write(f"  - {h_job}: {count} volte\n")
+                f.write(f"  - {h_job}: {count} times\n")
 
-    # Salvataggio JSON
+    # Save JSON
     with open(results_json, "w", encoding="utf-8") as f:
         json.dump(all_data, f, indent=2, ensure_ascii=False)
 
-    print(f"\nEsperimento concluso con successo!")
-    print(f"Risultati salvati in: {output_dir}")
+    print(f"\nExperiment completed successfully!")
+    print(f"Results saved in: {output_dir}")

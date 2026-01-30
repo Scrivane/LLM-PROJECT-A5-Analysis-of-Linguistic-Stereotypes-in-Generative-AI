@@ -7,7 +7,6 @@ from datetime import datetime
 from collections import Counter
 from pathlib import Path
 
-# Add parent directory to path to import call_apis
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from call_apis import call_api_gpt_by_gio
 
@@ -52,9 +51,7 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
     it will be prepended to every prompt; if None, prompts are neutral
     (no persona).
     """
-    #print("Loading Qwen model...")
-    #load_model_once()
-    #print("Model loaded successfully!\n")
+
     
 
     df = pd.read_csv(csv_file)
@@ -76,7 +73,7 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
     
     results = []
     
-    # Process each row
+
     for idx, row in df.iterrows():
         character_id = row['id']
         print(f"\n{'='*80}")
@@ -89,7 +86,7 @@ def process_prompts(csv_file, jobs_file, output_file, log_file, num_runs=1, run_
             'original_descriptions': {}
         }
         
-        # Process each language
+
         for col_name, lang_name in language_columns.items():
             if col_name in df.columns and pd.notna(row[col_name]):
                 character_desc = row[col_name]
@@ -198,15 +195,14 @@ def aggregate_from_results_file(results_path, aggregated_path=None, summary_path
 
 if __name__ == "__main__":
     
-    # File paths
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
     csv_file = os.path.join(script_dir, "descrizioni.csv")
     jobs_file = os.path.join(script_dir, "jobs.txt")
     
-    # Number of runs (change this to 100 or any other number)
+
     NUM_RUNS = 30
     
-    # Create timestamped output directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     results_dir = os.path.join(script_dir, f"baseline_{NUM_RUNS}_runs_{timestamp}")
     os.makedirs(results_dir, exist_ok=True)
@@ -227,20 +223,19 @@ if __name__ == "__main__":
 
     all_results = []
 
-    # Decide which personas to run
+
     if args.no_persona:
         personas_to_run = [None]
     elif args.persona:
         personas_to_run = [args.persona]
     else:
-        # No flags: run once for each persona defined in PERSONAS
+
         personas_to_run = list(PERSONAS.keys())
 
     print("Personas to run:")
     for p in personas_to_run:
         print(f"  - {'<none>' if p is None else p}")
 
-    # Run the process NUM_RUNS times for each selected persona
     for persona_key in personas_to_run:
         persona_desc = PERSONAS.get(persona_key) if persona_key is not None else None
         print("=" * 80)
@@ -262,11 +257,10 @@ if __name__ == "__main__":
                 r["persona"] = persona_key if persona_key is not None else "none"
             all_results.extend(results)
     
-    # Save all results to JSON file
+
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(all_results, f, ensure_ascii=False, indent=2)
-    
-    # Aggregate results by counting job frequencies for each character
+
     aggregated = {}
     df_check = pd.read_csv(csv_file)
     
@@ -279,7 +273,7 @@ if __name__ == "__main__":
             'Napoletano': Counter()
         }
     
-    # Count job occurrences
+
     for result in all_results:
         char_id = str(result['id'])
         for lang in ['Italian', 'Sicilian', 'Parmigiano', 'Napoletano']:
@@ -288,18 +282,18 @@ if __name__ == "__main__":
                 jobs = [j.strip() for j in result[key].split(',')]
                 aggregated[char_id][lang].update(jobs)
     
-    # Convert Counters to dictionaries sorted by frequency
+
     aggregated_final = {}
     for char_id, langs in aggregated.items():
         aggregated_final[char_id] = {}
         for lang, counter in langs.items():
             aggregated_final[char_id][lang] = dict(counter.most_common())
     
-    # Save aggregated results
+
     with open(aggregated_file, 'w', encoding='utf-8') as f:
         json.dump(aggregated_final, f, ensure_ascii=False, indent=2)
     
-    # Create summary report
+    
     with open(summary_file, 'w', encoding='utf-8') as f:
         f.write("=" * 80 + "\n")
         f.write("Job Assignment - Multiple Runs Summary Report\n")

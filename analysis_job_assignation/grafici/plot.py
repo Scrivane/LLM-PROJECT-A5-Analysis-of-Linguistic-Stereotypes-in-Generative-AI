@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
-file_path = 'job_divergence_baseline.csv' 
+file_path = 'test_assegna_lavori_dai_character_sketch_by_Digre\summaries\job_divergence_multiagent.csv' 
 
 try:
     df = pd.read_csv(file_path)
@@ -11,8 +11,8 @@ except FileNotFoundError:
     print(f"Errore: Il file '{file_path}' non trovato.")
     sys.exit()
 
-dialetti = ['SIC', 'PAR', 'NAP']
-colori = {'SIC': '#3498db', 'PAR': '#e67e22', 'NAP': '#2ecc71'}
+dialetti = ['SIC', 'EML', 'NAP']
+colori = {'SIC': '#3498db', 'EML': '#e67e22', 'NAP': '#2ecc71'}
 
 for d in dialetti:
     df[f'{d}_div'] = df[d] - df['ITA']
@@ -60,11 +60,11 @@ for i, d in enumerate(dialetti):
 axes[0].set_yticks(y_pos)
 axes[0].set_yticklabels(df_filtered['LAVORO'], fontweight='bold')
 
-plt.suptitle('Analisi Divergenze Occupazionali: Dialetti vs Italiano Centrale', 
+plt.suptitle('Occupational Divergence Analysis: Dialects vs. Standard Italian', 
              fontsize=20, y=1.05, fontweight='bold')
 
 fig.legend(loc='upper center', bbox_to_anchor=(0.5, 1.01), ncol=4, frameon=False, fontsize=12)
 
 plt.tight_layout()
-plt.savefig('divergence_baseline_values_dumbell.png', dpi=300, bbox_inches='tight')
+plt.savefig('divergence_multiagent_values_dumbbell_full.png', dpi=300, bbox_inches='tight')
 plt.show()

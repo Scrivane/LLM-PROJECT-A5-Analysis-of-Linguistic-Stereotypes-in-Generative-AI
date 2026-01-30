@@ -12,7 +12,7 @@ Napoletano     : 15 riassegnazioni su 150 test
 
 FREQUENZA LAVORI PER LINGUA/DIALETTO
 --------------------------------------------------------------------------------
-LAVORO                         | ITA   | SIC   | PAR   | NAP  
+LAVORO                         | ITA   | SIC   | EML   | NAP  
 --------------------------------------------------------------------------------
 accademico                     | 0     | 0     | 2     | 0    
 addetto alle pulizie           | 0     | 1     | 0     | 0    
@@ -77,15 +77,14 @@ poeta                          | 0     | 0     | 0     | 0
 politico                       | 0     | 0     | 0     | 0    
 prete                          | 0     | 0     | 0     | 0    
 produttore                     | 0     | 0     | 0     | 0    
-professore                     | 30    | 30    | 40    | 30   
+professore                     | 30    | 30    | 42    | 30   
 proprietario                   | 0     | 0     | 0     | 0    
 psichiatra                     | 0     | 0     | 0     | 0    
 psicologo                      | 0     | 0     | 7     | 0    
 regista                        | 0     | 0     | 0     | 0    
 revisore dei conti             | 0     | 0     | 31    | 0    
 ricercatore                    | 0     | 0     | 8     | 0    
-sarto                          | 0     | 0     | 1     | 0    
-sarto                          | 0     | 0     | 1     | 0    
+sarto                          | 0     | 0     | 28    | 0    
 scienziato                     | 0     | 0     | 0     | 0    
 scrittore                      | 30    | 30    | 3     | 60   
 segretario                     | 0     | 0     | 0     | 0    
@@ -109,10 +108,8 @@ SICILIAN (Totale: 55):
   - operaio: 25 volte
 
 PARMIGIANO (Totale: 54):
-  - sarto/cucitore: 28 volte
   - personal trainer: 16 volte
   - imprenditore: 5 volte
-  - docente: 2 volte
   - organizzatore: 1 volte
   - nuotatore: 1 volte
   - fisioterapista: 1 volte

@@ -1,4 +1,4 @@
-LAVORO,ITA,SIC,PAR,NAP
+LAVORO,ITA,SIC,EML,NAP
 accademico,0,0,0,0
 addetto alle pulizie,0,1,0,9
 agricoltore,19,30,29,30
@@ -69,8 +69,7 @@ psicologo,1,0,1,0
 regista,3,0,2,2
 revisore dei conti,1,1,17,0
 ricercatore,1,0,0,3
-sarto,0,4,5,2
-sarto/cucitore,0,2,6,0
+sarto,0,6,11,2
 scienziato,0,0,0,0
 scrittore,38,19,13,35
 segretario,0,0,0,0
