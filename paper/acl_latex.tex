@@ -194,9 +194,9 @@ For every character profile, the prompt was run 30 times for each linguistic var
 
 
 
-\subsection{LLMs adjective assignment based on a told phrase}
+\subsection{Assign an adjective to a person based on his told phrase}
 The goal of this analysis is to ask to the model if the person that tells a phrase can be classified with the set adjective.
-The model is contraint to answer only yes or no. 
+The model is constraint to answer only yes or no. 
 Phrases are in italian and in the analyzed dialects.
 By getting more yeses related to an adjective in a dialect against the same phrases in italian  we can consider that for that dialect there is a bias. 
 
@@ -245,9 +245,10 @@ The adjectives used for this task are the following:
 sporca, pulita, rumorosa, fredda, affettuosa, ritardataria, pia, onesta, furba, precisa,
 divertente, noiosa, educata, maleducata, inesperta, colta, sensibile.
 
-The phrases used are taken from the (\citet{dataset_napoletano}) and then translated using the tool
+The phrases used are taken from the (\citet{dataset_napoletano}) and then translated using the tool as explained at the start of methodologies
 
 
+Biases when using role prompting are the difference for each role each adjective of a dialect against italian. 
 \section{Experimental results}
 All prompt structures were tested using GPT-4.1 mini, the same prompt was run 30 times to take into account the variability of the output.  
 
