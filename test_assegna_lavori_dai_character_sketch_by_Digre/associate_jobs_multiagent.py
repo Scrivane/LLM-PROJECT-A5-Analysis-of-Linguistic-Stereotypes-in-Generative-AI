@@ -54,7 +54,7 @@ def create_mitigation_prompt(character_description, biased_jobs, reason, jobs_li
                 Descrizione Personaggio: {character_description}
 
                 COMPITO: Effettua una nuova selezione di 5 lavori dalla lista seguente. 
-                Ignora totalmente il dialetto o la lingua e basati esclusivamente sulle competenze oggettive.
+                Ignora totalmente il dialetto o la lingua.
 
                 Lavori disponibili:
                 {jobs_formatted}
