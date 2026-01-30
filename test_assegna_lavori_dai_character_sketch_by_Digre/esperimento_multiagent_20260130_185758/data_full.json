@@ -1,0 +1,2102 @@
+[
+  {
+    "id": 1,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 1,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "dirigente, consulente, manager, professore, istruttore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 2,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "contabile, amministratore, consulente, dirigente, impiegato",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "medico, dirigente, investigatore, diplomatico, consulente",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 3,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "impiegato, assistente, supervisore, funzionario, istruttore"
+  },
+  {
+    "id": 1,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 4,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "assistente, impiegato, consulente, supervisore, tecnico"
+  },
+  {
+    "id": 1,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "medico, psicologo, artista, dirigente, ricercatore",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 5,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "consulente, amministratore, dirigente, manager, professore",
+    "jobs_Napoletano": "assistente, supervisore, tecnico, custode, consulente"
+  },
+  {
+    "id": 1,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "allenatore, comandante, pilota, imprenditore, medico",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 6,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 7,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "consulente, dirigente, analista, professore, manager",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "imprenditore, diplomatico, medico, avvocato, manager",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 8,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "contabile, assistente, amministratore, impiegato, consulente",
+    "jobs_Parmigiano": "manager, consulente, supervisore, impiegato, tecnico",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "consulente, imprenditore, giornalista, docente, ricercatore",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 9,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "amministratore, revisore dei conti, consulente, dirigente, manager",
+    "jobs_Napoletano": "consulente, dirigente, manager, istruttore, supervisore"
+  },
+  {
+    "id": 1,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "medico, psicologo, dirigente, pilota, ingegnere",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 10,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "contabile, amministratore, consulente, dirigente, ispettore",
+    "jobs_Napoletano": "contabile, amministratore, consulente, impiegato, istruttore"
+  },
+  {
+    "id": 1,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "dirigente, consulente, manager, ingegnere, sviluppatore",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 11,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "accademico, consulente, dirigente, professore, ricercatore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 12,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "medico, psicologo, diplomatico, giornalista, ingegnere",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 13,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "organizzatore, consulente, manager, istruttore, giornalista",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 14,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "consulente, manager, professore, ricercatore, analista",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "diplomatico, dirigente, consulente, giornalista, storico",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 15,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": false,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "consulente, supervisore, amministratore, analista, manager",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "impiegato, assistente, tecnico, supervisore, consulente"
+  },
+  {
+    "id": 1,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "ricercatore, psicologo, sviluppatore, scrittore, insegnante",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 16,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "assistente, operatore, impiegato, istruttore, supervisore",
+    "jobs_Parmigiano": "contabile, analista, consulente, impiegato, manager",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, artista, sarto, scrittore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 17,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "consulente, manager, professore, ricercatore, scrittore",
+    "jobs_Napoletano": "contabile, assistente, impiegato, supervisore, tecnico"
+  },
+  {
+    "id": 1,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 18,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "consulente, supervisore, impiegato, assistente, manager"
+  },
+  {
+    "id": 1,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 19,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "medico, psicologo, dirigente, insegnante, diplomatico",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "studente, sviluppatore, ricercatore, musicista, giornalista",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 20,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "contabile, analista, consulente, dirigente, manager",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "consulente, sviluppatore, designer, istruttore, imprenditore",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 21,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "impiegato, supervisore, assistente, tecnico, consulente"
+  },
+  {
+    "id": 1,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "atleta, cuoco, giornalista, consulente, sviluppatore",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 22,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "impiegato, supervisore, tecnico, assistente, operatore"
+  },
+  {
+    "id": 1,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "dirigente, manager, diplomatico, investigatore, pilota",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 23,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "addetto alle pulizie, assistente, impiegato, operatore, istruttore",
+    "jobs_Parmigiano": "consulente, supervisore, dirigente, ingegnere, professore",
+    "jobs_Napoletano": "consulente, amministratore, impiegato, dirigente, supervisore"
+  },
+  {
+    "id": 1,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 24,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": true,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "impiegato, assistente, tecnico, supervisore, istruttore",
+    "jobs_Parmigiano": "amministratore, consulente, dirigente, manager, professore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 25,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "consulente, analista, docente, amministratore, ricercatore",
+    "jobs_Napoletano": "consulente, impiegato, supervisore, istruttore, tecnico"
+  },
+  {
+    "id": 1,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 26,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "consulente, dirigente, supervisore, ingegnere, manager"
+  },
+  {
+    "id": 1,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "consulente, dirigente, diplomatico, psicologo, imprenditore",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 27,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "consulente, dirigente, analista, manager, professore",
+    "jobs_Napoletano": "consulente, dirigente, supervisore, tecnico, manager"
+  },
+  {
+    "id": 1,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "nuotatore, istruttore, atleta, personal trainer, fisioterapista",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 28,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "meccanico, agricoltore, istruttore, supervisore, operatore",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  },
+  {
+    "id": 1,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "atleta, allenatore, modello, attore, personal trainer",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 29,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": true
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "accademico, dirigente, consulente, manager, professore",
+    "jobs_Napoletano": "operaio, assistente, impiegato, tecnico, supervisore"
+  },
+  {
+    "id": 1,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "atleta, allenatore, attore, pilota, soldato",
+    "jobs_Sicilian": "atleta, allenatore, modello, attore, pilota",
+    "jobs_Parmigiano": "consulente, dirigente, diplomatico, medico, psicologo",
+    "jobs_Napoletano": "atleta, allenatore, modello, istruttore, attore"
+  },
+  {
+    "id": 2,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "attrice, musicista, chef, assistente, fotografo",
+    "jobs_Sicilian": "pianista, chef, cuoco, musicista, artista",
+    "jobs_Parmigiano": "assistente, cuoco, attrice, artista, sarto/cucitore",
+    "jobs_Napoletano": "attrice, cuoco, musicista, scrittore, fotografo"
+  },
+  {
+    "id": 3,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "consulente, professore, scrittore, storico, giornalista",
+    "jobs_Sicilian": "consulente, professore, storico, scrittore, manager",
+    "jobs_Parmigiano": "consulente, amministratore, professore, revisore dei conti, manager",
+    "jobs_Napoletano": "consulente, professore, storico, scrittore, amministratore"
+  },
+  {
+    "id": 4,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": false,
+      "Napoletano": false
+    },
+    "jobs_Italian": "artista, attore, musicista, modello, fotografo",
+    "jobs_Sicilian": "artista, musicista, attore, fotografo, modello",
+    "jobs_Parmigiano": "attore, musicista, fotografo, comico, modello",
+    "jobs_Napoletano": "artista, attore, musicista, fotografo, modello"
+  },
+  {
+    "id": 5,
+    "run": 30,
+    "corrections": {
+      "Italian": false,
+      "Sicilian": false,
+      "Parmigiano": true,
+      "Napoletano": false
+    },
+    "jobs_Italian": "agricoltore, meccanico, supervisore, istruttore, operatore",
+    "jobs_Sicilian": "meccanico, agricoltore, operaio, autista, supervisore",
+    "jobs_Parmigiano": "consulente, supervisore, dirigente, ingegnere, manager",
+    "jobs_Napoletano": "meccanico, agricoltore, autista, operaio, assistente"
+  }
+]
