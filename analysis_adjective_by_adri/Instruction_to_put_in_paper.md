@@ -53,13 +53,13 @@ Chi parla in itlaiano invece è più colto , educato .
 Si nota che sicilaino e napoletano spesso si comportano uguale.
 Un po diverso è il comportamento del parmigiano , chi parla in questo dialetto tende ad essere clssificato come persona inesperta e scarsamente precisa .
 
-![alt text](image.png)
+![alt text](image-22.png)
 
 
 
 facendo role prompting si nota che ci sono meno volte che llm risponde si alla suddetta domadna 
 <!-- ![alt text](image-1.png) -->
-![alt text](image-13.png)
+![alt text](image-14.png)
 
 
 
@@ -73,14 +73,13 @@ Invece nella versione corta del prompt è il contrario.
 Dunque probabilmente si può concludere che non è che il modello considera un giudice imparziale come più affetto da bias rispetto a un uomo di paese . Ma è lo specifico prompt usato nella versione lunga a creare un miglioramento del bias del uomo di paese rispetto al giudice imparziale .
 In ogni caaso tutte e 4 le versioni di role prompting riportano un miglioramento rispetto a nessun role prompting 
 <!-- ![alt text](image-2.png) -->
-![alt text](image-12.png)
-
+![alt text](image-15.png)
 Qui invece normalizzo calcolando standard deviazione , ovvero faccio sqrt(delta_{lingua}_sq)/n volte il modello dice si per quel ruolo
 
 
 usare la versione corta del prompt giudice migliora rispetto alla versione lunga solo napoletano se si normalizza qui teneendo conto del diverso  numero di volte che il modello dice si per quel ruolo
 <!-- ![alt text](image-6.png) -->
-![alt text](image-10.png)
+![alt text](image-16.png)
 
 
 
@@ -95,13 +94,13 @@ su pochi aggettivi quali furba,divertente ,colta ed affettuasa il  miglioraament
 la zero line è diversa per ogni ruolo ,  ma la lingua della zero line è sempre italiano
 questa è la comparisono dei ruoli in napoletano
 <!-- ![alt text](image-3.png) -->
-![alt text](image-8.png)
+![alt text](image-19.png)
 siciliano
 <!-- ![alt text](image-4.png) -->
-![alt text](image-9.png)
+![alt text](image-20.png)
 parmigiano
 <!-- ![alt text](image-5.png) -->
-![alt text](image-7.png)
+![alt text](image-21.png)
 
 
 non so se è abbastanza chiaro che la zero line è diversa per ogni ruolo , nello stesso file c'è anche la stessa comparison usando la zero line italiano con nessun ruolo , ma non ho messo qui i grafici , perchè non si capisce molto che le barre con role prompting sono di media più corte di quelle senza role prompting 
