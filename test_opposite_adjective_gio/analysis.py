@@ -33,19 +33,19 @@ client = OpenAI(api_key=API_KEY)
 # colonne e lingue per i grafici
 languages_cols = {
     "Neapolitan Text": "Napoletano",
-    "Automated Translation": "Italiano (Auto)",
+    "Automated Translation": "Italiano",
     "Parmigiano": "Parmigiano",
     "Siciliano": "Siciliano"
 }
 
 # Ordine fisso delle dimensioni
 categories = [
-    "Coscienzioso",
-    "Mentalita_aperta",
-    "Amichevole",
-    "Urbano",
-    "Calmo",
-    "Istruito"
+    "Conscientious",
+    "Open-mindedness",
+    "Friendly",
+    "Urban",
+    "Calm",
+    "Educated"
 ]
 
 # funzione per richiedere a chatGPT
@@ -349,7 +349,7 @@ def run_3agents():
 
     # Salvataggio CSV Finale
     df_final = pd.DataFrame(final_results)
-    output_path = "./test_opposite_adjective_gio/3agents/risultati_finali_multiagente.csv"
+    output_path = "./test_opposite_adjective_gio/3agents/risultati_finali_multiagente1.csv"
     
     # Assicurati che la cartella esista
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -360,7 +360,7 @@ def run_3agents():
         df_final, 
         suffix="_Final", 
         title="Analisi Finale Multi-Agente (Post-Correzione)", 
-        filename="./test_opposite_adjective_gio/3agents/radar_finale.png"
+        filename="./test_opposite_adjective_gio/3agents/radar_finale1.png"
     )
     
     print(f"Processo completato. File salvato in: {output_path}")
@@ -368,21 +368,54 @@ def run_3agents():
 
 if __name__ == "__main__":
     #df_results = run_analysis()
-    run_3agents()
+    #run_3agents()
     #  Genera il grafico per l'Agente 1 (Raw Response)
-    ''''
+    # Nel tuo script, il caricamento è definito qui:
+    input = "./test_opposite_adjective_gio/2agents/risultati_analisi_completi.csv"
+    mappa_colonne = {
+            "Coscienzioso_Raw": "Conscientious_Raw",
+            "Coscienzioso_Refined": "Conscientious_Refined",
+            "Mentalita_aperta_Raw": "Open-mindedness_Raw",
+            "Mentalita_aperta_Refined": "Open-mindedness_Refined",
+            "Amichevole_Raw": "Friendly_Raw",
+            "Amichevole_Refined": "Friendly_Refined",
+            "Urbano_Raw": "Urban_Raw",
+            "Urbano_Refined": "Urban_Refined",
+            "Calmo_Raw": "Calm_Raw",
+            "Calmo_Refined": "Calm_Refined",
+            "Istruito_Raw": "Educated_Raw",
+            "Istruito_Refined": "Educated_Refined",
+            "Coscienzioso_Final": "Conscientious_Final",
+            "Mentalita_aperta_Final": "Open-mindedness_Final",
+            "Amichevole_Final": "Friendly_Final",
+            "Urbano_Final": "Urban_Final",
+            "Calmo_Final": "Calm_Final",
+            "Istruito_Final": "Educated_Final"
+        }
+# Viene caricato effettivamente in questa riga:
+    df_results = pd.read_csv(input)
+    df_results = df_results.rename(columns=mappa_colonne)
+    df_results["Language"] = df_results["Language"].replace("Italiano (Auto)", "Italiano")
+
     plot_radar_chart(
         df_results, 
         suffix="_Raw", 
-        title="Agente 1: Percezione Originale (Bias)", 
-        filename="./test_opposite_adjective_gio/radar_agente1_raw.png"
+        title="Baseline", 
+        filename="./test_opposite_adjective_gio/GIO_radar_baseline.png"
     )
     # Genera il grafico per l'Agente 2 (Refined Response)
     plot_radar_chart(
         df_results, 
         suffix="_Refined", 
-        title="Agente 2: Dopo Audit di Bias (Refined)", 
-        filename="./test_opposite_adjective_gio/radar_agente2_refined.png"
+        title="2 agents: Baseline, Bias Improvement", 
+        filename="./test_opposite_adjective_gio/rGIO_agente2.png"
+    )
+    '''
+    plot_radar_chart(
+        df_results, 
+        suffix="_Final", 
+        title="3 agents: Baseline, Judge, Corrector", 
+        filename="./test_opposite_adjective_gio/GIO_radar_judge_corrector.png"
     )
     '''
 
