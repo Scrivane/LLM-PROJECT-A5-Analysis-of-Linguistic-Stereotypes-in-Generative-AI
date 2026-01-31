@@ -389,6 +389,7 @@ Two interesting cases are the jobs \textit{"sarto"} and \textit{"comico"}, where
 %%%%%%%%%% END DIGRE GRAPHS %%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Trait adjective assignment based on statement}
+\label{sec:adriano_results}
 \normalsize
 As presented in Fig. \ref{fig:trait_baseline} , the baseline analysis reveals systematic differences between assigned adjectives to Italian and dialectal statements: dialectal varieties are more often associated with traits such as clever, precise and funny, while Italian is more often linked to educated and polite. Moreover, it is notable that Sicilian and Neapolitan show largely overlapping bias profiles whereas Parmigiano shows a partially divergent behavior. Again, this behavior could be linked to data scarcity during the model training.
 \\
@@ -475,8 +476,11 @@ By conducting this multi faced analysis, we managed to tackle the research quest
 \section{Conclusions}
 %Provide a critical evaluation of your work. What are %the main outcomes and limitations? How can the work be %extended?
 
-In this work we investigated covert linguistic biases in GPT-4.1 mini, focusing our attention on three Italian regional dialects: Neapolitan, Sicilian and Emilian. We explored how the adopted prompting strategy could influence the LLM behavior. To do so, we took advantage of two common prompting techniques: role prompting and multi-agentic pipeline. We observed that the model consistently presents stereotypical behaviors when prompted with a longer, more sophisticated style. Contrarily, applying Role Prompting  showed to successfully mitigate the biased results. In most cases, by adopting a multi-agent approach we managed to redistribute or correct the displayed biases, however, when transitioning from a 2 agents to a 3 agents framework, the issue of overcompensation occurs. To extend the outcomes of this research, we suggest exploring more in the depth the asymmetric outcomes between Norther and southern regions, to understand whether the reduced bias observed for the Emilian dialect is simply due to data scarcity or if it reflects a cultural stereotype as well. Finally, a significant challenge would be addressing the problem of over-compensation with the 3 agents framework.
 
+In this work we investigated covert linguistic biases in GPT-4.1 mini, focusing our attention on three Italian regional dialects: Neapolitan, Sicilian and Emilian. We explored how the adopted prompting strategy could influence the LLM behavior. To do so, we took advantage of two common prompting techniques: role prompting and multi-agentic pipeline. Applying Role Prompting  showed to successfully mitigate the biased results (\ref{sec:adr_results}).
+In most cases, by adopting a multi-agent approach we managed to redistribute or correct the displayed biases, however, when transitioning from a 2 agents to a 3 agents framework, the issue of overcompensation occurs (\ref{sec:gio_results}).
+In \ref{sec:res_questions} we observed that the model consistently presents stereotypical behaviors when prompted with a longer, more sophisticated text.
+To extend the outcomes of this research, we suggest exploring more in the depth the asymmetric outcomes between Norther and southern regions, to understand whether the reduced bias observed for the Emilian dialect is simply due to data scarcity or if it reflects a cultural stereotype as well. Finally, a significant challenge would be addressing the problem of over-compensation with the 3 agents framework.
 
 
 %Table~\ref{citation-guide} shows the syntax supported %by the style files.
