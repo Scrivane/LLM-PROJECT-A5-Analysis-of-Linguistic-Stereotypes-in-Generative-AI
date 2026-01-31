@@ -251,11 +251,18 @@ società che ti circonda."}
 
 The phrases used are taken from the (\citet{dataset_napoletano}) dataset and then translated using the tools mentioned above.
 A role shows higher bias if it generates a significantly different amount of affirmative answers for the same adjective when switching between standard Italian and regional dialects. 
-To compare roles and understand which one is better at reducing bias , we compute the following metric in which deltas between italiand and dialect are squared to ignore the direction of the bias:
+To compare roles and understand which one is better at reducing bias , we compute the following metric, in which deltas between Italian and dialect related responses are squared to take into account the direction of the bias:
 \begin{equation}
 \Delta_b = \sum_{a} \bigl( y_{d,r,a} - y_{i,r,a} \bigr)^2
 \label{eq:delta_b}
 \end{equation}
+\noindent
+where:  
+\begin{itemize}
+    \item $y_{d,r,a}$ is the number of ``yes'' responses for adjective $a$ in dialect for role $r$.
+    \item $y_{i,r,a}$ is the number of ``yes'' responses for adjective $a$ in standard Italian for the same role $r$.
+    \item $\sum_a $ denotes the summation across all adjectives.
+\end{itemize}
 \noindent
 where:  
 \begin{itemize}
