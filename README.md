@@ -34,6 +34,18 @@ Dependencies:
 
 To compute the results, run function analyze_results(input_json) in main.py .
 
+## Instruction to run experiments related to : Criminality analysis based on character descriptions
+The code related to this experiment is contained in test_hierarchy/analysis.py
+
+Dependencies
+- pandas (Data manipulation)
+- numpy (Mathematical operations)
+- matplotlib (Radar charts)
+- openai (LLM API interaction)
+- pyyaml (Configuration/API Key loading)
+
+mukti agent pipeline: execute run_manager_assistant_test()
+
 ## Instruction to run experiments related to : Character analysis
 all the code written for this section is contained in test_character/analysis.py
 
