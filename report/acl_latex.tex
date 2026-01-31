@@ -251,6 +251,19 @@ società che ti circonda."}
 
 The phrases used are taken from the (\citet{dataset_napoletano}) dataset and then translated using the tools mentioned above.
 A role shows higher bias if it generates a significantly different amount of affirmative answers for the same adjective when switching between standard Italian and regional dialects. 
+To compare roles and understand which one is better at reducing bias , we compute the following metric in which deltas between italiand and dialect are squared to ignore the direction of the bias:
+\begin{equation}
+\Delta_b = \sum_{a} \bigl( y_{d,r,a} - y_{i,r,a} \bigr)^2
+\label{eq:delta_b}
+\end{equation}
+\noindent
+where:  
+\begin{itemize}
+    \item $y_{d,r,a}$ is the number of ``yes'' responses for adjective $a$ in the dialect for role $r$.
+    \item $y_{i,r,a}$ is the number of ``yes'' responses for adjective $a$ in standard Italian for the same role $r$.
+    \item $\sum_a $ denotes the summation across all adjectives.
+\end{itemize}
+\noindent
 \subsection{Character analysis}
 To perform this analysis, we used a \texttt{.csv} file containing 141 sentences written in the 4 linguistic varieties, developed with reference to the work of \cite{dataset_napoletano}. We then prompted the LLM to give a score to each sentence for all of these six dimensions:
 \begin{itemize}
@@ -404,7 +417,7 @@ Again, this behavior pattern could stem from data scarcity during training or ma
     \label{fig:trait_baseline}
 \end{figure}
 
-With the introduction of role prompting, a consistent reduction of the magnitude of these biases is emerged: there is a lower number of affirmative responses and smaller aggregated bias scores across all configurations. However, the results of this strategy depends also on the selected role and on the prompt formulation: the short version of the impartial judge has a better performance than its longer corresponding version, while the opposite trend is observed for the villager role. 
+With the introduction of role prompting, a consistent reduction of the magnitude of these biases emerged: there is a lower number of affirmative responses and smaller aggregated bias scores across all roles as seen in Tab.\ref{tab:delta_sq_roles}. However, the results of this strategy depends also on the selected role and on the prompt formulation: the short version of the impartial judge has a better performance than its longer corresponding version, while the opposite trend is observed for the villager role. 
 Fig. \ref{fig:trait_role} illustrates the associations for Neapolitan descriptions across all adopted roles, a similar trends was observed for Sicilian and Emilian dialects.
 \begin{figure}[H]
     \centering
@@ -412,6 +425,25 @@ Fig. \ref{fig:trait_role} illustrates the associations for Neapolitan descriptio
     \caption[Trait assignment role]{Divergence in trait assignments for each role in Neapolitan , compared to the standard Italian of that role, represented by the central vertical line (zero). }
     \label{fig:trait_role}
 \end{figure}
+
+\begin{table}[h!]
+\centering
+\scriptsize
+\caption{Squared delta values for each role and dialect, summed across all adjectives (as defined in Equation~\ref{eq:delta_b}). Lower values indicate less bias.}
+\label{tab:delta_sq_roles}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Role} & \textbf{Neapolitan} & \textbf{Sicilian} & \textbf{Parmigiano} \\ 
+\midrule
+Impartial Judge       & 1117 & 819  & 958  \\
+Impartial Judge Short & 212  & 359  & 552  \\
+None                  & 6479 & 4566 & 5144 \\
+Villager              & 367  & 319  & 243  \\
+Villager Short        & 675  & 562  & 660  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{Character analysis}
 \label{sec:gio_results}
 To have a nice visual representation of the result of this analysis, a radar plot was used. These plots allows us to see the average score the model assigned at every iteration for every dimension. 
