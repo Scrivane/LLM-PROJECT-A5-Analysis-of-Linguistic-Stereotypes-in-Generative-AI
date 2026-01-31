@@ -131,6 +131,7 @@ These instructions should be used both for papers submitted for review and for f
 Describe here the objectives and the context of application of your experiment. This text can be based on the application description or on the SEMeval task requirements
 
 \subsection{Research Questions}
+\label{sec:res_questions}
 
 \textbf{R.Q.1: }What types of linguistic stereotypes do LLMs reproduce?
 \\ \textbf{R.Q.2: }Does prompt structure (zero-shot, role prompting, chain-of-thought) amplify or reduce bias?
@@ -153,14 +154,14 @@ Based on how the model treats African American English (AAE) compared to Standar
 %Describe all the methodological choices that you performed: e.g., architecture, utilized datasets, methodology, prompt engineering techniques, tuning approaches, model selections, validation strate-gies. Use separate subparagraphs for each piece of information. Use diagrams to describe architectural choices.
 In order to find and analyze linguistic stereotypes reproduced by LLMs, we have aimed at finding covert stereotypes, focusing not on what models overtly say about dialect speakers, but rather focusing on what models covertly associate with them.
 
-\textbf{Prompts} We have employed the matched guise probing technique introduced by (\citet{hofmann-24}: we presented language models with texts in either Italian standard language or Italian dialect and asked them to make predictions about the speakers who uttered the texts. 
+\paragraph{Prompts.} We have employed the matched guise probing technique introduced by (\citet{hofmann-24}: we presented language models with texts in either Italian standard language or Italian dialect and asked them to make predictions about the speakers who uttered the texts. 
 We examined matched guise probing in the meaning-matched setting, directly comparing texts that have the same meaning.
 Specifically, to perform our baseline analysis, five different
 prompting structures were selected, investigating the model's associations in five different fields: criminality analysis, job assignment, trait adjective association, character analysis, hierarchical positioning.
 Based on the results of each baseline study, we employed some common prompting techniques to understand how the prompting strategy impacts the finding of linguistic stereotypes. More precisely, we adopted \textit{role prompting} and a \textit{multi agent} approach. 
-During the analysis, all prompting requests were fully phrased in Italian, to avoid introducing further variability into the results. However, in the following sections, the prompting templates are going to be presented in English. 
+%During the analysis, all prompting requests were fully %phrased in Italian, to avoid introducing further %variability into the results. However, in the following %sections, the prompting templates are going to be %presented in English. 
 
-\textbf{Selected linguistic varieties} Given that the core of our work is to understand LLMs biases towards Italian regional dialects, we selected three meaningful dialects to be compared against the Italian standard language: Sicilian, Neapolitan and Emilian \footnote{more specifically, the dialect spoken in the Parma area}.  To generate the dialectal texts, besides leveraging personal knowledge, we took advantage of two public translation tools.  \footnote{\url{https://github.com/LiITA-LOD/LocalVarieties/tree/main} for sicilian and Emilian}
+\paragraph{Selected linguistic varieties.} Given that the core of our work is to understand LLMs biases towards Italian regional dialects, we selected three meaningful dialects to be compared against the Italian standard language: Sicilian, Neapolitan and Emilian \footnote{more specifically, the dialect spoken in the Parma area}.  This choice was based on the popularity of the dialects among Italian speakers ~\cite{10.1162/tacl_a_00631}  and on resources availability. To generate the dialectal texts, besides leveraging personal knowledge, we took advantage of two public translation tools.  \footnote{\url{https://github.com/LiITA-LOD/LocalVarieties/tree/main} for sicilian and Emilian}
 \footnote{\url{https://www.stars21.com/translator/} for neapolitan} 
 
 %Original prompts in italian can be found in the appendix.
@@ -176,7 +177,7 @@ Specifically, the prompting structure is as follows:\\
             Persona B: \{dialectal description\} \\
             A commettere il crimine è stato \_."}\\
 
-Following this baseline study, a similar structure was employed to propose a more articulate prompting style, aiming to understand whether, by deepening its reasoning with a more detailed and longer prompt, the model was able to produce less stereotyped responses.  The same experiment was conducted by phrasing the request both in Italian and in the Neapolitan dialect, to capture whether the model adopted to the language used in the prompt. This is how the model input was changed:\\
+Following this baseline study, a similar structure was employed to propose a more articulate prompting text, aiming to understand whether, by deepening its reasoning with more detailed prompt, the model was able to produce less stereotyped responses.  The same experiment was conducted by phrasing the request both in Italian and in the Neapolitan dialect. This is how the model input was changed:\\
 
 
     \textit{"Scegli una sola tra persona A e persona B. \\
@@ -190,7 +191,7 @@ Following this baseline study, a similar structure was employed to propose a mor
             A commettere il crimine è stato \_."}
 \\
 \\
-When phrasing the request using the Neapolitan dialect, we only considered Italian and Neapolitan descriptions, Sicilian and Emilian statements were excluded. 
+When phrasing the request using the Neapolitan dialect, we only considered Italian and Neapolitan descriptions, Sicilian and Emilian profiles were excluded. 
     
 \subsection{Job assignment based on character descriptions}
 
@@ -255,7 +256,7 @@ società che ti circonda."}
 The phrases used are taken from the (\citet{dataset_napoletano}) dataset and then translated using the tools mentioned above.
 A role shows higher bias if it generates a significantly different amount of affirmative answers for the same adjective when switching between standard Italian and regional dialects. 
 \subsection{Character analysis}
-To perform this analysis, we used a \texttt{.csv} file containing 141 sentences written in the 4 linguistic varieties. We then prompted the LLM to give a score to each sentence for all of these six dimensions:
+To perform this analysis, we used a \texttt{.csv} file containing 141 sentences written in the 4 linguistic varieties, developed with reference to the work of \cite{dataset_napoletano}. We then prompted the LLM to give a score to each sentence for all of these six dimensions:
 \begin{itemize}
     \item Negligent (1) - Conscientious (5)
     \item Closed-minded (1) - Open-minded (5)
@@ -274,7 +275,7 @@ With the use of this simple multi agent critique framework, we expect a bias red
 
 \subsection{Hierarchical positioning analysis}
 The goal of this analysis is to measure how the linguistic variety influences the hierarchical positioning \cite{giachino2025}, in terms of professional role, of a speaker. 
-We used a \texttt{.csv} file containing a set of 141 sentences written in the four linguistic varieties. The LLM was required to assign a score to each sentence using the following scale:
+We used a \texttt{.csv} file containing a set of 141 sentences written in the four linguistic varieties, the \cite{dataset_napoletano} was taken as reference. The LLM was required to assign a score to each sentence using the following scale:
 \begin{itemize}
 \item Assistant (1)
 \item Manager (10)
@@ -287,10 +288,11 @@ To evaluate the model’s response to a potential overt linguistic bias, we empl
 \item In the second step, Agent 2 receives the original sentence together with the score produced by Agent 1. Agent 2 is explicitly asked to re-evaluate the score while \emph{avoiding linguistic bias}. \end{itemize}
 
 \section{Experimental results}
-All prompt structures were tested using GPT-4.1 mini, the same prompt was run 30 times to take into account the variability of the output.  
+All prompt structures were tested using GPT-4.1 mini. As observed in \cite{hofmann-24}, GPT-4.1 mini was trained using Reinforcement Learning from Human Feedback (RLHF), enhancing the importance of studying its stereotypical behaviors. \\
+Unless stated otherwise, the same prompt was run 30 times to take into account the variability of the output.  
 
 \subsection{Semi-juridical analysis based on character descriptions}
-
+\label{sec:silvia_results}
 
 This study was conducted on ten different character descriptions, each repeated three times (once for every regional dialect).
 \\
@@ -312,12 +314,12 @@ Neapolitan & 49.81\% & 50.19\% \\ \bottomrule
 
 Tab.\ref{tab:deep_eval_ita} shows the occurrences of 'Persona A' and 'Persona B' responses when applying a more articulate prompting style, phrasing the request in standard Italian. A shift towards the Italian speaking individual can be observed for Sicilian (+18.47\%)  and Neapolitan (+30.35\%) dialects, while the opposite behavior is appreciated for the Emilian dialect (-2.49\%). 
 
-The divergence between the results of the Emilian dialect with respect to Sicilian and Neapolitan ones could be a sign of biased thinking, as southern Italian dialects are stereotypically associated to criminal contexts more than northern ones. A specific investigation on the diverse behavior associated to southern regions dialects compared to northern ones could be an interesting starting point for future work.
-Nevertheless, it's relevant to consider that the Emilian dialect is less common among Italian speakers \citet{10.1162/tacl_a_00631}. The scarcity of related data during the training phase could be a partial explanation for the observed behavior. 
+The divergence between the results of the Emilian dialect with respect to Sicilian and Neapolitan could be a sign of biased thinking, as southern Italian dialects are stereotypically associated to criminal contexts more than northern ones. A specific investigation on the diverse behavior associated to southern regions dialects compared to northern ones could be an interesting starting point for future work.
+Nevertheless, it's relevant to consider that the Emilian dialect is less common among Italian speakers (\citet{10.1162/tacl_a_00631}). The scarcity of related data during the training phase could be a partial explanation for the observed behavior. 
 
 \begin{table}[h!]
 \centering
-\caption{Deeper evaluation results with Italian request. Values in brackets represent the variation with respect to the baseline, results}
+\caption{Deeper evaluation results with Italian request. Values in brackets represent the variation with respect to the baseline results.}
 \label{tab:deep_eval_ita}
 \begin{tabular}{lccc}
 \toprule
@@ -329,7 +331,7 @@ Neapolitan & 19.46\% & 80.54\% \textbf{\scriptsize\color{gray}(+30.35\%)} \\ \bo
 \end{tabular}
 \end{table}
 
-When the same type of lengthy prompt was given as input to the model with a request in Neapolitan dialect form, we experienced a less polarized outcome: "Persona B" answers went from 80.54 \% to 65.89\%.  
+When the same type of lengthy prompt was given as input to the model with the request expressed in Neapolitan dialect, we experienced a less polarized outcome: "Persona B" answers went from 80.54 \% to 65.89\%.  
 Our suggestion is that, when a longer prompt is used, the model tends to pay more attention to the prompt text itself, therefore adapting to the language spoken in the prompt. 
 
 \begin{table}[h!]
@@ -344,6 +346,7 @@ Neapolitan &  34.11\% &  65.89\% \textbf{\scriptsize\color{gray}(+15.70\%)} \\ \
 \end{table}
 
 \subsection{Job assignment based on character descriptions}
+\label{sec:char_descr_results}
 
 The results revealed a bias in the distribution of job assignments. For higher prestige jobs such as \textit{"comandante"} (captain), \textit{"professore"} (professor), and manager, the distribution appeared more balanced.
 However, for creative jobs like \textit{"fotografo"} (photographer) and \textit{"scrittore"} (writer), the Italian profiles were consistently favored over the other dialects, with these roles being assigned significantly more frequently to Italian character descriptions.
@@ -361,27 +364,27 @@ Despite these corrections, the bias was not eliminated, but it was redistributed
 
 Specifically, the job \textit{"amministratore"} (administrator) became dominant in the dialects, appearing 36 times for Emilian and 32 times for Neapolitan or \textit{"manager"} 31 times Sicilian and 47 Emilian, while it was never assigned (0 times) to the Italian descriptions. Meanwhile, the assignation for the others high estimated jobs like \textit{"comandante"} (captain) or \textit{"avvocato"} (lawyer) dropped to 0 or 1 for all the profiles.
 
-Regarding the analysis for the "creative" jobs, the pattern changed favoring Neapolitan, going from 43 to 60. \textit{"fotografo"} (photographer) increased for Neapolitan from 43 to 60. Same trend can be observed for  \textit{"scrittore"} (writer) that went from 35 to 60
+Regarding the analysis for the "creative" jobs, the pattern changed favoring Neapolitan, going from 43 to 60. \textit{"fotografo"} (photographer) increased for Neapolitan, from 43 to 60. Same trend can be observed for  \textit{"scrittore"} (writer), that went from 35 to 60.
 
 The tendency to associate manual jobs with dialect persisted, but was slightly reduced. For example, the assignation of the role \textit{"autista"} (Driver) was reduced from 30 to 15 times for Neapolitan, but still persist in Sicilian that went from 26 to 25.
 
 The previously analyzed polarization between \textit{"cuoco"} and "chef" became even more evident. The Italian profiles were assigned "chef" 30 times and "cuoco" 0 times. At the same time, the Emilian and Neapolitan profiles were assigned \textit{"cuoco"} 30 times each but were never assigned the title of "chef" (0 times), indicating a strong semantic bias based on the language variety.
 
-Concerning the "hallucinated" jobs, the multi-agent approach managed to partially face the issue  for both Neapolitan and Sicilian and completely solve it for Italian. The presence of the hallucinated job \textit("operaio") (worker) was removed for Emilian but actually increased for Sicilian.
+Concerning the "hallucinated" jobs, the multi-agent approach managed to partially face the issue  for both Neapolitan and Sicilian and completely solve it for Italian. The presence of the hallucinated job \textit{"operaio"} (worker) was removed for Emilian but actually increased for Sicilian.
 
-Two interesting cases are the jobs \textbf{"sarto"} and \textit{"comico"}, whereas the single-agent approach related them to every dialect, the multi-agent model showed a drop to zero for all languages other than Emilian, which spiked for both roles. This anomaly, along with the high volume of corrections, could be caused by an insufficient presence of specific Emilian dialect data, with respect of Neapolitan and Sicilian \citet{10.1162/tacl_a_00631}, during the model's training
+Two interesting cases are the jobs \textit{"sarto"} and \textit{"comico"}, whereas the single-agent approach related them to every dialect, the multi-agent model showed a drop to zero for all languages other than Emilian, which spiked for both roles. This anomaly, along with the high volume of corrections, could be caused by an insufficient presence of specific Emilian dialect data, with respect of Neapolitan and Sicilian \citet{10.1162/tacl_a_00631}, during the model's training
 
 %%%%%%%%%% DIGRE GRAPHS %%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\linewidth]{grafici_digre/divergence_baseline_values_dumbell.png}
+    \includegraphics[width=0.8\linewidth]{grafici_digre/divergence_baseline_values_dumbell.png}
     \caption[Baseline occupational divergence scores]{Baseline occupational divergence scores (Standard Italian vs. Dialects).}
     \label{fig:divergence_baseline}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\linewidth]{grafici_digre/divergence_multiagent_values_dumbell.png}
+    \includegraphics[width=0.8\linewidth]{grafici_digre/divergence_multiagent_values_dumbell.png}
     \caption[Multi-Agent occupational divergence scores]{Multi-Agent occupational divergence scores (Standard Italian vs. Dialects).}
     \label{fig:divergence_multiagent}
 \end{figure}
@@ -389,6 +392,7 @@ Two interesting cases are the jobs \textbf{"sarto"} and \textit{"comico"}, where
 \small{\centering{\textit{Note: For legibility reasons, only occupations with divergence greater than 10 are displayed.}}}
 %%%%%%%%%% END DIGRE GRAPHS %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Character analysis}
+\label{sec:gio_results}
 To have a nice visual representation of the result of this analysis, a radar plot was used. These plots allows us to see the average score the model assigned at every iteration for every dimension. 
 The base analysis gave us the chart showed in \ref{fig:GIO_radar_baseline}.
 \begin{figure}[H] 
@@ -424,23 +428,29 @@ The two analysis give us interesting results.
 Multi agent critique frameworks can effectively reduce linguistic bias in LLMs, although introducing a new challenge, regarding its neutrality. The transition between the 2 agents and 3 agents framework shows how bias awareness can very easily lead to over compensation, effectively flipping the bias.
 
 
+\subsection{General overview}
+By conducting this multi faced analysis, we managed to tackle the research questions presented in \ref{sec:res_questions}.
+\paragraph{R.Q.1.} The model appeared to reproduce common social-economic stereotypes towards dialect speakers: it consistently associated standard Italian with high-prestige and creative jobs, while it seemed to relate dialectal profile to lower-esteemed or manual professions, even generating some 'hallucinations'. Moreover, Southern dialects (Sicilian and Neapolitan) are frequently linked to criminal contexts and perceived as more "rural" and less educated compared to Northern varieties. 
+\paragraph{R.Q.2.} Our results suggest that prompt style and complexity have a significant impact on the reproduced bias. While with a simpler, zero shot, prompting style the LLM is able to show a more balanced behavior, when adopting a more articulate prompting structure some discrepancies can be observed, likely due to the model ability to adapt to the prompt text language registry. \ref{sec:res_questions} Conversely, when employing a Role Prompting approach, we experienced an improvement under almost every aspect: when asked to assume a specific role, the model appeared to provide less stereotypical responses, compared to the role-less analysis.
+\paragraph{R.Q.3.} By employing a 2 agents pipeline, we experienced both a redistribution (\ref{sec:char_descr_results}) and a successful mitigation (\ref{sec:gio_results}) of biases. However, when moving to a 3 agents approach, we faced the issue of \textit{over-correction}: if the final LLM is made aware of the suspected linguistic stereotypes, it will over-correct its output to compensate them, thereby raising the problem of impartiality. 
+
+
 \section{Conclusions}
-Provide a critical evaluation of your work. What are the main outcomes and limitations? How can the work be extended?
+%Provide a critical evaluation of your work. What are %the main outcomes and limitations? How can the work be %extended?
+
+In this work we investigated covert linguistic biases in GPT-4.1 mini, focusing our attention on three Italian regional dialects: Neapolitan, Sicilian and Emilian. We explored how the adopted prompting strategy could influence the LLM behavior. To do so, we took advantage of two common prompting techniques: role prompting and multi-agentic pipeline. We observed that the model consistently presents stereotypical behaviors when prompted with a longer, more sophisticated style, showing signs of common biases directed towards dialect speakers. Contrarily, applying Role Prompting  showed to successfully mitigate the biased results. In most cases, by adopting a multi-agent approach we managed to redistribute or correct the displayed biases, however, when transitioning from a 2 agents to a 3 agents framework, the issue of overcompensation occurs. To extend the outcomes of this research, we suggest exploring more in the depth the asymmetric outcomes between Norther and southern regions, to understand whether the reduced bias observed for the Emilian dialect is simply due to data scarcity or if it reflects a cultural stereotype as well. Finally, a significant challenge would be addressing the problem of over-compensation with the 3 agents framework.
 
 
 
-\subsection{Citations}
-
-
-Table~\ref{citation-guide} shows the syntax supported by the style files.
-We encourage you to use the natbib styles.
-You can use the command \verb|\citet| (cite in text) to get ``author (year)'' citations, like this citation to a paper by \citet{Gusfield:97}.
-You can use the command \verb|\citep| (cite in parentheses) to get ``(author, year)'' citations \citep{Gusfield:97}.
-You can use the command \verb|\citealp| (alternative cite without parentheses) to get ``author, year'' citations, which is useful for using citations within parentheses (e.g. \citealp{Gusfield:97}).
-
-A possessive citation can be made with the command \verb|\citeposs|.
-This is not a standard natbib command, so it is generally not compatible
-with other style files.
+%Table~\ref{citation-guide} shows the syntax supported %by the style files.
+%We encourage you to use the natbib styles.
+%You can use the command \verb|\citet| (cite in text) to %get ``author (year)'' citations, like this citation to %a paper by \citet{Gusfield:97}.
+%You can use the command \verb|\citep| (cite in %parentheses) to get ``(author, year)'' citations \citep%{Gusfield:97}.
+%You can use the command \verb|\citealp| (alternative %cite without parentheses) to get ``author, year'' %citations, which is useful for using citations within %parentheses (e.g. \citealp{Gusfield:97}).
+%
+%A possessive citation can be made with the command %\verb|\citeposs|.
+%This is not a standard natbib command, so it is %generally not compatible
+%with other style files.
 
 
 
