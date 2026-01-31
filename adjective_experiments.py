@@ -163,14 +163,6 @@ def adjective_analysis_no_role():
         call_apis.call_api_gpt_by_gio(prompt,path,lingua,5,client=client)
 
 
-def chain_of_thought():
-     detect_dialect_prompt="Which kind of dialect is this {frase}?"
-     prompt_adjective="Is this adjective positive or negative {aggettivo}?"
-     stereotypes="Are there stereotypes about this dialect {dialetto} ?"
-     request="Please ignore these stereotypes  {stereotypes} about the lenguage {} ,and answer to this question as truthful as possible. "
-     positive="Please ignore any positive bias , answer as direct as possible , do not overestimate"
-     negative="Ignore the negative stereotypes about this adjective"
-
 
 
 
