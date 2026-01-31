@@ -5,6 +5,7 @@ import random
 import sys
 
 from mistralai import Mistral
+from collections import OrderedDict
 
 workspace_root = Path(__file__).resolve().parent.parent
 if str(workspace_root) not in sys.path:
@@ -63,22 +64,18 @@ def convert_prompt_silvia_to_csv(input_path: str = "translation/prompt_criminali
 
 
 def expand_prompts_with_dialects(input_csv: str = "prompt_criminality.csv", output_csv: str = "prompt_criminality_expanded.csv") -> int:
-    """Read `input_csv`, translate each prompt into Sicilian and Parmigiano and
-    write `output_csv` with rows: italian_prompt, dialect_prompt, dialect_name.
 
-    Returns the number of output rows written.
-    """
     inp = Path(input_csv)
     if not inp.exists():
         raise FileNotFoundError(f"Input CSV not found: {input_csv}")
 
-    # read prompts (robust to presence/absence of header)
+    # read prompts 
     prompts = []
     with inp.open("r", encoding="utf-8") as f:
         reader = csv.reader(f)
         rows = list(reader)
         start = 0
-        if rows and len(rows[0]) == 1 and rows[0][0].strip().lower() == "prompt":
+        if rows and len(rows[0]) == 1 and rows[0][0].strip().lower() == "prompt":   #header
             start = 1
         for r in rows[start:]:
             if not r:
@@ -111,13 +108,7 @@ def expand_prompts_with_dialects(input_csv: str = "prompt_criminality.csv", outp
 
 
 def group_expanded_prompts(expanded_csv: str = "prompt_criminality_expanded.csv", output_csv: str | None = None) -> int:
-    """Group rows in `expanded_csv` by the Italian prompt and write them so that for
-    each Italian prompt the order of dialect rows is: siciliano, parmigiano, napoletano.
 
-    If `output_csv` is None, the function overwrites `expanded_csv` safely.
-    Returns number of rows written.
-    """
-    from collections import OrderedDict
 
     inp = Path(expanded_csv)
     if not inp.exists():
@@ -162,7 +153,7 @@ def group_expanded_prompts(expanded_csv: str = "prompt_criminality_expanded.csv"
                 if d in dmap:
                     writer.writerow([italian, dmap[d], d])
                     written += 1
-            # write any other dialects in original encounter order
+            # write any other dialects in original  order
             for d in order_of_dialects[italian]:
                 if d in preferred:
                     continue
@@ -180,27 +171,12 @@ def group_expanded_prompts(expanded_csv: str = "prompt_criminality_expanded.csv"
 
 
 def batch_run_expanded_prompts(input_csv,output_json, question, model_name, runs: int = 100) -> int:
-    """
-    For each row in `expanded_csv` (italian, dialect_prompt, dialect_name),
-    builds a full prompt with `question`, runs the LLM `runs` times,
-    and saves results to `output_csv`.
-
-    Output CSV columns:
-        - prompt
-        - risposta
-        - dialetto
-
-    Returns:
-        int: number of rows written
-    """
 
     inp = Path(input_csv)
     if not inp.exists():
         raise FileNotFoundError(f"Expanded CSV not found: {input_csv}")
 
-    # -------------------------
     # Read expanded prompts
-    # -------------------------
     rows = []
     with inp.open("r", encoding="utf-8", newline="") as f:
         reader = csv.reader(f)
@@ -213,9 +189,8 @@ def batch_run_expanded_prompts(input_csv,output_json, question, model_name, runs
     if not rows:
         raise ValueError("Expanded CSV is empty or malformed")
 
-    # -------------------------
     # Prepare output file
-    # -------------------------
+
     outp = Path(output_json)
     outp.parent.mkdir(parents=True, exist_ok=True)
 
@@ -225,9 +200,8 @@ def batch_run_expanded_prompts(input_csv,output_json, question, model_name, runs
         writer = csv.writer(f)
         writer.writerow(["prompt", "risposta", "dialetto"])
 
-        # -------------------------
         # Run experiments
-        # -------------------------
+
         for idx, (italian, dialect_prompt, dialect_name) in enumerate(rows, start=1):
             full_prompt = (
                 f'{question}\n'
@@ -288,9 +262,7 @@ def call_llm_online_with_retry(
     max_retries=5,
     base_sleep=2.5,
 ):
-    """
-    Robust LLM call with rate-limit handling.
-    """
+
 
     for attempt in range(1, max_retries + 1):
         try:
@@ -319,27 +291,13 @@ def call_llm_online_with_retry(
     return "<api_error: rate limit exceeded after retries>"
 
 def batch_run_expanded_prompts_MULTI(input_csv,output_json_first, output_json_second, question_firstAgent, question_secondAgent, model_name, runs: int = 100) -> int:
-    """
-    For each row in `expanded_csv` (italian, dialect_prompt, dialect_name),
-    builds a full prompt with `question`, runs the LLM `runs` times,
-    and saves results to `output_csv`.
 
-    Output CSV columns:
-        - prompt
-        - risposta
-        - dialetto
-
-    Returns:
-        int: number of rows written
-    """
 
     inp = Path(input_csv)
     if not inp.exists():
         raise FileNotFoundError(f"Expanded CSV not found: {input_csv}")
 
-    # -------------------------
-    # Read expanded prompts
-    # -------------------------
+
     rows = []
     with inp.open("r", encoding="utf-8", newline="") as f:
         reader = csv.reader(f)
@@ -352,9 +310,6 @@ def batch_run_expanded_prompts_MULTI(input_csv,output_json_first, output_json_se
     if not rows:
         raise ValueError("Expanded CSV is empty or malformed")
 
-    # -------------------------
-    # Prepare output file
-    # -------------------------
     outp_first = Path(output_json_first)
     outp_first.parent.mkdir(parents=True, exist_ok=True)
 
@@ -364,9 +319,6 @@ def batch_run_expanded_prompts_MULTI(input_csv,output_json_first, output_json_se
         writer = csv.writer(f)
         writer.writerow(["prompt", "risposta", "dialetto"])
 
-        # -------------------------
-        # Run experiments
-        # -------------------------
         for idx, (italian, dialect_prompt, dialect_name) in enumerate(rows, start=1):
             full_prompt = (
                 f'Persona A: "{italian}"\n'
@@ -405,7 +357,7 @@ def analyze_results(input_json):
             "napoletano": {"total": 0, "persona_a": 0, "persona_b": 0},
         }
         for line_number, line in enumerate(f):
-            # Skippa la prima riga (header)
+            # Skip header
             if line_number == 0:
                 continue
             line = line.strip()

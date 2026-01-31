@@ -449,7 +449,7 @@ def analyze_results(input_json):
             "napoletano": {"total": 0, "persona_a": 0, "persona_b": 0},
         }
         for line_number, line in enumerate(f):
-            # Skippa la prima riga (header)
+            # Skippa header
             if line_number == 0:
                 continue
             line = line.strip()
