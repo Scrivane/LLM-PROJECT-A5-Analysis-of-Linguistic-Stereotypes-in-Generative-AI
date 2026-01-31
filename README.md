@@ -31,7 +31,17 @@ Run function run_gpt_criminality() in main.py. An API key for GPT-4.1 mini is re
 To compute the results, run function analyze_results(input_json) in main.py .
 
 ## Instruction to run experiments related to : Character analysis
+all the code written for this section is contained in test_character/analysis.py
+
+Dependencies
+- pandas (Data manipulation)
+- numpy (Mathematical operations)
+- matplotlib (Radar charts)
+- openai (LLM API interaction)
+- pyyaml (Configuration/API Key loading)
 
 baseline: execute function run_analysis(), it will automatically extract the phrases from the all_dialect_traslated.csv file
 
 multi agent: execute function run_3agents() to execute the 3 agents analysis
+
+to get plots: run plot_radar_chart() with the right parameters.

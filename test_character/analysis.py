@@ -1,12 +1,9 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 from math import pi
 from openai import OpenAI
 import json
 import yaml
-import time
-import seaborn as sns
 import os
 # config
 script_dir = os.path.dirname(os.path.abspath(__file__))
