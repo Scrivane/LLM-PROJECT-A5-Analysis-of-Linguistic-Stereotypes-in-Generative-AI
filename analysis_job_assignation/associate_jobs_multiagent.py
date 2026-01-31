@@ -195,5 +195,5 @@ if __name__ == "__main__":
     with open(results_json, "w", encoding="utf-8") as f:
         json.dump(all_data, f, indent=2, ensure_ascii=False)
 
-    print(f"\nExperiment completed successfully!")
+    print(f"\nExperiment completed successfully")
     print(f"Results saved in: {output_dir}")

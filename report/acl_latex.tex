@@ -281,7 +281,7 @@ To evaluate the model’s response to a potential overt linguistic bias, we empl
 \item In the second step, Agent 2 receives the original sentence together with the score produced by Agent 1. Agent 2 is explicitly asked to re-evaluate the score while \emph{avoiding linguistic bias}. \end{itemize}
 
 \subsection{Character analysis}
-To perform this analysis, we used a \texttt{.csv} file containing 141 sentences written in the 4 linguistic varieties, developed with reference to the work of \cite{dataset_napoletano}. We then prompted the LLM to give a score to each sentence for all of these six dimensions:
+To perform this analysis, we used a \texttt{.csv} file containing 141 sentences written in the 4 linguistic varieties, developed with reference to the work of \cite{dataset_napoletano}. Each prompt was only executed once. We then prompted the LLM to give a score to each sentence for all of these six dimensions:
 \begin{itemize}
     \item Negligent (1) - Conscientious (5)
     \item Closed-minded (1) - Open-minded (5)
@@ -300,7 +300,7 @@ With the use of this simple multi agent critique framework, we expect a bias red
 
 
 \section{Experimental results}
-All prompt structures were tested using GPT-4.1 mini. As observed in \cite{hofmann-24}, GPT-4.1 mini was trained using Reinforcement Learning from Human Feedback (RLHF), enhancing the importance of studying its stereotypical behaviors. \\
+All prompt structures were tested using GPT-4.1 mini. \\
 Unless stated otherwise, the same prompt was run 30 times to take into account the variability of the output.  
 
 \subsection{Job assignment based on character descriptions}

@@ -1,4 +1,5 @@
 
+from analysis_job_assignation.associate_jobs_baseline import aggregate_results, process_prompts
 import call_apis
 import csv,re,json, os
 from tqdm import tqdm
@@ -375,7 +376,7 @@ def run_gpt_criminality():
 
 
 
-def run_gpt_gio_2(num_runs: int = 30, out_dir=None) -> None:
+def run_gpt_jobs(num_runs: int = 30, out_dir=None) -> None:
     
     base_dir = Path(__file__).parent / "test_assegna_lavori_dai_character_sketch_by_Digre"
     csv_file = base_dir / "descrizioni.csv"
@@ -399,7 +400,7 @@ def run_gpt_gio_2(num_runs: int = 30, out_dir=None) -> None:
     summary_file = results_dir / "summary.txt"
 
     print("=" * 80)
-    print("Job Assignment Script - Multiple Runs (via run_gpt_gio_2)")
+    print("Job Assignment Script - Multiple Runs (via run_gpt_jobs)")
     print("=" * 80)
     print(f"CSV file: {csv_file}")
     print(f"Jobs file: {jobs_file}")
@@ -430,7 +431,7 @@ def run_gpt_gio_2(num_runs: int = 30, out_dir=None) -> None:
         f.write(summary_text)
 
     print("\n" + "=" * 80)
-    print("Processing complete (run_gpt_gio_2)!")
+    print("Processing complete (run_gpt_jobs)!")
     print(f"Results directory: {results_dir}")
     print(f"All results saved to: {output_file}")
     print(f"Aggregated results saved to: {aggregated_file}")
@@ -449,7 +450,7 @@ def analyze_results(input_json):
             "napoletano": {"total": 0, "persona_a": 0, "persona_b": 0},
         }
         for line_number, line in enumerate(f):
-            # Skippa header
+            # Skip header
             if line_number == 0:
                 continue
             line = line.strip()
@@ -487,5 +488,5 @@ def analyze_results(input_json):
 
 #to_run_by_giovanni()
 #run_gpt_criminality()    
-#run_gpt_gio_2()
+#run_gpt_jobs()
 
