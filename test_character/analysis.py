@@ -11,11 +11,11 @@ import os
 # config
 script_dir = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE = "./all_dialects_traslated.csv"
-OUTPUT_DATA_FILE = "./test_opposite_adjective_gio/risultati_analisi_completi.csv"
-OUTPUT_IMAGE_FILE = "./test_opposite_adjective_gio/grafico_stereotipi_linguistici.png"
+OUTPUT_DATA_FILE = "./test_character/risultati_analisi_completi.csv"
+OUTPUT_IMAGE_FILE = "./test_character/grafico_stereotipi_linguistici.png"
 
 # caricamento API key
-def load_api_key(filepath="./test_opposite_adjective_gio/key.yaml"):
+def load_api_key(filepath="./test_character/key.yaml"):
     try:
         with open(filepath, "r") as file:
             config = yaml.safe_load(file)
@@ -64,8 +64,8 @@ def ask_gpt(messages, model="gpt-4.1-mini", max_completion_tokens=200):
 
 # prompt
 def analyze_text_with_gpt(text):
-    promptLLM1_path = "./test_opposite_adjective_gio/prompts/LLM1.txt"
-    promptLLM2_path = "./test_opposite_adjective_gio/prompts/LLM2.txt"
+    promptLLM1_path = "./test_character/prompts/LLM1.txt"
+    promptLLM2_path = "./test_character/prompts/LLM2.txt"
 
     with open(promptLLM1_path, "r", encoding="utf-8") as f:
         llm1_base = f.read()
@@ -280,13 +280,13 @@ def run_3agents():
     e il Correttore (Agente 3). Salva i punteggi e il ragionamento del giudice.
     """
     # 1. Caricamento dati Agente 1 e Testo originale
-    df_raw = pd.read_csv("./test_opposite_adjective_gio/2agents/risultati_analisi_completi.csv")
+    df_raw = pd.read_csv("./test_character/2agents/risultati_analisi_completi.csv")
     df_texts = pd.read_csv(INPUT_FILE)
     
     # Caricamento Prompt
-    with open("./test_opposite_adjective_gio/prompts/LLMjudge.txt", "r", encoding="utf-8") as f:
+    with open("./test_character/prompts/LLMjudge.txt", "r", encoding="utf-8") as f:
         prompt_giudice_base = f.read()
-    with open("./test_opposite_adjective_gio/prompts/LLMcorrector.txt", "r", encoding="utf-8") as f:
+    with open("./test_character/prompts/LLMcorrector.txt", "r", encoding="utf-8") as f:
         prompt_correttore_base = f.read()
 
     final_results = []
@@ -349,7 +349,7 @@ def run_3agents():
 
     # Salvataggio CSV Finale
     df_final = pd.DataFrame(final_results)
-    output_path = "./test_opposite_adjective_gio/3agents/risultati_finali_multiagente1.csv"
+    output_path = "./test_character/3agents/risultati_finali_multiagente1.csv"
     
     # Assicurati che la cartella esista
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -360,18 +360,15 @@ def run_3agents():
         df_final, 
         suffix="_Final", 
         title="Analisi Finale Multi-Agente (Post-Correzione)", 
-        filename="./test_opposite_adjective_gio/3agents/radar_finale1.png"
+        filename="./test_character/3agents/radar_finale1.png"
     )
     
     print(f"Processo completato. File salvato in: {output_path}")
     return df_final
 
 if __name__ == "__main__":
-    #df_results = run_analysis()
-    #run_3agents()
-    #  Genera il grafico per l'Agente 1 (Raw Response)
-    # Nel tuo script, il caricamento è definito qui:
-    input = "./test_opposite_adjective_gio/2agents/risultati_analisi_completi.csv"
+    #insert the desired result .csv path:
+    input = "./test_character/2agents/risultati_analisi_completi.csv"
     mappa_colonne = {
             "Coscienzioso_Raw": "Conscientious_Raw",
             "Coscienzioso_Refined": "Conscientious_Refined",
@@ -392,7 +389,6 @@ if __name__ == "__main__":
             "Calmo_Final": "Calm_Final",
             "Istruito_Final": "Educated_Final"
         }
-# Viene caricato effettivamente in questa riga:
     df_results = pd.read_csv(input)
     df_results = df_results.rename(columns=mappa_colonne)
     df_results["Language"] = df_results["Language"].replace("Italiano (Auto)", "Italiano")
@@ -401,23 +397,22 @@ if __name__ == "__main__":
         df_results, 
         suffix="_Raw", 
         title="Baseline", 
-        filename="./test_opposite_adjective_gio/GIO_radar_baseline.png"
+        filename="./test_character/GIO_radar_baseline.png"
     )
     # Genera il grafico per l'Agente 2 (Refined Response)
     plot_radar_chart(
         df_results, 
         suffix="_Refined", 
         title="2 agents: Baseline, Bias Improvement", 
-        filename="./test_opposite_adjective_gio/rGIO_agente2.png"
+        filename="./test_character/rGIO_agente2.png"
     )
-    '''
+
     plot_radar_chart(
         df_results, 
         suffix="_Final", 
         title="3 agents: Baseline, Judge, Corrector", 
-        filename="./test_opposite_adjective_gio/GIO_radar_judge_corrector.png"
+        filename="./test_character/GIO_radar_judge_corrector.png"
     )
-    '''
 
     #plot_radar_chart(df_results)
     #df_results = pd.read_csv(OUTPUT_DATA_FILE)

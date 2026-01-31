@@ -1,7 +1,0 @@
-MAS 
-- primo agente: uguale
--secondo agente: giudce - se rileva bias chiama il terzo agente
--terzo agente: corregge gli score del primo agente
-
-RISULTATI NUMERICI
--fare uno score numerico con la differenza tra il punteggio in italiano e i vari dialetti (alla seconda)

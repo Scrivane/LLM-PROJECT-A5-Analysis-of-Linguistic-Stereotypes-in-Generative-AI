@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex acl_latex"] 1769887744.31112 "acl_latex.aux" "acl_latex.bbl" "acl_latex" 1769887785.30774 0
+["bibtex acl_latex"] 1769887744.31112 "acl_latex.aux" "acl_latex.bbl" "acl_latex" 1769887875.35676 0
   "./acl_natbib.bst" 1769873830.70361 45186 3d1af46d62cc9172ef6e42b56c1cd613 ""
   "./custom.bib" 1769873830.71214 7205 6f77a712a7633b6299965e8914ad4971 ""
-  "acl_latex.aux" 1769887785.13685 8607 1767879af46a5202ec506e3d710389f4 "pdflatex"
+  "acl_latex.aux" 1769887875.19225 8607 1767879af46a5202ec506e3d710389f4 "pdflatex"
   (generated)
   "acl_latex.bbl"
   "acl_latex.blg"
   (rewritten before read)
-["pdflatex"] 1769887780.92629 "/Users/giovannigiordano/Desktop/work/LLM-PROJECT-A5-Analysis-of-Linguistic-Stereotypes-in-Generative-AI/report/acl_latex.tex" "acl_latex.pdf" "acl_latex" 1769887785.30788 0
-  "/Users/giovannigiordano/Desktop/work/LLM-PROJECT-A5-Analysis-of-Linguistic-Stereotypes-in-Generative-AI/report/acl_latex.tex" 1769887780.73153 41381 36fb3d2d4044833ea22041bdec698878 ""
+["pdflatex"] 1769887870.99277 "/Users/giovannigiordano/Desktop/work/LLM-PROJECT-A5-Analysis-of-Linguistic-Stereotypes-in-Generative-AI/report/acl_latex.tex" "acl_latex.pdf" "acl_latex" 1769887875.35689 0
+  "/Users/giovannigiordano/Desktop/work/LLM-PROJECT-A5-Analysis-of-Linguistic-Stereotypes-in-Generative-AI/report/acl_latex.tex" 1769887870.91364 41391 1c4a81f00ed7508e36410281189e532c ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1741388039 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc" 1741388039 7631 5169ff1acd97ff1c4ab83563c99f96f4 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/map/fontname/texfonts.map" 1741388039 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -131,10 +131,10 @@
   "GIO_radar_baseline.png" 1769873830.68929 528983 a9ce92948dcfcbc5acb267370f5e8047 ""
   "GIO_radar_judge_corrector.png" 1769873830.69287 562219 3ab3a36e6bd105181a417821f7935f09 ""
   "acl.sty" 1769873830.69361 11615 e2c027f483aa40e577ed34264c8b0655 ""
-  "acl_latex.aux" 1769887785.13685 8607 1767879af46a5202ec506e3d710389f4 "pdflatex"
+  "acl_latex.aux" 1769887875.19225 8607 1767879af46a5202ec506e3d710389f4 "pdflatex"
   "acl_latex.bbl" 1769887744.36605 3355 7285ab03983abc9ae82aef3616896a81 "bibtex acl_latex"
-  "acl_latex.out" 1769887785.13774 3454 a5930f276a8a9315e97f29d3f0965663 "pdflatex"
-  "acl_latex.tex" 1769887780.73153 41381 36fb3d2d4044833ea22041bdec698878 ""
+  "acl_latex.out" 1769887875.19312 3454 a5930f276a8a9315e97f29d3f0965663 "pdflatex"
+  "acl_latex.tex" 1769887870.91364 41391 1c4a81f00ed7508e36410281189e532c ""
   "adriano_baseline.png" 1769873830.70396 72043 950c42877f498abc79ae490ab4121357 ""
   "adriano_role_nap.png" 1769873830.70439 100415 ce3c10188bb3d5e140c89c52ed46c0a0 ""
   "boxplot_agente1_bias.png" 1769873830.71092 137829 7fd6944632e2222131446a6b97b2b73a ""
