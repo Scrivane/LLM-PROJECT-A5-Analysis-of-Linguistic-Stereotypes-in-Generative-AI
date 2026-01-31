@@ -118,14 +118,13 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-This document is a supplement to the general instructions for *ACL authors. It contains instructions for using the \LaTeX{} style files for ACL conferences.
-The document itself conforms to its own specifications, and is therefore an example of what your manuscript should look like.
-These instructions should be used both for papers submitted for review and for final versions of accepted papers.
+Large Language Models (LLMs) reproduce, among other biases, linguistic stereotypes. Our work leverages the matched guise probing technique to investigate prejudices towards the speakers of three Italian dialects -Sicilian, Neapolitan, and Emilian-. The analyses are performed in different contexts and assess the model’s behaviour in different prompting settings.
 \end{abstract}
 
 \section{Introduction}
+Large Language Models (LLMs) have reportedly encoded and reproduced social biases, including those related to race, gender, religion and profession \cite{nadeem2021}. Investigating biased judgments, also dialectal varieties have often been associated with negative personality traits and lower-prestige jobs. \cite{hofmann-24}
+In our work, we analyze covert stereotyped associations towards speakers of 3 Italian dialects - Sicilian, Neapolitan, and Emilian dialects-. We observe the reflection on linguistic biases on the contexts of criminality, employability,personal traits and professional hierarchy. We also assess the impact of different prompting strategies, including zero-shot, role prompting, and multi-agent critique. 
 
-Describe here the objectives and the context of application of your experiment. This text can be based on the application description or on the SEMeval task requirements
 
 \subsection{Research Questions}
 \label{sec:res_questions}
@@ -136,7 +135,7 @@ Describe here the objectives and the context of application of your experiment. 
 
 
 \section{Background}
-The ability of Large Language Models (LLMs) to pick up biases encoded in training data can lead to the risk of systematic judgments on social stereotypes,reflecting different categories of biases - that can range from, but not be limited to, gender and race. (\citet{bender-2021})
+The ability of Large Language Models (LLMs) to pick up biases encoded in training data can lead to the risk of systematic judgments on social stereotypes,reflecting different categories of biases - that can range from, but not be limited to, gender and race. (\citet{bender-2021}
 \\ In the context of linguistic stereotypes, Hofmann et al. (\citet{hofmann-24}) have investigated covert racism, observing what language models covertly associate with dialect speakers. 
 Based on how the model treats African American English (AAE) compared to Standard American English (SAE), their work shows that dialect prejudice has visible consequences: LLMs are more likely to assign AAE speakers to lower-prestige jobs, predict criminal behavior, or recommend harsher legal outcomes.  
 \\Beyond English, studies on German dialects show that LLMs match dialect speakers with negative traits and occupational assignment that have a lower score and are considered less prestigious.
@@ -288,7 +287,7 @@ To evaluate the model’s response to a potential overt linguistic bias, we empl
 All prompt structures were tested using GPT-4.1 mini. As observed in \cite{hofmann-24}, GPT-4.1 mini was trained using Reinforcement Learning from Human Feedback (RLHF), enhancing the importance of studying its stereotypical behaviors. \\
 Unless stated otherwise, the same prompt was run 30 times to take into account the variability of the output.  
 
-\subsection{Semi-juridical analysis based on character descriptions}
+\subsection{Criminality analysis based on character descriptions}
 \label{sec:silvia_results}
 
 This study was conducted on ten different character descriptions, each repeated three times (once for every regional dialect).
@@ -439,6 +438,27 @@ The two analysis give us interesting results.
 
 Multi agent critique frameworks can effectively reduce linguistic bias in LLMs, although introducing a new challenge, regarding its neutrality. The transition between the 2 agents and 3 agents framework shows how bias awareness can very easily lead to over compensation, effectively flipping the bias.
 
+\subsection{Hierarchical positioning analysis}
+The hierarchical positioning analysis shows a general high level of agreement between the two agents, suggesting that the perceived professional authority is stable across evaluators. Indeed, only a limited number of cases (9 instances out of 1200) results in a discrepancy between the scores assigned by Agent 1 and those re-evaluated by Agent 2; the subtle average correction of +0.89 proposed by Agent 2, suggests that indicating overt linguistic biases does not affect the model’s judgment.
+
+However, taking a closer look at assigned scores, it’s notable that across all languages considered except Neapolitan, the distribution is quite stable, with a mean value between 5 and 6, showing that the model avoids polarized judgments. As for Neapolitan, the model tends to assign a slightly higher score in more cases, with a mean value between 5 and 7, possibly reflecting sociolinguistic stereotypes or a less stable internal representation of the considered dialect.
+
+Overall, it is possible to notice that in the context of professional relationships and hierarchies, the considered model avoids polarized judgments and, when used in pipeline with a second agent, does not overly recognize the presence of a linguistic bias.
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.4\textwidth]
+    {boxplot_agente1_bias.png} 
+    \caption{Chart for agent 1 in the LLM pipeline}
+    \label{fig:Lisa_agente1}
+\end{figure}
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.4\textwidth]{boxplot_agente2_debiased.png} 
+    \caption{Chart for agent 2 in the LLM pipeline }
+    \label{fig:Lisa_agente2}
+\end{figure}
+
 
 \subsection{General overview}
 By conducting this multi faced analysis, we managed to tackle the research questions presented in \ref{sec:res_questions}.
@@ -450,7 +470,7 @@ By conducting this multi faced analysis, we managed to tackle the research quest
 \section{Conclusions}
 %Provide a critical evaluation of your work. What are %the main outcomes and limitations? How can the work be %extended?
 
-In this work we investigated covert linguistic biases in GPT-4.1 mini, focusing our attention on three Italian regional dialects: Neapolitan, Sicilian and Emilian. We explored how the adopted prompting strategy could influence the LLM behavior. To do so, we took advantage of two common prompting techniques: role prompting and multi-agentic pipeline. We observed that the model consistently presents stereotypical behaviors when prompted with a longer, more sophisticated style, showing signs of common biases directed towards dialect speakers. Contrarily, applying Role Prompting  showed to successfully mitigate the biased results. In most cases, by adopting a multi-agent approach we managed to redistribute or correct the displayed biases, however, when transitioning from a 2 agents to a 3 agents framework, the issue of overcompensation occurs. To extend the outcomes of this research, we suggest exploring more in the depth the asymmetric outcomes between Norther and southern regions, to understand whether the reduced bias observed for the Emilian dialect is simply due to data scarcity or if it reflects a cultural stereotype as well. Finally, a significant challenge would be addressing the problem of over-compensation with the 3 agents framework.
+In this work we investigated covert linguistic biases in GPT-4.1 mini, focusing our attention on three Italian regional dialects: Neapolitan, Sicilian and Emilian. We explored how the adopted prompting strategy could influence the LLM behavior. To do so, we took advantage of two common prompting techniques: role prompting and multi-agentic pipeline. We observed that the model consistently presents stereotypical behaviors when prompted with a longer, more sophisticated style. Contrarily, applying Role Prompting  showed to successfully mitigate the biased results. In most cases, by adopting a multi-agent approach we managed to redistribute or correct the displayed biases, however, when transitioning from a 2 agents to a 3 agents framework, the issue of overcompensation occurs. To extend the outcomes of this research, we suggest exploring more in the depth the asymmetric outcomes between Norther and southern regions, to understand whether the reduced bias observed for the Emilian dialect is simply due to data scarcity or if it reflects a cultural stereotype as well. Finally, a significant challenge would be addressing the problem of over-compensation with the 3 agents framework.
 
 
 
@@ -472,5 +492,6 @@ In this work we investigated covert linguistic biases in GPT-4.1 mini, focusing 
 % Custom bibliography entries only
 \bibliographystyle{acl_natbib}
 \bibliography{custom}
+
 
 \end{document}
