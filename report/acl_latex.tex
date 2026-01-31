@@ -251,7 +251,8 @@ società che ti circonda."}
 %sporca, pulita, rumorosa, fredda, affettuosa, ritardataria, pia, onesta, furba, precisa,
 %divertente, noiosa, educata, maleducata, inesperta, colta, sensibile.
 
-The phrases used are taken from the (\citet{dataset_napoletano}) dataset and then translated using the tools mentioned above.
+The phrases used are taken from the (\citet{dataset_napoletano}) dataset and then translated in the other 3 linguistic variety using the tools mentioned above.
+For each phrase, adjective , lenguage and role, the prompt was executed only once.
 A role shows higher bias if it generates a significantly different amount of affirmative answers for the same adjective when switching between standard Italian and regional dialects. 
 To compare roles and understand which one is better at reducing bias , we compute the following metric, in which deltas between Italian and dialect related responses are squared not to take into account the direction of the bias:
 \begin{equation}
