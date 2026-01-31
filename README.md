@@ -34,7 +34,7 @@ Dependencies:
 
 To compute the results, run function analyze_results(input_json) in main.py .
 
-## Instruction to run experiments related to : Criminality analysis based on character descriptions
+## Instruction to run experiments related to : Hierarchical positioning analysis
 The code related to this experiment is contained in test_hierarchy/analysis.py
 
 Dependencies
