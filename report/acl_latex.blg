@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/Homebrew)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: acl_latex.aux
+The style file: acl_natbib.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: custom.bib
+Warning--empty year in dataset_napoletano
+You've used 9 entries,
+            3764 wiz_defined-function locations,
+            796 strings with 8264 characters,
+and the built_in function-call counts, 5877 in all, are:
+= -- 522
+> -- 245
+< -- 5
++ -- 95
+- -- 70
+* -- 378
+:= -- 904
+add.period$ -- 37
+call.type$ -- 9
+change.case$ -- 73
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 357
+empty$ -- 442
+format.name$ -- 97
+if$ -- 1304
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 73
+newline$ -- 50
+num.names$ -- 32
+pop$ -- 193
+preamble$ -- 1
+purify$ -- 60
+quote$ -- 0
+skip$ -- 335
+stack$ -- 0
+substring$ -- 164
+swap$ -- 178
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 81
+warning$ -- 1
+while$ -- 28
+width$ -- 0
+write$ -- 116
+(There was 1 warning)

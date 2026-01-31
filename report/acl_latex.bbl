@@ -1,0 +1,50 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Bui et~al.(2025)Bui, Holtermann, Hofmann, Lauscher, and von~der Wense}]{bui2025}
+Minh~Duc Bui, Carolin Holtermann, Valentin Hofmann, Anne Lauscher, and Katharina von~der Wense. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2509.13835} {Large language models discriminate against speakers of german dialects}.
+\newblock \emph{arXiv preprint arXiv:2509.13835}.
+\newblock Accepted to EMNLP 2025 Main.
+
+\bibitem[{Dataset Napoletano()}]{dataset_napoletano}
+Dataset Napoletano.
+\newblock \href {https://huggingface.co/datasets/anonymous-nsc-author/Neapolitan-Spoken-Corpus} {Neapolitan-spoken-corpus}.
+
+\bibitem[{Elsafoury and Hartmann(2025)}]{elsafoury-25}
+Fatma Elsafoury and David Hartmann. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2504.12767} {Out of sight out of mind: Measuring bias in language models against overlooked marginalized groups in regional contexts}.
+\newblock \emph{arXiv:2504.12767}.
+
+\bibitem[{Emily M.~Bender and Shmitchell(2021)}]{bender-2021}
+Angelina McMillan-Major Emily M.~Bender, Timnit~Gebru and Shmargaret Shmitchell. 2021.
+\newblock \href {https://doi.org/10.1145/3442188.3445922} {On the dangers of stochastic parrots: Can language models be too big?}
+\newblock \emph{FAccT '21: Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency}.
+
+\bibitem[{Giachino et~al.(2025)Giachino, Rondina, Vetr{\`o}, Coppola, and De~Martin}]{giachino2025}
+Gioele Giachino, Marco Rondina, Antonio Vetr{\`o}, Riccardo Coppola, and Juan~Carlos De~Martin. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2507.19156} {An empirical investigation of gender stereotype representation in large language models: The italian case}.
+\newblock \emph{arXiv preprint arXiv:2507.19156}.
+\newblock ECML PKDD 2025, 5th Workshop on Bias and Fairness in AI (BIAS25).
+
+\bibitem[{Hofmann et~al.(2024)Hofmann, Kalluri, and Jurafsky}]{hofmann-24}
+Valentin Hofmann, Pratyusha~Ria Kalluri, and Dan Jurafsky. 2024.
+\newblock \href {https://doi.org/10.1038/s41586-024-07856-5} {Ai generates covertly racist decisions about people based on their dialect}.
+\newblock \emph{Nature 633}.
+
+\bibitem[{Massaro and Samo(2023)}]{massaro-23}
+Angelapia Massaro and Giuseppe Samo. 2023.
+\newblock \href {https://dx.doi.org/10.15388/Verb.42} {Prompting metalinguistic awareness in large language models: Chatgpt and bias effects on the grammar of italian and italian varieties}.
+\newblock \emph{Verbum, vol. 14}.
+
+\bibitem[{Nadeem et~al.(2021)Nadeem, Bethke, and Reddy}]{nadeem2021}
+Moin Nadeem, Anna Bethke, and Siva Reddy. 2021.
+\newblock \href {https://doi.org/10.18653/v1/2021.acl-long.416} {{S}tereo{S}et: Measuring stereotypical bias in pretrained language models}.
+\newblock In \emph{Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)}, pages 5356--5371, Online. Association for Computational Linguistics.
+
+\bibitem[{Ramponi(2024)}]{10.1162/tacl_a_00631}
+Alan Ramponi. 2024.
+\newblock \href {https://doi.org/10.1162/tacl_a_00631} {Language varieties of italy: Technology challenges and opportunities}.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 12:19--38.
+
+\end{thebibliography}
