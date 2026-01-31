@@ -39,7 +39,7 @@
 %
 % and set <dim> to something 5cm or larger.
 
-\title{Analysis of Linguistic Stereotypes in GenerativeAI}
+\title{Analysis of LLMs Covert Linguistic Stereotypes Towards Speakers of Italian Dialects}
 
 % Author information can be set in various styles:
 % For several authors from the same institution:
@@ -401,7 +401,12 @@ As presented in Fig. \ref{fig:trait_baseline} , the baseline analysis reveals sy
 
 With the introduction of role prompting, a consistent reduction of the magnitude of these biases is emerged: there is a lower number of affirmative responses and smaller aggregated bias scores across all configurations. However, the results of this strategy depends also on the selected role and on the prompt formulation: the short version of the impartial judge has a better performance than its longer corresponding version, while the opposite trend is observed for the villager role. 
 Fig. \ref{fig:trait_role} illustrates the associations for Neapolitan descriptions across all adopted roles, a similar trends was observed for Sicilian and Emilian dialects.
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{adriano_role_nap.png}
+    \caption[Trait assignment role]{Divergence in trait assignments for each role, compared to the standard Italian baseline, represented by the central vertical line (zero).  Divergence is computed as \texttt{value\_dialect - value\_Italian}, which means that bars on the right indicate a stronger associations with the dialect variety, while bars on the left indicate a lean toward the Italian profile. }
+    \label{fig:trait_role}
+\end{figure}
 \subsection{Character analysis}
 \label{sec:gio_results}
 To have a nice visual representation of the result of this analysis, a radar plot was used. These plots allows us to see the average score the model assigned at every iteration for every dimension. 
