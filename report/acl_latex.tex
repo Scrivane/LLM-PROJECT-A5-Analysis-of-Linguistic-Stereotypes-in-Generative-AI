@@ -162,6 +162,26 @@ Based on the results of each baseline study, we employed some common prompting t
 
 %Original prompts in italian can be found in the appendix.
 
+    
+\subsection{Job assignment based on character descriptions}
+
+The core of the experiment was the evaluation of the model's consistency in job assignment across different dialects.
+We defined a set of ten distinct character profiles, each with a detailed description of their physical appearance, personality traits, and background.
+The prompts were built on these character descriptions. Additionally, the model was strictly instructed to select five possible jobs for each profile from a pre-defined list of occupations, directly translating the one provided by \cite{hofmann-24}.
+
+
+%the job was asked to be unique, and the response had %to be only the job results divided by commas
+%For every character profile, the prompt was run 30 %times for each linguistic variety, and the results %aggregated checking if there was any response that was %not compliant with the request, in particular jobs %that were not in the list
+
+The model was asked to provide a set of unique professions and to generate a response that followed a specific structure: just the designated jobs, separated by commas. The results were manually inspected to check whether there was any response that was not compliant with the request, specifically, whether it included jobs not in the list.
+
+Three agents were employed for the multi-agent approach, their roles in the pipeline are the following:
+\begin{itemize}
+    \item Agent 1: assigning the job based on character descriptions;
+    \item Agent 2: searching for biases in Agent 1 results, given original character descriptions and character language name;
+    \item Agent 3: starting from the results of Agent 2, the list of biased jobs and the associated explanation, re-assign the occupations. 
+\end{itemize}
+
 
 \subsection{Criminality analysis based on character descriptions}
 To conduct this analysis we provided the model with two character descriptions, one written in standard Italian and the other in one of the three chosen dialects.  
@@ -188,25 +208,6 @@ Following this baseline study, a similar structure was employed to propose a mor
 \\
 \\
 When phrasing the request using the Neapolitan dialect, we only considered Italian and Neapolitan descriptions, Sicilian and Emilian profiles were excluded. 
-    
-\subsection{Job assignment based on character descriptions}
-
-The core of the experiment was the evaluation of the model's consistency in job assignment across different dialects.
-We defined a set of ten distinct character profiles, each with a detailed description of their physical appearance, personality traits, and background.
-The prompts were built on these character descriptions. Additionally, the model was strictly instructed to select five possible jobs for each profile from a pre-defined list of occupations, directly translating the one provided by \cite{hofmann-24}.
-
-
-%the job was asked to be unique, and the response had %to be only the job results divided by commas
-%For every character profile, the prompt was run 30 %times for each linguistic variety, and the results %aggregated checking if there was any response that was %not compliant with the request, in particular jobs %that were not in the list
-
-The model was asked to provide a set of unique professions and to generate a response that followed a specific structure: just the designated jobs, separated by commas. The results were manually inspected to check whether there was any response that was not compliant with the request, specifically, whether it included jobs not in the list.
-
-Three agents were employed for the multi-agent approach, their roles in the pipeline are the following:
-\begin{itemize}
-    \item Agent 1: assigning the job based on character descriptions;
-    \item Agent 2: searching for biases in Agent 1 results, given original character descriptions and character language name;
-    \item Agent 3: starting from the results of Agent 2, the list of biased jobs and the associated explanation, re-assign the occupations. 
-\end{itemize}
 
 
 \subsection{Trait adjective assignment based on statement}
@@ -271,6 +272,21 @@ where:
     \item $\sum_a $ denotes the summation across all adjectives.
 \end{itemize}
 \noindent
+
+\subsection{Hierarchical positioning analysis}
+The goal of this analysis is to measure how the linguistic variety influences the hierarchical positioning \cite{giachino2025}, in terms of professional role, of a speaker. 
+We used a \texttt{.csv} file containing a set of 141 sentences written in the four linguistic varieties, the \cite{dataset_napoletano} was taken as reference. The LLM was required to assign a score to each sentence using the following scale:
+\begin{itemize}
+\item Assistant (1)
+\item Manager (10)
+\end{itemize}
+
+The assignment of higher values indicates a higher perceived authoritative position, while lower values indicate a more subordinate role.
+To evaluate the model’s response to a potential overt linguistic bias, we employed a a two-agent LLM pipeline:
+\begin{itemize}
+\item In the first step, Agent 1 analyzes each sentence independently and assigns a score from 1 to 10 based on their perception.
+\item In the second step, Agent 2 receives the original sentence together with the score produced by Agent 1. Agent 2 is explicitly asked to re-evaluate the score while \emph{avoiding linguistic bias}. \end{itemize}
+
 \subsection{Character analysis}
 To perform this analysis, we used a \texttt{.csv} file containing 141 sentences written in the 4 linguistic varieties, developed with reference to the work of \cite{dataset_napoletano}. We then prompted the LLM to give a score to each sentence for all of these six dimensions:
 \begin{itemize}
@@ -289,27 +305,61 @@ To improve eventual bias, two distinct multi agentic LLM pipeline approaches wer
 \end{itemize}
 With the use of this simple multi agent critique framework, we expect a bias reduction visible in the radar graph that will be plotted for the six dimensions.
 
-\subsection{Hierarchical positioning analysis}
-The goal of this analysis is to measure how the linguistic variety influences the hierarchical positioning \cite{giachino2025}, in terms of professional role, of a speaker. 
-We used a \texttt{.csv} file containing a set of 141 sentences written in the four linguistic varieties, the \cite{dataset_napoletano} was taken as reference. The LLM was required to assign a score to each sentence using the following scale:
-\begin{itemize}
-\item Assistant (1)
-\item Manager (10)
-\end{itemize}
-
-The assignment of higher values indicates a higher perceived authoritative position, while lower values indicate a more subordinate role.
-To evaluate the model’s response to a potential overt linguistic bias, we employed a a two-agent LLM pipeline:
-\begin{itemize}
-\item In the first step, Agent 1 analyzes each sentence independently and assigns a score from 1 to 10 based on their perception.
-\item In the second step, Agent 2 receives the original sentence together with the score produced by Agent 1. Agent 2 is explicitly asked to re-evaluate the score while \emph{avoiding linguistic bias}. \end{itemize}
 
 \section{Experimental results}
 All prompt structures were tested using GPT-4.1 mini. As observed in \cite{hofmann-24}, GPT-4.1 mini was trained using Reinforcement Learning from Human Feedback (RLHF), enhancing the importance of studying its stereotypical behaviors. \\
 Unless stated otherwise, the same prompt was run 30 times to take into account the variability of the output.  
 
+\subsection{Job assignment based on character descriptions}
+\label{sec:char_descr_results}
+
+The results revealed a bias in the distribution of job assignments. For higher prestige jobs such as \textit{"comandante"} (captain), \textit{"professore"} (professor), and manager, the distribution appeared more balanced.
+However, for creative jobs like \textit{"fotografo"} (photographer) and \textit{"scrittore"} (writer), the Italian profiles were consistently favored over the other dialects, with these roles being assigned significantly more frequently to Italian character descriptions.
+A different pattern emerged for lower esteemed or manual jobs, which the model assigned less frequently ,or not at all, to Italian descriptions. In particular, \textit{"autista"} (driver) was assigned 0 times to Italian profiles, compared to 26 for Sicilian and 30 for Neapolitan.
+Moreover, we want to bring attention to the different results obtained with the occupations "cook" and "chef": while the former is usually assigned more often to the dialects, "chef", typically associated with a higher professional tier,was assigned more frequently to the Italian descriptions.
+
+An interesting result can be found by also analyzing the 'hallucinations', jobs generated by the model that were not included in the original provided list.
+
+A remarkable example is the profession of \textit{"operaio"} (manual worker). This role was never assigned to the Italian descriptions (0 times), whereas it appeared frequently for the dialects: 13 times for Sicilian, 13 for Emilian, and 23 for Neapolitan.
+
+%%MULTIAGENT
+After the implementation of the multi-agent pipeline, the results showed a shift in behavior due to the active intervention of the "Corrector" agent, which reassigned jobs 5 times for Sicilian, 38 for Emilian, and 15 for Neapolitan.
+
+Despite these corrections, the bias was not eliminated, but it was redistributed in a different pattern.
+
+Specifically, the job \textit{"amministratore"} (administrator) became dominant in the dialects, appearing 36 times for Emilian and 32 times for Neapolitan or \textit{"manager"} 31 times Sicilian and 47 Emilian, while it was never assigned (0 times) to the Italian descriptions. Meanwhile, the assignation for the others high estimated jobs like \textit{"comandante"} (captain) or \textit{"avvocato"} (lawyer) dropped to 0 or 1 for all the profiles.
+
+Regarding the analysis for the "creative" jobs, the pattern changed favoring Neapolitan, going from 43 to 60. \textit{"fotografo"} (photographer) increased for Neapolitan, from 43 to 60. Same trend can be observed for  \textit{"scrittore"} (writer), that went from 35 to 60.
+
+The tendency to associate manual jobs with dialect persisted, but was slightly reduced. For example, the assignation of the role \textit{"autista"} (Driver) was reduced from 30 to 15 times for Neapolitan, but still persist in Sicilian that went from 26 to 25.
+
+The previously analyzed polarization between \textit{"cuoco"} and "chef" became even more evident. The Italian profiles were assigned "chef" 30 times and "cuoco" 0 times. At the same time, the Emilian and Neapolitan profiles were assigned \textit{"cuoco"} 30 times each but were never assigned the title of "chef" (0 times), indicating a strong semantic bias based on the language variety.
+
+Concerning the "hallucinated" jobs, the multi-agent approach managed to partially face the issue  for both Neapolitan and Sicilian and completely solve it for Italian. The presence of the hallucinated job \textit{"operaio"} (worker) was removed for Emilian but actually increased for Sicilian.
+
+Two interesting cases are the jobs \textit{"sarto"} and \textit{"comico"}, whereas the single-agent approach related them to every dialect, the multi-agent model showed a drop to zero for all languages other than Emilian, which spiked for both roles. This anomaly, along with the high volume of corrections, could be caused by an insufficient presence of specific Emilian dialect data, with respect of Neapolitan and Sicilian \citet{10.1162/tacl_a_00631}, during the model's training
+
+%%%%%%%%%% DIGRE GRAPHS %%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{grafici_digre/divergence_baseline_values_dumbell.png}
+    \caption[Baseline occupational divergence scores]{Baseline occupational divergence scores (Standard Italian vs. Dialects).}
+    \label{fig:divergence_baseline}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{grafici_digre/divergence_multiagent_values_dumbell.png}
+    \caption[Multi-Agent occupational divergence scores]{Multi-Agent occupational divergence scores (Standard Italian vs. Dialects).}
+    \label{fig:divergence_multiagent}
+\end{figure}
+
+\small{\centering{\textit{Note: For legibility reasons, only occupations with divergence greater than 10 are displayed.}}}
+%%%%%%%%%% END DIGRE GRAPHS %%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Criminality analysis based on character descriptions}
 \label{sec:silvia_results}
-
+\normalsize
 This study was conducted on ten different character descriptions, each repeated three times (once for every regional dialect).
 \\
 As displayed in Tab. \ref{tab:baseline}, the answers given by the LLM when queried with the original prompt show a close to perfect split, with a slight lean towards 'Persona A'. This is the ideal behavior we would expect from a non-biased model. While we are not able to investigate on GPT-4.1 mini training dataset due to OpenAI policies, this outcome suggests that the model may be trained on Italian linguistic varieties, possibly making it aware of the stereotypes against dialect speakers.
@@ -361,57 +411,12 @@ Neapolitan &  34.11\% &  65.89\% \textbf{\scriptsize\color{gray}(+15.70\%)} \\ \
 \end{tabular}
 \end{table}
 
-\subsection{Job assignment based on character descriptions}
-\label{sec:char_descr_results}
 
-The results revealed a bias in the distribution of job assignments. For higher prestige jobs such as \textit{"comandante"} (captain), \textit{"professore"} (professor), and manager, the distribution appeared more balanced.
-However, for creative jobs like \textit{"fotografo"} (photographer) and \textit{"scrittore"} (writer), the Italian profiles were consistently favored over the other dialects, with these roles being assigned significantly more frequently to Italian character descriptions.
-A different pattern emerged for lower esteemed or manual jobs, which the model assigned less frequently ,or not at all, to Italian descriptions. In particular, \textit{"autista"} (driver) was assigned 0 times to Italian profiles, compared to 26 for Sicilian and 30 for Neapolitan.
-Moreover, we want to bring attention to the different results obtained with the occupations "cook" and "chef": while the former is usually assigned more often to the dialects, "chef", typically associated with a higher professional tier,was assigned more frequently to the Italian descriptions.
-
-An interesting result can be found by also analyzing the 'hallucinations', jobs generated by the model that were not included in the original provided list.
-
-A remarkable example is the profession of \textit{"operaio"} (manual worker). This role was never assigned to the Italian descriptions (0 times), whereas it appeared frequently for the dialects: 13 times for Sicilian, 13 for Emilian, and 23 for Neapolitan.
-
-%%MULTIAGENT
-After the implementation of the multi-agent pipeline, the results showed a shift in behavior due to the active intervention of the "Corrector" agent, which reassigned jobs 5 times for Sicilian, 38 for Emilian, and 15 for Neapolitan.
-
-Despite these corrections, the bias was not eliminated, but it was redistributed in a different pattern.
-
-Specifically, the job \textit{"amministratore"} (administrator) became dominant in the dialects, appearing 36 times for Emilian and 32 times for Neapolitan or \textit{"manager"} 31 times Sicilian and 47 Emilian, while it was never assigned (0 times) to the Italian descriptions. Meanwhile, the assignation for the others high estimated jobs like \textit{"comandante"} (captain) or \textit{"avvocato"} (lawyer) dropped to 0 or 1 for all the profiles.
-
-Regarding the analysis for the "creative" jobs, the pattern changed favoring Neapolitan, going from 43 to 60. \textit{"fotografo"} (photographer) increased for Neapolitan, from 43 to 60. Same trend can be observed for  \textit{"scrittore"} (writer), that went from 35 to 60.
-
-The tendency to associate manual jobs with dialect persisted, but was slightly reduced. For example, the assignation of the role \textit{"autista"} (Driver) was reduced from 30 to 15 times for Neapolitan, but still persist in Sicilian that went from 26 to 25.
-
-The previously analyzed polarization between \textit{"cuoco"} and "chef" became even more evident. The Italian profiles were assigned "chef" 30 times and "cuoco" 0 times. At the same time, the Emilian and Neapolitan profiles were assigned \textit{"cuoco"} 30 times each but were never assigned the title of "chef" (0 times), indicating a strong semantic bias based on the language variety.
-
-Concerning the "hallucinated" jobs, the multi-agent approach managed to partially face the issue  for both Neapolitan and Sicilian and completely solve it for Italian. The presence of the hallucinated job \textit{"operaio"} (worker) was removed for Emilian but actually increased for Sicilian.
-
-Two interesting cases are the jobs \textit{"sarto"} and \textit{"comico"}, whereas the single-agent approach related them to every dialect, the multi-agent model showed a drop to zero for all languages other than Emilian, which spiked for both roles. This anomaly, along with the high volume of corrections, could be caused by an insufficient presence of specific Emilian dialect data, with respect of Neapolitan and Sicilian \citet{10.1162/tacl_a_00631}, during the model's training
-
-%%%%%%%%%% DIGRE GRAPHS %%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\linewidth]{grafici_digre/divergence_baseline_values_dumbell.png}
-    \caption[Baseline occupational divergence scores]{Baseline occupational divergence scores (Standard Italian vs. Dialects).}
-    \label{fig:divergence_baseline}
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\linewidth]{grafici_digre/divergence_multiagent_values_dumbell.png}
-    \caption[Multi-Agent occupational divergence scores]{Multi-Agent occupational divergence scores (Standard Italian vs. Dialects).}
-    \label{fig:divergence_multiagent}
-\end{figure}
-
-\small{\centering{\textit{Note: For legibility reasons, only occupations with divergence greater than 10 are displayed.}}}
-%%%%%%%%%% END DIGRE GRAPHS %%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Trait adjective assignment based on statement}
 \label{sec:adriano_results}
-\normalsize
-As presented in Fig. \ref{fig:trait_baseline} , the baseline analysis reveals systematic differences between assigned adjectives to Italian and dialectal statements: dialectal varieties are more often associated with traits such as 'furbo'\footnote{Italian adjective ``furbo'' has both a positive and a negative connotations, combining cleverness and cunning, it's difficult to traslate in english}, affectionate and funny, while Italian is more often linked to educated and polite.
+
+As presented in Fig. \ref{fig:trait_baseline} , the baseline analysis reveals systematic differences between assigned adjectives to Italian and dialectal statements: dialectal varieties are more often associated with traits such as 'furbo'\footnote{Italian adjective ``furbo'' has both a positive and a negative connotation, combining cleverness and cunning, it's difficult to traslate it in English}, affectionate and funny, while Italian is more often linked to educated and polite.
 
 Moreover, it is notable that Sicilian and Neapolitan show largely overlapping bias profiles whereas Parmigiano
  displays a partially divergent behavior : It is more often associated with being inexperienced and less precise.
@@ -451,17 +456,39 @@ Villager Short        & 675  & 562  & 660  \\
 \end{tabular}
 \end{table}
 
+
+\subsection{Hierarchical positioning analysis}
+The hierarchical positioning analysis shows a general high level of agreement between the two agents, suggesting that the perceived professional authority is stable across evaluators. Indeed, only a limited number of cases (9 instances out of 1200) results in a discrepancy between the scores assigned by Agent 1 and those re-evaluated by Agent 2; the subtle average correction of +0.89 proposed by Agent 2, suggests that indicating overt linguistic biases does not affect the model’s judgment.
+
+However, taking a closer look at assigned scores, it’s notable that across all languages considered except Neapolitan, the distribution is quite stable, with a mean value between 5 and 6, showing that the model avoids polarized judgments. As for Neapolitan, the model tends to assign a slightly higher score in more cases, with a mean value between 5 and 7, possibly reflecting sociolinguistic stereotypes or a less stable internal representation of the considered dialect.
+
+Overall, it is possible to notice that in the context of professional relationships and hierarchies, the considered model avoids polarized judgments and, when used in pipeline with a second agent, does not overly recognize the presence of a linguistic bias.
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.4\textwidth]
+    {boxplot_agente1_bias.png} 
+    \caption{Chart for agent 1 in the LLM pipeline}
+    \label{fig:Lisa_agente1}
+\end{figure}
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.4\textwidth]{boxplot_agente2_debiased.png} 
+    \caption{Chart for agent 2 in the LLM pipeline }
+    \label{fig:Lisa_agente2}
+\end{figure}
+
 \subsection{Character analysis}
 \label{sec:gio_results}
 To have a nice visual representation of the result of this analysis, a radar plot was used. These plots allows us to see the average score the model assigned at every iteration for every dimension. 
-The base analysis gave us the chart showed in \ref{fig:GIO_radar_baseline}.
+The base analysis gave us the chart showed in Fig. \ref{fig:GIO_radar_baseline}.
 \begin{figure}[H] 
     \centering
     \includegraphics[width=0.4\textwidth]{GIO_radar_baseline.png} 
     \caption{Radar chart for baseline analysis}
     \label{fig:GIO_radar_baseline}
 \end{figure}
-From this chart, we can clearly see how the LLM tends to be more biased towards certain adjectives. The radar plot shows how dialects are generally perceived more "rural", less educated and less conscientious, while on the other dimensions the LLM doesn't appear to have biases.
+From this (\ref{fig:GIO_radar_baseline}) chart, we can clearly see how the LLM tends to be more biased towards certain adjectives. The radar plot shows how dialects are generally perceived more "rural", less educated and less conscientious, while on the other dimensions the LLM doesn't appear to have biases.
 
 The following graphs (\ref{fig:GIO_agente2}, \ref{fig:GIO_radar_judge_corrector}) refer to our attempt at bias reduction using a multi-agentic LLM pipeline.
 
@@ -486,28 +513,6 @@ The two analysis give us interesting results.
 \end{itemize}
 
 Multi agent critique frameworks can effectively reduce linguistic bias in LLMs, although introducing a new challenge, regarding its neutrality. The transition between the 2 agents and 3 agents framework shows how bias awareness can very easily lead to over compensation, effectively flipping the bias.
-
-\subsection{Hierarchical positioning analysis}
-The hierarchical positioning analysis shows a general high level of agreement between the two agents, suggesting that the perceived professional authority is stable across evaluators. Indeed, only a limited number of cases (9 instances out of 1200) results in a discrepancy between the scores assigned by Agent 1 and those re-evaluated by Agent 2; the subtle average correction of +0.89 proposed by Agent 2, suggests that indicating overt linguistic biases does not affect the model’s judgment.
-
-However, taking a closer look at assigned scores, it’s notable that across all languages considered except Neapolitan, the distribution is quite stable, with a mean value between 5 and 6, showing that the model avoids polarized judgments. As for Neapolitan, the model tends to assign a slightly higher score in more cases, with a mean value between 5 and 7, possibly reflecting sociolinguistic stereotypes or a less stable internal representation of the considered dialect.
-
-Overall, it is possible to notice that in the context of professional relationships and hierarchies, the considered model avoids polarized judgments and, when used in pipeline with a second agent, does not overly recognize the presence of a linguistic bias.
-
-\begin{figure}[H] 
-    \centering
-    \includegraphics[width=0.4\textwidth]
-    {boxplot_agente1_bias.png} 
-    \caption{Chart for agent 1 in the LLM pipeline}
-    \label{fig:Lisa_agente1}
-\end{figure}
-\begin{figure}[H] 
-    \centering
-    \includegraphics[width=0.4\textwidth]{boxplot_agente2_debiased.png} 
-    \caption{Chart for agent 2 in the LLM pipeline }
-    \label{fig:Lisa_agente2}
-\end{figure}
-
 
 \subsection{General overview}
 By conducting this multi faced analysis, we managed to tackle the research questions presented in \ref{sec:res_questions}.
