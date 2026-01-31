@@ -34,6 +34,8 @@ Dependencies:
 
 To compute the results, run function analyze_results(input_json) in main.py .
 
+Additional code (prompt files pre-processing) related to this section can be found in test_criminality/analysis.py
+
 ## Instruction to run experiments related to : Hierarchical positioning analysis
 The code related to this experiment is contained in test_hierarchy/analysis.py
 
