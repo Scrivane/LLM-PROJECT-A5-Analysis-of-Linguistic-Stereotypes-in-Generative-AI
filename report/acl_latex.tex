@@ -391,7 +391,11 @@ Two interesting cases are the jobs \textit{"sarto"} and \textit{"comico"}, where
 \subsection{Trait adjective assignment based on statement}
 \label{sec:adriano_results}
 \normalsize
-As presented in Fig. \ref{fig:trait_baseline} , the baseline analysis reveals systematic differences between assigned adjectives to Italian and dialectal statements: dialectal varieties are more often associated with traits such as clever, precise and funny, while Italian is more often linked to educated and polite. Moreover, it is notable that Sicilian and Neapolitan show largely overlapping bias profiles whereas Parmigiano shows a partially divergent behavior. Again, this behavior could be linked to data scarcity during the model training.
+As presented in Fig. \ref{fig:trait_baseline} , the baseline analysis reveals systematic differences between assigned adjectives to Italian and dialectal statements: dialectal varieties are more often associated with traits such as clever, precise and funny, while Italian is more often linked to educated and polite.
+
+Moreover, it is notable that Sicilian and Neapolitan show largely overlapping bias profiles whereas Parmigiano
+ displays a partially divergent behavior : It is more often associated with being inexperienced and less precise.
+Again, this behavior pattern could stem from data scarcity during training or may reflect a specific bias toward speakers of Parmigiano.
 \\
 \begin{figure}[H]
     \centering
@@ -405,7 +409,7 @@ Fig. \ref{fig:trait_role} illustrates the associations for Neapolitan descriptio
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{adriano_role_nap.png}
-    \caption[Trait assignment role]{Divergence in trait assignments for each role, compared to the standard Italian baseline, represented by the central vertical line (zero).  Divergence is computed as \texttt{value\_dialect - value\_Italian}, which means that bars on the right indicate a stronger associations with the dialect variety, while bars on the left indicate a lean toward the Italian profile. }
+    \caption[Trait assignment role]{Divergence in trait assignments for each role, compared to the standard Italian baseline of that role, represented by the central vertical line (zero). }
     \label{fig:trait_role}
 \end{figure}
 \subsection{Character analysis}
